@@ -7,7 +7,7 @@ $version = 70;
 while ($nofile && $version > 50) {
 	$file = 'https://ftp.drupal.org/files/projects/drupal-7.'.$version.'.zip';
 	print 'Checkfile: '.$file.'<br/>';
-	if (strlen(file_get_contents($file))) {
+	if (strlen(@file_get_contents($file))) {
 		$nofile = FALSE;
 		print '<br/>Get file: '.$file.'<br/>';
 	} else {
@@ -29,10 +29,10 @@ if (file_put_contents("drupal_core.zip", file_get_contents($file)) ) {
     print '<br/><a href="http://sandbox.fusbfg.de/admin/reports/updates/update" target="_blank">http://sandbox.fusbfg.de/admin/reports/updates/update</a><br/>';
     print '<br/><a href="http://sandbox.fusbfg.de/admin/config/regional/translate/check" target="_blank">http://sandbox.fusbfg.de/admin/config/regional/translate/check</a><br/>';
     print '<br/><a href="http://sandbox.fusbfg.de/admin/config/content/ckeditor/editg#edit-skin" target="_blank">http://sandbox.fusbfg.de/admin/config/content/ckeditor/editg</a>: <a href="http://ckeditor.com/download" target="_blank">CKEditor-Version</a>, <a href="https://github.com/jackmoore/colorbox#changelog" target="_blank">Colorbox</a>, <a href="https://github.com/woothemes/FlexSlider#updates" target="_blank">Flexslider</a> und Libraries überprüfen';
-    print '<br/><a href="http://sandbox.fusbfg.de/admin/config/system/backup_migrate" target="_blank">Sandbox Backup erstellen</a><br/>';
+    print '<br/><br/><a href="http://sandbox.fusbfg.de/admin/config/system/backup_migrate" target="_blank">Sandbox Backup erstellen</a><br/>';
 
-    print '<br/><br/>Create <em>sites.zip</em>: <a href="http://sandbox.fusbfg.de/_zip.php?dir=sites" target="_blank">http://sandbox.fusbfg.de/_zip.php?dir=sites</a>';
-    print '<br/>Next Step: <b><a href="_download_sites.php">_download_sites.php</a>';
+    print '<br/>Create <em>sites.zip</em>: <a href="http://sandbox.fusbfg.de/_zip.php?dir=sites" target="_blank">http://sandbox.fusbfg.de/_zip.php?dir=sites</a>';
+    print '<br/><br/>Next Step: <b><a href="_download_sites.php">_download_sites.php</a><br/><br/><br/>';
 } else {
     echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';
 }
