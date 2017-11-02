@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+
 	<title>Update-Helfer</title>
 
 	<style>
@@ -14,8 +14,6 @@
 </head>
 
 <body>
-
-
 
 
 
@@ -61,12 +59,7 @@
 		Nach Update:
 		<ol>
 			<li><a href="/admin/config/media/file-system" target="_blank">ggf. temporäres Verzeichnis wiederherstellen (admin/config/media/file-system)</a></li>
-			<!-- <li><a href="/update.php" target="_blank">update.php</a></li>
-			<li><a href="/admin/config/system/cron" target="_blank">admin/config/system/cron</a></li>
-			<li><a href="/admin/reports/updates/update" target="_blank">admin/reports/updates/update</a></li>
-			<li><a href="/admin/config/regional/translate/check" target="_blank">admin/config/regional/translate/update</a></li> -->
 			<li><a href="/admin/reports/status" target="_blank">admin/reports/status</a></li>
-			<!-- <li><a href="/admin/config/content/ckeditor/editg#edit-skin" target="_blank">/admin/config/content/ckeditor/editg</a>: <a href="http://ckeditor.com/download" target="_blank">CKEditor-Version</a>, <a href="https://github.com/jackmoore/colorbox#changelog" target="_blank">Colorbox</a>, <a href="https://github.com/woothemes/FlexSlider#updates" target="_blank">Flexslider</a> und Libraries überprüfen</li> -->
 			<li><a href="/admin/content?type=patch" target="_blank">Patches löschen</a></li>
 			<li><a href="/admin/structure/types/manage/patch/delete" target="_blank">Inhaltstyp Patch löschen</a></li>
 			<li><a href="/admin/modules#edit-modules-development-devel-generate-enable" target="_blank">Modules Patch- / Unused- / Update Extended deaktivieren</a></li>
@@ -421,50 +414,50 @@ Disallow: /?q=user/logout</pre>
 			<br/>
 			<p><strong>Output:</strong></p>
 			<ul>
-			<li><a href="https://www.drupal.org/project/bricks" target="_blank">Bricks</a></li>
-			<li><a href="https://www.drupal.org/project/boxes" target="_blank">Boxes</a></li>
-			<li><a href="https://www.drupal.org/project/mini_blocks" target="_blank">Mini Blocks</a></li>
-			<li><a href="https://www.drupal.org/project/element" target="_blank">Element</a></li>
-			<li><a href="https://www.drupal.org/project/bean" target="_blank">Beans</a></li>
-			<li><a href="/Users/tobbi/Websites/•DRUPAL/Skripte und Module/D7-Module/bean_revision" target="_blank">Beans remove revision (•DRUPAL-Ordner)</a></li>
-			<li><a href="https://www.drupal.org/project/equalheights" target="_blank">Equalheights</a></li>
-			<li><a href="https://www.drupal.org/project/breakpoints" target="_blank">Breakpoints</a></li>
-			<li><a href="https://www.drupal.org/project/flatcomments" target="_blank">Flat Comments</a></li>
-			<li><a href="https://www.drupal.org/project/fontyourface" target="_blank">Font Your Face</a></li>
-			<li><a href="https://www.drupal.org/project/touch_icons" target="_blank">Apple Touch Icons</a></li>
-			<li><a href="https://www.drupal.org/project/socialshareprivacy" target="_blank">Social Share Privacy</a></li>
-			<li><a href="https://www.drupal.org/project/mobile_codes" target="_blank">Mobile Codes QR</a></li>
-			<li><a href="https://www.drupal.org/project/ccl" target="_blank">Custom Contextual Links</a></li>
-			<li><a href="https://www.drupal.org/project/page_throbber" target="_blank">Page Throbber</a></li>
-			<li><a href="https://www.drupal.org/project/exclude_node_title" target="_blank">Exclude Node Title</a></li>
-			<li><a href="https://www.drupal.org/project/hurricane" target="_blank">Hurricane Throbber</a></li>
-			<li><a href="https://www.drupal.org/project/stringoverrides" target="_blank">String Overrides</a></li>
-			<li><a href="https://www.drupal.org/project/ajax_links_api" target="_blank">Ajaxify Drupal</a></li>
-			<li><a href="https://www.drupal.org/project/jquery_ajax_load" target="_blank">jQuery AJAX Load</a></li>
-			<li><a href="https://www.drupal.org/project/content_callback" target="_blank">Content callback</a></li>
-			<li><a href="https://www.drupal.org/project/layouter" target="_blank">Layouter - WYSIWYG layout templates</a></li>
-			<li><a href="https://www.drupal.org/project/no_term_pages" target="_blank">No term pages (Taxonomy)</a></li>
-			<li><a href="https://www.drupal.org/project/simpleads" target="_blank">SimpleAds</a></li>
-			<li><a href="https://www.drupal.org/project/themekey" target="_blank">ThemeKey</a></li>
-			<li><a href="https://www.drupal.org/project/domain_themekey" target="_blank">Domain ThemeKey</a></li>
-			<li><a href="https://www.drupal.org/project/domain_menu_overview" target="_blank">Domain menu overview</a></li>
-			<li><a href="https://www.drupal.org/project/attachment_links" target="_blank">Attachment Links</a></li>
-			<li><a href="https://www.drupal.org/project/trimmed_popup_formatter" target="_blank">Trimmed Popup Formatter</a></li>
-			<li><a href="https://www.drupal.org/project/dividize" target="_blank">Dividize - Converting table to DIV</a></li>
-			<li><a href="https://www.drupal.org/project/notification_bar" target="_blank">Notification Bar</a></li>
-			<li><a href="https://www.drupal.org/project/ouibounce_exit_modal" target="_blank">Ouibounce Exit Modal</a></li>
-			<li><a href="https://www.drupal.org/project/html_title_trash" target="_blank">HTML Title Trash</a></li>
-			<li><a href="https://www.drupal.org/project/slick" target="_blank">Slick Carousel</a></li>
-			<li><a href="https://www.drupal.org/project/exposebox" target="_blank">Expose Box (Collapsible Box)</a></li>
-			<li><a href="https://www.drupal.org/project/collapse_text" target="_blank">Collapse Text</a></li>
-			<li><a href="https://www.drupal.org/project/menu_item_attach" target="_blank">Menu Item Attach</a></li>
-			<li><a href="https://www.drupal.org/project/minimal_share" target="_blank">Minimal Share</a></li>
-			<li><a href="https://www.drupal.org/project/simple_word_link" target="_blank">Simple Word Link</a></li>
-			<li><a href="https://www.drupal.org/project/turnjs_magazines" target="_blank">Turn.js Magazines (Flip-Magazine)</a></li>
-			<li><a href="https://www.drupal.org/project/autodialog" target="_blank">Auto-Dialog (Pop Up)</a></li>
-			<li><a href="https://www.drupal.org/project/node_subpages" target="_blank">Node Subpages</a></li>
-			<li><a href="https://www.drupal.org/project/icon" target="_blank">Icon API</a></li>
-			<li><a href="https://www.drupal.org/project/submenutree" target="_blank">Submenu Tree</a></li>
+				<li><a href="https://www.drupal.org/project/bricks" target="_blank">Bricks</a></li>
+				<li><a href="https://www.drupal.org/project/boxes" target="_blank">Boxes</a></li>
+				<li><a href="https://www.drupal.org/project/mini_blocks" target="_blank">Mini Blocks</a></li>
+				<li><a href="https://www.drupal.org/project/element" target="_blank">Element</a></li>
+				<li><a href="https://www.drupal.org/project/bean" target="_blank">Beans</a></li>
+				<li><a href="/Users/tobbi/Websites/•DRUPAL/Skripte und Module/D7-Module/bean_revision" target="_blank">Beans remove revision (•DRUPAL-Ordner)</a></li>
+				<li><a href="https://www.drupal.org/project/equalheights" target="_blank">Equalheights</a></li>
+				<li><a href="https://www.drupal.org/project/breakpoints" target="_blank">Breakpoints</a></li>
+				<li><a href="https://www.drupal.org/project/flatcomments" target="_blank">Flat Comments</a></li>
+				<li><a href="https://www.drupal.org/project/fontyourface" target="_blank">Font Your Face</a></li>
+				<li><a href="https://www.drupal.org/project/touch_icons" target="_blank">Apple Touch Icons</a></li>
+				<li><a href="https://www.drupal.org/project/socialshareprivacy" target="_blank">Social Share Privacy</a></li>
+				<li><a href="https://www.drupal.org/project/mobile_codes" target="_blank">Mobile Codes QR</a></li>
+				<li><a href="https://www.drupal.org/project/ccl" target="_blank">Custom Contextual Links</a></li>
+				<li><a href="https://www.drupal.org/project/page_throbber" target="_blank">Page Throbber</a></li>
+				<li><a href="https://www.drupal.org/project/exclude_node_title" target="_blank">Exclude Node Title</a></li>
+				<li><a href="https://www.drupal.org/project/hurricane" target="_blank">Hurricane Throbber</a></li>
+				<li><a href="https://www.drupal.org/project/stringoverrides" target="_blank">String Overrides</a></li>
+				<li><a href="https://www.drupal.org/project/ajax_links_api" target="_blank">Ajaxify Drupal</a></li>
+				<li><a href="https://www.drupal.org/project/jquery_ajax_load" target="_blank">jQuery AJAX Load</a></li>
+				<li><a href="https://www.drupal.org/project/content_callback" target="_blank">Content callback</a></li>
+				<li><a href="https://www.drupal.org/project/layouter" target="_blank">Layouter - WYSIWYG layout templates</a></li>
+				<li><a href="https://www.drupal.org/project/no_term_pages" target="_blank">No term pages (Taxonomy)</a></li>
+				<li><a href="https://www.drupal.org/project/simpleads" target="_blank">SimpleAds</a></li>
+				<li><a href="https://www.drupal.org/project/themekey" target="_blank">ThemeKey</a></li>
+				<li><a href="https://www.drupal.org/project/domain_themekey" target="_blank">Domain ThemeKey</a></li>
+				<li><a href="https://www.drupal.org/project/domain_menu_overview" target="_blank">Domain menu overview</a></li>
+				<li><a href="https://www.drupal.org/project/attachment_links" target="_blank">Attachment Links</a></li>
+				<li><a href="https://www.drupal.org/project/trimmed_popup_formatter" target="_blank">Trimmed Popup Formatter</a></li>
+				<li><a href="https://www.drupal.org/project/dividize" target="_blank">Dividize - Converting table to DIV</a></li>
+				<li><a href="https://www.drupal.org/project/notification_bar" target="_blank">Notification Bar</a></li>
+				<li><a href="https://www.drupal.org/project/ouibounce_exit_modal" target="_blank">Ouibounce Exit Modal</a></li>
+				<li><a href="https://www.drupal.org/project/html_title_trash" target="_blank">HTML Title Trash</a></li>
+				<li><a href="https://www.drupal.org/project/slick" target="_blank">Slick Carousel</a></li>
+				<li><a href="https://www.drupal.org/project/exposebox" target="_blank">Expose Box (Collapsible Box)</a></li>
+				<li><a href="https://www.drupal.org/project/collapse_text" target="_blank">Collapse Text</a></li>
+				<li><a href="https://www.drupal.org/project/menu_item_attach" target="_blank">Menu Item Attach</a></li>
+				<li><a href="https://www.drupal.org/project/minimal_share" target="_blank">Minimal Share</a></li>
+				<li><a href="https://www.drupal.org/project/simple_word_link" target="_blank">Simple Word Link</a></li>
+				<li><a href="https://www.drupal.org/project/turnjs_magazines" target="_blank">Turn.js Magazines (Flip-Magazine)</a></li>
+				<li><a href="https://www.drupal.org/project/autodialog" target="_blank">Auto-Dialog (Pop Up)</a></li>
+				<li><a href="https://www.drupal.org/project/node_subpages" target="_blank">Node Subpages</a></li>
+				<li><a href="https://www.drupal.org/project/icon" target="_blank">Icon API</a></li>
+				<li><a href="https://www.drupal.org/project/submenutree" target="_blank">Submenu Tree</a></li>
 			</ul>
 
 
@@ -506,91 +499,91 @@ Disallow: /?q=user/logout</pre>
 			<br/>
 			<p><strong>Mobile:</strong></p>
 			<ul>
-			<li><a href="https://www.drupal.org/project/footable" target="_blank">FooTable</a></li>
-			<li><a href="https://www.drupal.org/project/table_trash" target="_blank">Table Trash</a></li>
-			<li><a href="https://www.drupal.org/project/thumbnav" target="_blank">Thumbnav</a></li>
-			<li><a href="https://www.drupal.org/project/quojs" target="_blank">Quo.js Gesture Detection</a></li>
-			<li><a href="https://www.drupal.org/project/me" target="_blank">me aliases</a></li>
-			<li><a href="https://www.drupal.org/project/admin_menu_navbar" target="_blank">Admin Menu Navbar</a></li>
-			<li><a href="https://www.drupal.org/project/views_mobile" target="_blank">Views Mobile</a></li>
-			<li><a href="https://www.drupal.org/project/zen_mobile_menu" target="_blank">Zen Mobile Menu</a></li>
-			<li><a href="https://www.drupal.org/project/field_group_easy_responsive_tabs" target="_blank">Field Group: Easy Responsive Tabs to Accordion</a></li>
-			<li><a href="https://www.drupal.org/project/mmenu" target="_blank">Mobile sliding menu</a></li>
-			<li><a href="https://www.drupal.org/project/zurb_responsive_tables" target="_blank">Zurb Responsive Tables</a></li>
-			<li><a href="https://www.drupal.org/project/footable" target="_blank">FooTable</a></li>
-			<li><a href="https://www.drupal.org/project/date_popup_mobile" target="_blank">Date Popup Mobile</a></li>
-			<li><a href="https://www.drupal.org/project/colorbox_swipe" target="_blank">Colorbox Swipe Gestures Support</a></li>
+				<li><a href="https://www.drupal.org/project/footable" target="_blank">FooTable</a></li>
+				<li><a href="https://www.drupal.org/project/table_trash" target="_blank">Table Trash</a></li>
+				<li><a href="https://www.drupal.org/project/thumbnav" target="_blank">Thumbnav</a></li>
+				<li><a href="https://www.drupal.org/project/quojs" target="_blank">Quo.js Gesture Detection</a></li>
+				<li><a href="https://www.drupal.org/project/me" target="_blank">me aliases</a></li>
+				<li><a href="https://www.drupal.org/project/admin_menu_navbar" target="_blank">Admin Menu Navbar</a></li>
+				<li><a href="https://www.drupal.org/project/views_mobile" target="_blank">Views Mobile</a></li>
+				<li><a href="https://www.drupal.org/project/zen_mobile_menu" target="_blank">Zen Mobile Menu</a></li>
+				<li><a href="https://www.drupal.org/project/field_group_easy_responsive_tabs" target="_blank">Field Group: Easy Responsive Tabs to Accordion</a></li>
+				<li><a href="https://www.drupal.org/project/mmenu" target="_blank">Mobile sliding menu</a></li>
+				<li><a href="https://www.drupal.org/project/zurb_responsive_tables" target="_blank">Zurb Responsive Tables</a></li>
+				<li><a href="https://www.drupal.org/project/footable" target="_blank">FooTable</a></li>
+				<li><a href="https://www.drupal.org/project/date_popup_mobile" target="_blank">Date Popup Mobile</a></li>
+				<li><a href="https://www.drupal.org/project/colorbox_swipe" target="_blank">Colorbox Swipe Gestures Support</a></li>
 			</ul>
 
 
 			<br/>
 			<p><strong>Users and Permissions:</strong></p>
 			<ul>
-			<li><a href="https://www.drupal.org/project/menu_admin_per_menu" target="_blank">Menu Admin per Menu</a></li>
-			<li><a href="https://www.drupal.org/project/admin_menu_source" target="_blank">Admin Menu Source</a></li>
-			<li><a href="https://www.drupal.org/project/custom_menu_perms" target="_blank">Custom Menu Permissions</a></li>
-			<li><a href="https://www.drupal.org/project/block_access" target="_blank">Block Access</a></li>
-			<li><a href="https://www.drupal.org/project/abt" target="_blank">Access By Term</a></li>
-			<li><a href="https://www.drupal.org/project/felix" target="_blank">Felix Block Access</a></li>
-			<li><a href="https://www.drupal.org/project/shortcutperrole" target="_blank">Shortcut per Role</a></li>
-			<li><a href="https://www.drupal.org/project/required_by_role" target="_blank">Required by role</a></li>
-			<li><a href="https://www.drupal.org/project/eu_cookie_compliance" target="_blank">EU Cookie Compliance</a></li>
-			<li><a href="https://www.drupal.org/project/divascookies" target="_blank">Divas Cookies</a></li>
-			<li><a href="https://www.drupal.org/project/cookiecontrol" target="_blank">Cookie Control</a></li>
-			<li><a href="https://www.drupal.org/project/cookiecuttr" target="_blank">CookieCuttr</a></li>
-			<li><a href="https://www.drupal.org/project/content_tab" target="_blank">Content Tab</a></li>
-			<li><a href="https://www.drupal.org/project/session_cookie_lifetime" target="_blank">Session cookie lifetime</a></li>
-			<li><a href="https://www.drupal.org/project/passwordless" target="_blank">Passwordless</a></li>
-			<li><a href="https://www.drupal.org/project/rpt" target="_blank">Registration Password Token</a></li>
-			<li><a href="https://www.drupal.org/project/email_registration" target="_blank">Email Registration</a></li>
-			<li><a href="https://www.drupal.org/project/feedback_reloaded" target="_blank">Feedback Reloaded</a></li>
-			<li><a href="https://www.drupal.org/project/feedback_collect" target="_blank">Feedback Collect</a></li>
-			<li><a href="https://www.drupal.org/project/save_draft" target="_blank">Save Draft</a></li>
-			<li><a href="https://www.drupal.org/project/publishcontent" target="_blank">Publish Content</a></li>
-			<li><a href="https://www.drupal.org/project/override_node_options" target="_blank">Override Node Options</a></li>
-			<li><a href="https://www.drupal.org/project/password_reset_help" target="_blank">Password Reset Help</a></li>
-			<li><a href="https://www.drupal.org/project/disable_field" target="_blank">Disable Field</a></li>
-			<li><a href="https://www.drupal.org/project/permissions_helper" target="_blank">Permissions Helper (Show Machine Name)</a></li>
-			<li><a href="https://www.drupal.org/project/soauth" target="_blank">Social Authorization</a></li>
-			<li><a href="https://www.drupal.org/project/hybridauth" target="_blank">HybridAuth Social Login</a></li>
-			<li><a href="https://www.drupal.org/project/xing_connect" target="_blank">Xing Connect</a></li>
-			<li><a href="https://www.drupal.org/project/content_login" target="_blank">Content Login</a></li>
-			<li><a href="https://www.drupal.org/project/redirect_after_logout" target="_blank">Redirect after logout</a></li>
-			<li><a href="https://www.drupal.org/project/multiple_registration" target="_blank">Multiple Registration</a></li>
-			<li><a href="https://www.drupal.org/project/user_picture_initials" target="_blank">User Picture Initials</a></li>
-			<li><a href="https://www.drupal.org/project/email_login" target="_blank">Role based Email Login</a></li>
-			<li><a href="https://www.drupal.org/project/drop_down_login" target="_blank">Drop Down Login</a></li>
-			<li><a href="https://www.drupal.org/project/entity_legal" target="_blank">Entity Legal</a></li>
-			<li><a href="https://www.drupal.org/project/roles_for_menu" target="_blank">Roles for menu</a></li>
-			<li><a href="https://www.drupal.org/project/jeap" target="_blank">Just Enough Administrator Power</a></li>
-			<li><a href="https://www.drupal.org/project/administrative_help" target="_blank">Administrative Help</a></li>
-			<li><a href="https://www.drupal.org/project/sso_multi_domain" target="_blank">Single Sign On Multiple Domain</a></li>
-			<li><a href="https://www.drupal.org/project/password_policy" target="_blank">Password Policy</a></li>
-			<li><a href="https://www.drupal.org/project/internal_nodes" target="_blank">Internal Nodes</a></li>
-			<li><a href="https://www.drupal.org/project/change_pwd_page" target="_blank">Password Separate Form</a></li>
-			<li><a href="https://www.drupal.org/project/email_confirm" target="_blank">Email Change Confirmation</a></li>
-			<li><a href="https://www.drupal.org/project/email_field_confirm" target="_blank">Email Field Confirm</a></li>
-			<li><a href="https://www.drupal.org/project/auto_login_url_tokens" target="_blank">Auto Login URL Tokens</a></li>
-			<li><a href="https://www.drupal.org/project/urllogin" target="_blank">urllogin</a></li>
-			<li><a href="https://www.drupal.org/project/auto_login_url" target="_blank">Auto Login URL</a></li>
-			<li><a href="https://www.drupal.org/project/login_one_time" target="_blank">Login one time</a></li>
-			<li><a href="https://www.drupal.org/project/gplus_sync" target="_blank">Google+ synchronization (Login)</a></li>
-			<li><a href="https://www.drupal.org/project/registration_invite" target="_blank">Registration invite</a></li>
-			<li><a href="https://www.drupal.org/project/invite" target="_blank">Invite</a></li>
-			<li><a href="https://www.drupal.org/project/registration" target="_blank">registration</a></li>
-			<li><a href="https://www.drupal.org/project/regcode_simple" target="_blank">Registration code (simple)</a></li>
-			<li><a href="https://www.drupal.org/project/access_code" target="_blank">Access Code</a></li>
-			<li><a href="https://www.drupal.org/project/access_unpublished" target="_blank">Access Unpublished</a></li>
-			<li><a href="https://www.drupal.org/project/rename_admin_paths" target="_blank">Rename Admin Paths</a></li>
-			<li><a href="https://www.drupal.org/project/vppr" target="_blank">Vocabulary Permissions Per Role</a></li>
-			<li><a href="https://www.drupal.org/project/user_role_field" target="_blank">User role field</a></li>
-			<li><a href="https://www.drupal.org/project/join_role_with_password" target="_blank">Join role with password</a></li>
-			<li><a href="https://www.drupal.org/project/regcode" target="_blank">Registration codes</a></li>
-			<li><a href="https://www.drupal.org/project/cas" target="_blank">CAS (Central Authentication Service)</a></li>
-			<li><a href="https://www.drupal.org/project/mailcontrol" target="_blank">Mailcontrol</a></li>
-			<li><a href="https://www.drupal.org/project/required_by_role" target="_blank">(Field) Required by role</a></li>
-			<li><a href="https://www.drupal.org/project/user_settings_access" target="_blank">User Settings Access</a></li>
-			<li><a href="https://www.drupal.org/project/roleassign" target="_blank">Role Assign (Permission)</a></li> 
+				<li><a href="https://www.drupal.org/project/menu_admin_per_menu" target="_blank">Menu Admin per Menu</a></li>
+				<li><a href="https://www.drupal.org/project/admin_menu_source" target="_blank">Admin Menu Source</a></li>
+				<li><a href="https://www.drupal.org/project/custom_menu_perms" target="_blank">Custom Menu Permissions</a></li>
+				<li><a href="https://www.drupal.org/project/block_access" target="_blank">Block Access</a></li>
+				<li><a href="https://www.drupal.org/project/abt" target="_blank">Access By Term</a></li>
+				<li><a href="https://www.drupal.org/project/felix" target="_blank">Felix Block Access</a></li>
+				<li><a href="https://www.drupal.org/project/shortcutperrole" target="_blank">Shortcut per Role</a></li>
+				<li><a href="https://www.drupal.org/project/required_by_role" target="_blank">Required by role</a></li>
+				<li><a href="https://www.drupal.org/project/eu_cookie_compliance" target="_blank">EU Cookie Compliance</a></li>
+				<li><a href="https://www.drupal.org/project/divascookies" target="_blank">Divas Cookies</a></li>
+				<li><a href="https://www.drupal.org/project/cookiecontrol" target="_blank">Cookie Control</a></li>
+				<li><a href="https://www.drupal.org/project/cookiecuttr" target="_blank">CookieCuttr</a></li>
+				<li><a href="https://www.drupal.org/project/content_tab" target="_blank">Content Tab</a></li>
+				<li><a href="https://www.drupal.org/project/session_cookie_lifetime" target="_blank">Session cookie lifetime</a></li>
+				<li><a href="https://www.drupal.org/project/passwordless" target="_blank">Passwordless</a></li>
+				<li><a href="https://www.drupal.org/project/rpt" target="_blank">Registration Password Token</a></li>
+				<li><a href="https://www.drupal.org/project/email_registration" target="_blank">Email Registration</a></li>
+				<li><a href="https://www.drupal.org/project/feedback_reloaded" target="_blank">Feedback Reloaded</a></li>
+				<li><a href="https://www.drupal.org/project/feedback_collect" target="_blank">Feedback Collect</a></li>
+				<li><a href="https://www.drupal.org/project/save_draft" target="_blank">Save Draft</a></li>
+				<li><a href="https://www.drupal.org/project/publishcontent" target="_blank">Publish Content</a></li>
+				<li><a href="https://www.drupal.org/project/override_node_options" target="_blank">Override Node Options</a></li>
+				<li><a href="https://www.drupal.org/project/password_reset_help" target="_blank">Password Reset Help</a></li>
+				<li><a href="https://www.drupal.org/project/disable_field" target="_blank">Disable Field</a></li>
+				<li><a href="https://www.drupal.org/project/permissions_helper" target="_blank">Permissions Helper (Show Machine Name)</a></li>
+				<li><a href="https://www.drupal.org/project/soauth" target="_blank">Social Authorization</a></li>
+				<li><a href="https://www.drupal.org/project/hybridauth" target="_blank">HybridAuth Social Login</a></li>
+				<li><a href="https://www.drupal.org/project/xing_connect" target="_blank">Xing Connect</a></li>
+				<li><a href="https://www.drupal.org/project/content_login" target="_blank">Content Login</a></li>
+				<li><a href="https://www.drupal.org/project/redirect_after_logout" target="_blank">Redirect after logout</a></li>
+				<li><a href="https://www.drupal.org/project/multiple_registration" target="_blank">Multiple Registration</a></li>
+				<li><a href="https://www.drupal.org/project/user_picture_initials" target="_blank">User Picture Initials</a></li>
+				<li><a href="https://www.drupal.org/project/email_login" target="_blank">Role based Email Login</a></li>
+				<li><a href="https://www.drupal.org/project/drop_down_login" target="_blank">Drop Down Login</a></li>
+				<li><a href="https://www.drupal.org/project/entity_legal" target="_blank">Entity Legal</a></li>
+				<li><a href="https://www.drupal.org/project/roles_for_menu" target="_blank">Roles for menu</a></li>
+				<li><a href="https://www.drupal.org/project/jeap" target="_blank">Just Enough Administrator Power</a></li>
+				<li><a href="https://www.drupal.org/project/administrative_help" target="_blank">Administrative Help</a></li>
+				<li><a href="https://www.drupal.org/project/sso_multi_domain" target="_blank">Single Sign On Multiple Domain</a></li>
+				<li><a href="https://www.drupal.org/project/password_policy" target="_blank">Password Policy</a></li>
+				<li><a href="https://www.drupal.org/project/internal_nodes" target="_blank">Internal Nodes</a></li>
+				<li><a href="https://www.drupal.org/project/change_pwd_page" target="_blank">Password Separate Form</a></li>
+				<li><a href="https://www.drupal.org/project/email_confirm" target="_blank">Email Change Confirmation</a></li>
+				<li><a href="https://www.drupal.org/project/email_field_confirm" target="_blank">Email Field Confirm</a></li>
+				<li><a href="https://www.drupal.org/project/auto_login_url_tokens" target="_blank">Auto Login URL Tokens</a></li>
+				<li><a href="https://www.drupal.org/project/urllogin" target="_blank">urllogin</a></li>
+				<li><a href="https://www.drupal.org/project/auto_login_url" target="_blank">Auto Login URL</a></li>
+				<li><a href="https://www.drupal.org/project/login_one_time" target="_blank">Login one time</a></li>
+				<li><a href="https://www.drupal.org/project/gplus_sync" target="_blank">Google+ synchronization (Login)</a></li>
+				<li><a href="https://www.drupal.org/project/registration_invite" target="_blank">Registration invite</a></li>
+				<li><a href="https://www.drupal.org/project/invite" target="_blank">Invite</a></li>
+				<li><a href="https://www.drupal.org/project/registration" target="_blank">registration</a></li>
+				<li><a href="https://www.drupal.org/project/regcode_simple" target="_blank">Registration code (simple)</a></li>
+				<li><a href="https://www.drupal.org/project/access_code" target="_blank">Access Code</a></li>
+				<li><a href="https://www.drupal.org/project/access_unpublished" target="_blank">Access Unpublished</a></li>
+				<li><a href="https://www.drupal.org/project/rename_admin_paths" target="_blank">Rename Admin Paths</a></li>
+				<li><a href="https://www.drupal.org/project/vppr" target="_blank">Vocabulary Permissions Per Role</a></li>
+				<li><a href="https://www.drupal.org/project/user_role_field" target="_blank">User role field</a></li>
+				<li><a href="https://www.drupal.org/project/join_role_with_password" target="_blank">Join role with password</a></li>
+				<li><a href="https://www.drupal.org/project/regcode" target="_blank">Registration codes</a></li>
+				<li><a href="https://www.drupal.org/project/cas" target="_blank">CAS (Central Authentication Service)</a></li>
+				<li><a href="https://www.drupal.org/project/mailcontrol" target="_blank">Mailcontrol</a></li>
+				<li><a href="https://www.drupal.org/project/required_by_role" target="_blank">(Field) Required by role</a></li>
+				<li><a href="https://www.drupal.org/project/user_settings_access" target="_blank">User Settings Access</a></li>
+				<li><a href="https://www.drupal.org/project/roleassign" target="_blank">Role Assign (Permission)</a></li> 
 			</ul>
 
 			<br/>
@@ -933,74 +926,74 @@ Disallow: /?q=user/logout</pre>
 			<br/>
 			<p><strong>Commerce:</strong></p>
 			<ul>
-			<li><a href="https://www.drupal.org/project/shopify" target="_blank">Shopify eCommerce</a></li>
-			<li><a href="https://www.drupal.org/project/amazon" target="_blank">Amazon Product Advertisement APIe</a></li>
-			<li><a href="https://www.drupal.org/project/bookit" target="_blank">Bookit</a></li>
-			<li><a href="https://www.drupal.org/project/payment_webform" target="_blank">Payment for Webform</a></li>
-			<li><a href="https://www.drupal.org/project/basic_cart" target="_blank">Basic Cart</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_refund_line_item" target="_blank">Commerce Refund Line Item</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_cartmessage" target="_blank">Commerce Cart Message</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_goodrelations" target="_blank">Commerce Goodrelations (schema.org)</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_schemaorg" target="_blank">Commerce Schema.org</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_cart_link" target="_blank">Commerce Cart Link</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_responsive_ui" target="_blank">Commerce Responsive UI</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_cart_estimate" target="_blank">Commerce Cart Estimate</a></li>
-			<li><a href="https://www.drupal.org/node/2196205" target="_blank">Commerce Piwik</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_addressbook_extra" target="_blank">Commerce Addressbook Extra</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_pc_field" target="_blank">Commerce pre-calculated price field</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_products_list" target="_blank">Commerce Checkout Product List</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_auto_checkout" target="_blank">Commerce Auto-Checkout</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_complete_registration" target="_blank">Commerce Checkout Complete Registration</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_customer_contact" target="_blank">Commerce Customer Contact</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_dtc" target="_blank">Commerce Direct-to-Cart</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_panes_manager" target="_blank">Commerce Panes Manager</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_fulfillment" target="_blank">Commerce Fulfillment</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_deploy" target="_blank">Commerce Deploy</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_reset" target="_blank">Commerce Reset</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_add_to_cart_extras" target="_blank">Commerce Add to Cart Extras</a></li>
-			<li><a href="https://www.drupal.org/project/dc_ajax_add_cart" target="_blank">Commerce Ajax Add to Cart</a></li>
-			<li><a href="https://www.drupal.org/project/2270819/git-instructions" target="_blank">Commerce Fast Ajax Add to Cart</a></li>
-			<li><a href="https://www.drupal.org/sandbox/xandeadx/2621602" target="_blank">Commerce Ajax Cart Form</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_option" target="_blank">Commerce Product Option</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_options_as_images" target="_blank">Commerce options as images</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_default_product_variant" target="_blank">Commerce Default Product Variant</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_stocked_default" target="_blank">Commerce Stocked Default</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_paths" target="_blank">Commerce Checkout paths</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_packing_slip" target="_blank">Commerce Packing Slip (Lieferschein)</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_field_group" target="_blank">Commerce Checkout Field Group</a></li>
-			<li><a href="https://www.drupal.org/project/product_specification" target="_blank">Product Specification</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_fancy_image_attributes" target="_blank">Commerce Fancy Image Attributes</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_cart_context" target="_blank">Commerce Cart Context</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_nocart" target="_blank">Commerce NoCart</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_multilane" target="_blank">Commerce Checkout Multilane</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_cart_expiration" target="_blank">Commerce Cart Expiration</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_order_cleanup" target="_blank">Commerce Order Cleanup</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_pricelist" target="_blank">Commerce Pricelist</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_price_table" target="_blank">Commerce price table</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_add_to_cart_confirmation" target="_blank">Commerce add to cart confirmation</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_shipping_quote_weight" target="_blank">Commerce Shipping Quote Weight</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_shipment" target="_blank">Commerce Shipment</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_payment_simpleui" target="_blank">Commerce Payment Simple UI</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_cap" target="_blank">Commerce Checkout AJAX Pages</a></li>	
-			<li><a href="https://www.drupal.org/project/erpal_invoice" target="_blank">ERPAL Invoice</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_order_types" target="_blank">Commerce Order Types</a></li>	
-			<li><a href="https://www.drupal.org/project/field_slide_show_j360" target="_blank">field slide show j360</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_deploy" target="_blank">Commerce Deploy</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_search_api" target="_blank">Commerce Search API</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_product_bundle" target="_blank">Commerce Product Bundle</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_option" target="_blank">Commerce Product Option (vs. Variants)</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_feeds" target="_blank">Commerce Feeds</a></li>	
-			<li><a href="https://www.drupal.org/project/commerce_saleprice" target="_blank">Commerce Sale Price</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_eu_vat" target="_blank">Commerce European Union VAT</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_progress" target="_blank">Commerce Checkout Progress</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_login" target="_blank">Commerce Checkout Login</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_redirect" target="_blank"><b>Commerce Checkout Redirect</b></a></li>
-			<li><a href="https://www.drupal.org/project/commerce_checkout_complete_registration" target="_blank">Commerce Checkout Complete Registration</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_wishlist" target="_blank">Commerce Wishlist</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_add_to_cart_confirmation" target="_blank">Commerce add to cart confirmation</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_discount" target="_blank">Commerce Discount</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_buy_one_click" target="_blank">Commerce Buy One Click</a></li>
-			<li><a href="https://www.drupal.org/project/commerce_authcache" target="_blank">Commerce Authcache (s.a. <a href="https://www.drupal.org/node/2037015" taget="_blank">Tutorial</a></li>
+				<li><a href="https://www.drupal.org/project/shopify" target="_blank">Shopify eCommerce</a></li>
+				<li><a href="https://www.drupal.org/project/amazon" target="_blank">Amazon Product Advertisement APIe</a></li>
+				<li><a href="https://www.drupal.org/project/bookit" target="_blank">Bookit</a></li>
+				<li><a href="https://www.drupal.org/project/payment_webform" target="_blank">Payment for Webform</a></li>
+				<li><a href="https://www.drupal.org/project/basic_cart" target="_blank">Basic Cart</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_refund_line_item" target="_blank">Commerce Refund Line Item</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_cartmessage" target="_blank">Commerce Cart Message</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_goodrelations" target="_blank">Commerce Goodrelations (schema.org)</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_schemaorg" target="_blank">Commerce Schema.org</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_cart_link" target="_blank">Commerce Cart Link</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_responsive_ui" target="_blank">Commerce Responsive UI</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_cart_estimate" target="_blank">Commerce Cart Estimate</a></li>
+				<li><a href="https://www.drupal.org/node/2196205" target="_blank">Commerce Piwik</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_addressbook_extra" target="_blank">Commerce Addressbook Extra</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_pc_field" target="_blank">Commerce pre-calculated price field</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_products_list" target="_blank">Commerce Checkout Product List</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_auto_checkout" target="_blank">Commerce Auto-Checkout</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_complete_registration" target="_blank">Commerce Checkout Complete Registration</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_customer_contact" target="_blank">Commerce Customer Contact</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_dtc" target="_blank">Commerce Direct-to-Cart</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_panes_manager" target="_blank">Commerce Panes Manager</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_fulfillment" target="_blank">Commerce Fulfillment</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_deploy" target="_blank">Commerce Deploy</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_reset" target="_blank">Commerce Reset</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_add_to_cart_extras" target="_blank">Commerce Add to Cart Extras</a></li>
+				<li><a href="https://www.drupal.org/project/dc_ajax_add_cart" target="_blank">Commerce Ajax Add to Cart</a></li>
+				<li><a href="https://www.drupal.org/project/2270819/git-instructions" target="_blank">Commerce Fast Ajax Add to Cart</a></li>
+				<li><a href="https://www.drupal.org/sandbox/xandeadx/2621602" target="_blank">Commerce Ajax Cart Form</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_option" target="_blank">Commerce Product Option</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_options_as_images" target="_blank">Commerce options as images</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_default_product_variant" target="_blank">Commerce Default Product Variant</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_stocked_default" target="_blank">Commerce Stocked Default</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_paths" target="_blank">Commerce Checkout paths</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_packing_slip" target="_blank">Commerce Packing Slip (Lieferschein)</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_field_group" target="_blank">Commerce Checkout Field Group</a></li>
+				<li><a href="https://www.drupal.org/project/product_specification" target="_blank">Product Specification</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_fancy_image_attributes" target="_blank">Commerce Fancy Image Attributes</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_cart_context" target="_blank">Commerce Cart Context</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_nocart" target="_blank">Commerce NoCart</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_multilane" target="_blank">Commerce Checkout Multilane</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_cart_expiration" target="_blank">Commerce Cart Expiration</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_order_cleanup" target="_blank">Commerce Order Cleanup</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_pricelist" target="_blank">Commerce Pricelist</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_price_table" target="_blank">Commerce price table</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_add_to_cart_confirmation" target="_blank">Commerce add to cart confirmation</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_shipping_quote_weight" target="_blank">Commerce Shipping Quote Weight</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_shipment" target="_blank">Commerce Shipment</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_payment_simpleui" target="_blank">Commerce Payment Simple UI</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_cap" target="_blank">Commerce Checkout AJAX Pages</a></li>	
+				<li><a href="https://www.drupal.org/project/erpal_invoice" target="_blank">ERPAL Invoice</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_order_types" target="_blank">Commerce Order Types</a></li>	
+				<li><a href="https://www.drupal.org/project/field_slide_show_j360" target="_blank">field slide show j360</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_deploy" target="_blank">Commerce Deploy</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_search_api" target="_blank">Commerce Search API</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_product_bundle" target="_blank">Commerce Product Bundle</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_option" target="_blank">Commerce Product Option (vs. Variants)</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_feeds" target="_blank">Commerce Feeds</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_saleprice" target="_blank">Commerce Sale Price</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_eu_vat" target="_blank">Commerce European Union VAT</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_progress" target="_blank">Commerce Checkout Progress</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_login" target="_blank">Commerce Checkout Login</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_redirect" target="_blank"><b>Commerce Checkout Redirect</b></a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_complete_registration" target="_blank">Commerce Checkout Complete Registration</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_wishlist" target="_blank">Commerce Wishlist</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_add_to_cart_confirmation" target="_blank">Commerce add to cart confirmation</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_discount" target="_blank">Commerce Discount</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_buy_one_click" target="_blank">Commerce Buy One Click</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_authcache" target="_blank">Commerce Authcache (s.a. <a href="https://www.drupal.org/node/2037015" taget="_blank">Tutorial</a></li>
 		</ul>
 		
 
