@@ -13,7 +13,9 @@ drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 
 header('Location: '.$base_url.'/admin/modules');
 
-$module_list = array('views_ui','field_ui','devel','module_configure_links','rules_admin','backup_migrate','update','simplehtmldom','enhanced_imagelist','prod-check');
+$module_list = array('views_ui','field_ui','devel','module_configure_links','rules_admin','simplehtmldom','enhanced_imagelist','prod-check','unused_modules','update_extended');
+// $module_list2 = array('backup_migrate','update','l10n_update');
+// $module_list = array_merge($module_list, $module_list2);
 
 
 foreach ($module_list as &$singlemodule) {
