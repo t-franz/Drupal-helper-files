@@ -30,7 +30,7 @@ if (file_put_contents("sites.zip", file_get_contents($file)) ) {
         }
     }
     removetxt();
-    print '<br/>Next Step: <b><a href="_helper.php">_helper.php</a></b>';
+    print '<br/>Next Step: <b><a href="_helper.php#installdrupal">_helper.php</a></b>';
 } else {
     echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';
 }

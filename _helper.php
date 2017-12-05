@@ -39,8 +39,8 @@
 	<p><a href="#module">Erweiterungs-Liste der MODULE »</a> | <a href="/admin/modules/install" target="_blank">admin/modules/install »</a> | <a href="#abschluss">Nach der Installation »</a></p>
 	<p><strong>Vor dem Restore:</strong>
 		<ol>
-			<li><a href="_download_core.php">_download_core.php</a></li>
-			<li><a href="/install.php?profile=minimal" target="_blank">Drupal installieren</a></li>
+			<li><a id="downloadcore" href="_download_core.php">_download_core.php</a></li>
+			<li><a id="installdrupal" href="/install.php?profile=minimal" target="_blank">Drupal installieren</a></li>
 			<li><a href="https://www.passwort-generator.com" target="_blank">Passwort generieren</a></li>
 			<li><a href="/admin/config/media/file-system" target="_blank">Privates Verzeichnis</a> (admin/config/media/file-system) auf <b>sites/default/files/private</b> stellen<br>
 			<li><a href="/admin/config/media/file-system" target="_blank">Temporäres Verzeichnis</a> (admin/config/media/file-system) vor dem Restore SPEICHERN und danach zurückstellen:<br>
@@ -67,8 +67,6 @@
 			<li><a href="/admin/config/development/performance" target="_blank">Gesamten Cache löschen</a></li>
 			<li><a href="/admin/config/system/backup_migrate" target="_blank">Backup</a></li>
 			<li><a href="/admin/config/system/backup_migrate/backups" target="_blank">Altes Backup löschen</a></li>
-			<li>FTP: sites/default/files/css und /js und <b>/styles</b> löschen</li>
-			<li><a href="/_zip.php?dir=sites" target="_blank">zip & download sites</a></li>
 			<li>Remove Trailing Slash from <a href="/robots.txt" target="_blank">robots.txt</a><br>
 			<pre style="line-height: 1em; font-size: .8em;"># Paths (clean URLs without trailing slash)
 Disallow: /admin
@@ -104,16 +102,15 @@ Disallow: /?q=user/logout</pre>
 			<li><a href="/node/4/edit" target="_blank">Adresse: Kontakt (Adresse kopieren) und ggf. Google+ Schema ändern</a></li>
 			<li><a href="/admin/structure/block/manage/block/5/configure" target="_blank">Adresse: Sidebar</a></li>
 			<li><a href="/node/2/edit" target="_blank">Adresse: Impressum</a></li>
-			<li><a href="/admin/structure/menu/item/236/edit" target="_blank">Menülink zur Startseite</a></li>	
-		</ol>
-
-
-		Gestaltung und Meta-Tags:
-		<ol>
-			<li><a href="/admin/appearance/settings/custom#edit-zen-html5-respond-meta" target="_blank">Responsive Design aktivieren</a></li>
+			<li><a href="/admin/structure/menu/item/236/edit" target="_blank">Menülink zur Startseite</a></li>
+			<li><a href="/file/80/edit" target="_blank">Große Logo-Datei (für Social) austauschen und Benutzer auf Admin setzen</a></li>
+			<li><a href="/admin/appearance/settings/custom#edit-logo" target="_blank">Logo eintragen</a></li>
+			<li><a href="/admin/structure/types/manage/article/fields/field_custom_json#edit-" target="_blank">Blog-JSON: Logo-Name und Größe eintragen</a></li>
+			<li><em>sites/all/themes/custom/templates/page.tpl.php</em> Logo anpassen</li>
+			<li><em>sites/all/themes/custom/templates/mimemail-message.tpl.php</em> Logo anpassen</li>
 			<li><a href="/admin/config/content/ckeditor/edit/Full#edit-width" target="_blank">CK-Editor-Breite ändern: Content-Breite + 45px</a></li>
-			<li><a href="/admin/config/media/image-styles" target="_blank">admin/config/media/image-styles</a></li>
-			<li><a href="/admin/config/search/metatags/config/" target="_blank">admin/config/search/metatags/config/</a></li>
+			<li><a href="/admin/config/media/image-styles" target="_blank">Image-styles für "Content" anpassen</a></li>
+			<li><a href="/admin/config/search/xmlsitemap/settings#edit-advanced" target="_blank">URL für XML-Sitemap ändern</a></li>
 		</ol>
 	</nav>
 	<section id="abschluss" name="abschluss">
@@ -124,7 +121,7 @@ Disallow: /?q=user/logout</pre>
 			<li><a href="/admin/config/media/image-toolkit" target="_blank">Qualität Bild Toolkit überprüfen (Standard 80%)</a></li>
 			<li><a href="/admin/structure/views/view/admin_views_node/edit" target="_blank">ggf. Inhalts-Tabelle anpassen</a></li>
 			<li><a href="/admin/structure/views/nojs/display/blog/block/cache" target="_blank">ggf. Blog-Cache anpassen</a></li>
-			<li><a href="/admin/config/search/xmlsitemap" target="_blank">XML-Sitemap aktualisieren</a></li>http://jens.schmedemann-ra.de/sitemap.xml
+			<li><a href="/admin/config/search/xmlsitemap" target="_blank">XML-Sitemap aktualisieren</a></li>
 			<li><a href="/sitemap.xml" target="_blank">XML-Sitemap überprüfen</a></li>
 			<li><a href="/admin/reports/prod-check" target="_blank">Production Check überprüfen</a></li>
 			<li><a href="/_deactivate_lastmodules.php" target="_blank">_deactivate_lastmodules.php </a>Views & Field UI, Devel, BackupMigrate u.ä.<b>deinstallieren</b></li>
@@ -375,6 +372,8 @@ Disallow: /?q=user/logout</pre>
 				<li><a href="https://www.drupal.org/project/webform_references" target="_blank">Webform References</a></li>
 				<li><a href="https://www.drupal.org/project/webform_layout" target="_blank">Webform Layout</a></li>
 				<li><a href="https://www.drupal.org/project/places_api_webform_autocomplete" target="_blank">Places API Webform Autocomplete</a></li>
+				<li><a href="https://www.drupal.org/project/webform_template" target="_blank">Webform Template</a></li>
+				<li><a href="https://www.drupal.org/project/webform_default_fields" target="_blank">Webform Default Fields</a></li>				
 				<li><a href="https://www.drupal.org/project/tgf" target="_blank">Taxonomy Group Fields</a></li>
 				<li><a href="https://www.drupal.org/project/better_form" target="_blank">Better Form (HTML5)</a></li>
 				<li><a href="https://www.drupal.org/project/elements" target="_blank">HTML5 Form Elements</a></li>
@@ -650,6 +649,7 @@ Disallow: /?q=user/logout</pre>
 				<li><a href="https://www.drupal.org/project/fe_paths" target="_blank">File Entity Path</a></li>
 				<li><a href="https://www.drupal.org/project/file_entity_inline" target="_blank">File Entity Inline</a></li>
 				<li><a href="https://www.drupal.org/project/cer" target="_blank">Corresponding Entity References</a></li>
+				<li><a href="https://www.drupal.org/project/entityconnect" target="_blank">Entity Connect</a></li>
 				<li><a href="https://www.drupal.org/project/rabbit_hole" target="_blank">Rabbit Hole (Disable Entity Page View)</a></li>
 				<li><a href="https://www.drupal.org/project/entityreference_embed_widget" target="_blank">Entity Reference Embed Widget</a></li>
 				<li><a href="https://www.drupal.org/project/relation" target="_blank">Relation</a></li>
@@ -681,6 +681,8 @@ Disallow: /?q=user/logout</pre>
 				<li><a href="https://www.drupal.org/project/formatter_field" target="_blank">Formatter Field</a></li>
 				<li><a href="https://www.drupal.org/project/field_jquery_tabs" target="_blank">jQuery Tabs Field</a></li>
 				<li><a href="https://www.drupal.org/project/field_multiple_limit" target="_blank">Field multiple limit</a></li>
+				<li><a href="https://www.drupal.org/project/multiple_value_widget" target="_blank">Multiple Value Widget</a></li>
+				<li><a href="https://www.drupal.org/project/field_multiple_extended" target="_blank">Field Multiple Extended</a></li>
 				<li><a href="https://www.drupal.org/project/ffc" target="_blank">Field formatter conditions</a></li>
 				<li><a href="https://www.drupal.org/project/field_formatter_filter" target="_blank">Field Formatter Filter</a></li>
 				<li><a href="https://www.drupal.org/project/field_formatter_class" target="_blank">Field Formatter Class</a></li>
@@ -694,7 +696,6 @@ Disallow: /?q=user/logout</pre>
 				<li><a href="https://www.drupal.org/project/semantic_fields" target="_blank">Semantic Fields</a></li>
 				<li><a href="https://www.drupal.org/project/field_sql_norevisions" target="_blank">Field SQL NoRevisions</a></li>
 				<li><a href="https://www.drupal.org/project/double_field" target="_blank">Double field</a></li>
-				<li><a href="https://www.drupal.org/project/multiple_value_widget" target="_blank">Multiple Value Widget</a></li>
 				<li><a href="https://www.drupal.org/project/multiupload_filefield_widget" target="_blank">Multiupload Filefield Widget</a></li>
 				<li><a href="https://www.drupal.org/project/multiupload_imagefield_widget" target="_blank">One Click Upload</a></li>
 				<li><a href="https://www.drupal.org/project/ocupload" target="_blank">Multiupload Imagefield Widget</a></li>
