@@ -39,7 +39,7 @@
 	<p><a href="#module">Erweiterungs-Liste der MODULE »</a> | <a href="/admin/modules/install" target="_blank">admin/modules/install »</a> | <a href="#abschluss">Nach der Installation »</a></p>
 	<p><strong>Vor dem Restore:</strong>
 		<ol>
-			<li><a id="downloadcore" href="_download_core.php">_download_core.php</a></li>
+			<li><a id="downloadcore" href="_download_files.php">Download Core and Sites (_download_files.php)</a></li>
 			<li><a id="installdrupal" href="/install.php?profile=minimal" target="_blank">Drupal installieren</a></li>
 			<li><a href="https://www.passwort-generator.com" target="_blank">Passwort generieren</a></li>
 			<li><a href="/admin/config/media/file-system" target="_blank">Privates Verzeichnis</a> (admin/config/media/file-system) auf <b>sites/default/files/private</b> stellen<br>

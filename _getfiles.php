@@ -10,6 +10,14 @@ if (file_put_contents("master.zip", file_get_contents($file)) ) {
     unzip("master.zip");
     movefiles();
     unlink("master.zip");
+    print '<h3>Prepare Sandbox:</h3>';
+    print '<p><a href="http://sandbox.fusbfg.de/admin/reports/status/run-cron" target="_blank">Run Cron</a></p>';
+    print '<p><a href="http://sandbox.fusbfg.de/admin/modules/update" target="_blank">Check Updates</a></p>';
+    print '<p><a href="http://sandbox.fusbfg.de/admin/config/regional/translate/update" target="_blank">Check Translations</a></p>';
+    print '<br/><a href="http://sandbox.fusbfg.de/admin/config/content/ckeditor/editg#edit-skin" target="_blank">http://sandbox.fusbfg.de/admin/config/content/ckeditor/editg</a>: <a href="http://ckeditor.com/download" target="_blank">CKEditor-Version</a>, <a href="https://github.com/jackmoore/colorbox#changelog" target="_blank">Colorbox</a>, <a href="https://github.com/woothemes/FlexSlider#updates" target="_blank">Flexslider</a> und Libraries überprüfen';
+    print '<p><a href="http://sandbox.fusbfg.de/admin/config/system/backup_migrate" target="_blank">Flush Cache and Backup</a></p>';
+    print '<p><a href="http://sandbox.fusbfg.de/_zip.php?dir=sites" target="_blank">Create sites.zip</a></p>';
+    
     print '<br/><br/>Next Step: <b><a href="_helper.php#downloadcore">_helper.php</a></b>';
 } else {
     echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';

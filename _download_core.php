@@ -26,12 +26,6 @@ if (file_put_contents("drupal_core.zip", file_get_contents($file)) ) {
     } else {
         print '<br/>Renaming folder <em>drupal-7.'.$version.'</em> to <em>drupal</em><br/>';
     }
-    print '<br/><a href="http://sandbox.fusbfg.de/admin/reports/updates/update" target="_blank">http://sandbox.fusbfg.de/admin/reports/updates/update</a><br/>';
-    print '<br/><a href="http://sandbox.fusbfg.de/admin/config/regional/translate/check" target="_blank">http://sandbox.fusbfg.de/admin/config/regional/translate/check</a><br/>';
-    print '<br/><a href="http://sandbox.fusbfg.de/admin/config/content/ckeditor/editg#edit-skin" target="_blank">http://sandbox.fusbfg.de/admin/config/content/ckeditor/editg</a>: <a href="http://ckeditor.com/download" target="_blank">CKEditor-Version</a>, <a href="https://github.com/jackmoore/colorbox#changelog" target="_blank">Colorbox</a>, <a href="https://github.com/woothemes/FlexSlider#updates" target="_blank">Flexslider</a> und Libraries überprüfen';
-    print '<br/><br/><a href="http://sandbox.fusbfg.de/admin/config/system/backup_migrate" target="_blank">Sandbox Backup erstellen</a><br/>';
-
-    print '<br/>Create <em>sites.zip</em>: <a href="http://sandbox.fusbfg.de/_zip.php?dir=sites" target="_blank">http://sandbox.fusbfg.de/_zip.php?dir=sites</a>';
     print '<br/><br/>Next Step: <b><a href="_download_sites.php">_download_sites.php</a><br/><br/><br/>';
 } else {
     echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';
