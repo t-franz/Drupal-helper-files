@@ -61,34 +61,11 @@
 			<li><a href="/admin/config/media/file-system" target="_blank">ggf. temporäres Verzeichnis wiederherstellen (admin/config/media/file-system)</a></li>
 			<li><a href="/admin/reports/status" target="_blank">admin/reports/status</a></li>
 			<li><a href="/admin/content?type=patch" target="_blank">Patches löschen</a></li>
-			<li><a href="/admin/structure/types/manage/patch/delete" target="_blank">Inhaltstyp Patch löschen</a></li>
-			<li><a href="/admin/modules#edit-modules-development-devel-generate-enable" target="_blank">Modules Patch- / Unused- / Update Extended deaktivieren</a></li>
+			<li><a href="/admin/modules#edit-modules-development-devel-generate-enable" target="_blank">Modules Patch- / Unused- / Update Extended deaktivieren</a></li>http://
 			<li><a href="/admin/modules/uninstall" target="_blank">ggf. Module deinstallieren</a></li>
 			<li><a href="/admin/config/development/performance" target="_blank">Gesamten Cache löschen</a></li>
 			<li><a href="/admin/config/system/backup_migrate" target="_blank">Backup</a></li>
 			<li><a href="/admin/config/system/backup_migrate/backups" target="_blank">Altes Backup löschen</a></li>
-			<li>Remove Trailing Slash from <a href="/robots.txt" target="_blank">robots.txt</a><br>
-			<pre style="line-height: 1em; font-size: .8em;"># Paths (clean URLs without trailing slash)
-Disallow: /admin
-Disallow: /comment/reply
-Disallow: /filter/tips
-Disallow: /node/add
-Disallow: /search
-Disallow: /user/register
-Disallow: /user/password
-Disallow: /user/login
-Disallow: /user/logout
-# Paths (no clean URLs)
-Disallow: /?q=admin
-Disallow: /?q=comment/reply
-Disallow: /?q=filter/tips
-Disallow: /?q=node/add
-Disallow: /?q=search
-Disallow: /?q=user/password
-Disallow: /?q=user/register
-Disallow: /?q=user/login
-Disallow: /?q=user/logout</pre>
-
 		</ol>
 		
 		Nach Neuanlage:
@@ -103,19 +80,21 @@ Disallow: /?q=user/logout</pre>
 			<li><a href="/admin/structure/block/manage/block/5/configure" target="_blank">Adresse: Sidebar</a></li>
 			<li><a href="/node/2/edit" target="_blank">Adresse: Impressum</a></li>
 			<li><a href="/admin/structure/menu/item/236/edit" target="_blank">Menülink zur Startseite</a></li>
-			<li><a href="/file/80/edit" target="_blank">Große Logo-Datei (für Social) austauschen und Benutzer auf Admin setzen</a></li>
+			<li><a href="/file/80/edit" target="_blank">Große Logo-Datei (für Social) austauschen und Benutzer auf Admin (<b>wg. Fehlermeldung!</b>) setzen</a></li>
 			<li><a href="/admin/appearance/settings/custom#edit-logo" target="_blank">Logo eintragen</a></li>
 			<li><a href="/admin/structure/types/manage/article/fields/field_custom_json#edit-" target="_blank">Blog-JSON: Logo-Name und Größe eintragen</a></li>
 			<li><em>sites/all/themes/custom/templates/page.tpl.php</em> Logo anpassen</li>
 			<li><em>sites/all/themes/custom/templates/mimemail-message.tpl.php</em> Logo anpassen</li>
-			<li><a href="/admin/config/content/ckeditor/edit/Full#edit-width" target="_blank">CK-Editor-Breite ändern: Content-Breite + 45px</a></li>
-			<li><a href="/admin/config/media/image-styles" target="_blank">Image-styles für "Content" anpassen</a></li>
-			<li><a href="/admin/config/search/xmlsitemap/settings#edit-advanced" target="_blank">URL für XML-Sitemap ändern</a></li>
+			<li><a href="/admin/config/media/image-styles/edit/rsp_content_desktop/effects/92" target="_blank">Image-styles für "rsp_content_desktop" anpassen (Content-Width)</a></li>
+			<li><a href="/admin/config/media/image-styles/edit/bloglist_sidebar/effects/111" target="_blank">Image-styles für "bloglist_sidebar" anpassen (Sidebar-Width)</a></li>
+			<li><a href="/admin/config/media/image-styles/edit/rsp_bloglist/effects/108" target="_blank">Image-styles für "rsp_bloglist"  ( (max-width - gap)/2 ) anpassen</a></li>
+			
 		</ol>
 	</nav>
 	<section id="abschluss" name="abschluss">
 		<strong>Nach Fertigstellung:</strong>
 		<ol>
+			<li><a href="/admin/config/search/xmlsitemap/settings#edit-advanced" target="_blank">URL für XML-Sitemap ändern</a></li>
 			<li><a href="http://realfavicongenerator.net" target="_blank">Favicon generieren (sites/all/themes/custom)</a></li>
 			<li><a href="/admin/appearance/settings/custom" target="_blank">Turn off Rebuild theme registry on every page.</a></li>
 			<li><a href="/admin/config/media/image-toolkit" target="_blank">Qualität Bild Toolkit überprüfen (Standard 80%)</a></li>
@@ -126,8 +105,9 @@ Disallow: /?q=user/logout</pre>
 			<li><a href="/admin/reports/prod-check" target="_blank">Production Check überprüfen</a></li>
 			<li><a href="/_deactivate_lastmodules.php" target="_blank">_deactivate_lastmodules.php </a>Views & Field UI, Devel, BackupMigrate u.ä.<b>deinstallieren</b></li>
 			<li><a href="/admin/modules" target="_blank">Module deaktivieren: </a>Views & Field UI, Devel, BackupMigrate u.ä.</li>
-			<li><a href="/admin/modules#edit-modules-performance-and-scalability" target="_blank">Module aktivieren: </a>Boost, HTTPRL, Crawler</li>
+			<li><a href="/admin/modules#edit-modules-performance-and-scalability" target="_blank">Module aktivieren: </a>Boost, HTTPRL, Crawler (Boost NICHT vorerst nicht updaten!)</li>
 			<li><a href="/admin/config/system/boost/htaccess" target="_blank">Boost einstellungen in die htaccess kopieren</a></li>
+			<li><a href="/admin/modules/update" target="_blank">Updates überprüfen</a></li>
 			<li><a href="/admin/reports/status" target="_blank">Status überprüfen</a></li>
 			<li><a href="/admin/config/development/httprl" target="_blank">ggf. HTTPRL auf -1 setzen</a></li>
 			<li><a href="/admin/config/development/performance/minifyjs" target="_blank">Minify Cache aufbauen</a></li>
@@ -136,6 +116,7 @@ Disallow: /?q=user/logout</pre>
 			<li><a href="/admin/config/development/logging" target="_blank">Fehlerlogging ausschalten</a></li>
 			<li><a href="/admin/config/regional/translate/update" target="_blank">Übersetzungen kontrollieren</a></li>
 			<li><a href="https://localize.drupal.org/translate/languages/de/export" target="_blank">ggf. fehlende Übersetzungen installieren</a></li>
+			<li><em>sites/all/themes/custom/templates/mimemail-message.tpl.php</em> Logo-Pfad anpassen</li>
 			<li>Images komprimieren mit Image-Optim</li>
 			<li>SVG komprimieren mit svgo-gui</li>
 

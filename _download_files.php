@@ -61,6 +61,7 @@ function _download_sites() {
             }
         }
         removetxt();
+        appendrobots();
         print '<br/>Next Step: <b><a href="_helper.php#installdrupal">_helper.php</a></b>';
     } else {
         echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';
@@ -156,6 +157,35 @@ function removetxt() {
             echo 'Remove <em>'.$filename . '</em><br/>';
             unlink($filename);
         }
+    }
+}
+
+function appendrobots() {
+    $append = "# Paths (clean URLs without trailing slash)
+    Disallow: /admin
+    Disallow: /comment/reply
+    Disallow: /filter/tips
+    Disallow: /node/add
+    Disallow: /search
+    Disallow: /user/register
+    Disallow: /user/password
+    Disallow: /user/login
+    Disallow: /user/logout
+    # Paths (no clean URLs)
+    Disallow: /?q=admin
+    Disallow: /?q=comment/reply
+    Disallow: /?q=filter/tips
+    Disallow: /?q=node/add
+    Disallow: /?q=search
+    Disallow: /?q=user/password
+    Disallow: /?q=user/register
+    Disallow: /?q=user/login
+    Disallow: /?q=user/logout";
+
+    if (file_put_contents("robots.txt", $append, FILE_APPEND)) {
+        print '<br>Remove paths without Trailing Slash from robots.txt<br>';
+    } else {
+        print '<br><strong>Could not append robots.txt</strong><br>';
     }
 }
 
