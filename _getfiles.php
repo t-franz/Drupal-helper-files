@@ -84,5 +84,6 @@ function movefiles() {
       unlink($file);
     }
     unlink($destination.'.gitattributes');
+    unlink($destination.'.gitignore');
     rmdir("Drupal-helper-files-master");
 }

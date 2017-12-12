@@ -62,7 +62,8 @@ function _download_sites() {
         }
         removetxt();
         appendrobots();
-        print '<br/>Next Step: <b><a href="_helper.php#installdrupal">_helper.php</a></b>';
+        print '<br/>Next Step: <b>FTP: Move drupal folder.</b>';
+        print '<br/>Install Drupal: <a href="_helper.php#installdrupal">_helper.php</a>';
     } else {
         echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';
     }
@@ -182,7 +183,7 @@ function appendrobots() {
     Disallow: /?q=user/login
     Disallow: /?q=user/logout";
 
-    if (file_put_contents("robots.txt", $append, FILE_APPEND)) {
+    if (file_put_contents("drupal/robots.txt", $append, FILE_APPEND)) {
         print '<br>Remove paths without Trailing Slash from robots.txt<br>';
     } else {
         print '<br><strong>Could not append robots.txt</strong><br>';
