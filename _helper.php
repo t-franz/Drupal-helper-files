@@ -9,6 +9,14 @@
 	<style>
 	body {font-size: 1.2em;
 	line-height: 1.8em;}
+	.pwselect {
+		-webkit-user-select: all;
+		-moz-user-select: all;
+		-ms-user-select: all;
+		user-select: all; 
+		background-color: #f3f3f3;
+		font-style: italic;
+	}
 	</style>
 	
 </head>
@@ -40,8 +48,9 @@
 	<p><strong>Vor dem Restore:</strong>
 		<ol>
 			<li><a id="downloadcore" href="_download_files.php">Download Core and Sites (_download_files.php)</a></li>
-			<li><a id="installdrupal" href="/install.php?profile=minimal" target="_blank">Drupal installieren</a></li>
-			<li><a href="https://www.passwort-generator.com" target="_blank">Passwort generieren</a></li>
+			<li><a id="installdrupal" href="/install.php?profile=minimal" target="_blank">Drupal installieren</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
+			<li><a href="https://www.passwort-generator.com" target="_blank">Passwort generieren</a>: <span class="pwselect"><?php print random_str(15); ?></span>></li>
+			<li><a href="/?q=admin/config/search/clean-urls" target="_blank">Enable CleanURLs (ggf. htaccess rewriteBase)</a></li>
 			<li><a href="/admin/config/media/file-system" target="_blank">Privates Verzeichnis</a> (admin/config/media/file-system) auf <b>sites/default/files/private</b> stellen<br>
 			<li><a href="/admin/config/media/file-system" target="_blank">Temporäres Verzeichnis</a> (admin/config/media/file-system) vor dem Restore SPEICHERN und danach zurückstellen:<br>
 			<input name="verzeichnis" type="text" size="100" value="/tmp"></li>
@@ -61,7 +70,7 @@
 			<li><a href="/admin/config/media/file-system" target="_blank">ggf. temporäres Verzeichnis wiederherstellen (admin/config/media/file-system)</a></li>
 			<li><a href="/admin/reports/status" target="_blank">admin/reports/status</a></li>
 			<li><a href="/admin/content?type=patch" target="_blank">Patches löschen</a></li>
-			<li><a href="/admin/modules#edit-modules-development-devel-generate-enable" target="_blank">Modules Patch- / Unused- / Update Extended deaktivieren</a></li>http://
+			<li><a href="/admin/modules#edit-modules-development-devel-generate-enable" target="_blank">Modules Patch- / Unused- / Update Extended deaktivieren</a></li>
 			<li><a href="/admin/modules/uninstall" target="_blank">ggf. Module deinstallieren</a></li>
 			<li><a href="/admin/config/development/performance" target="_blank">Gesamten Cache löschen</a></li>
 			<li><a href="/admin/config/system/backup_migrate" target="_blank">Backup</a></li>
@@ -70,7 +79,7 @@
 		
 		Nach Neuanlage:
 		<ol>
-			<li><a href="/admin/people/create" target="_blank">Benutzer hinzufügen und Shortcut zuweisen</a></li>
+			<li><a href="/admin/people/create" target="_blank">Benutzer hinzufügen,</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="/admin/content" target="_blank">Inhalte Benutzer zuweisen</a></li>
 			<li><a href="/admin/content/file" target="_blank">Dateien Benutzer zuweisen (außer Standards wie Logo o.ä.!)</a></li>
 			<li><a href="/admin/config/system/site-information" target="_blank">admin/config/system/site-information (E-Mail kopieren)</a></li>
@@ -88,8 +97,26 @@
 			<li><a href="/admin/config/media/image-styles/edit/rsp_content_desktop/effects/92" target="_blank">Image-styles für "rsp_content_desktop" anpassen (Content-Width)</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/bloglist_sidebar/effects/111" target="_blank">Image-styles für "bloglist_sidebar" anpassen (Sidebar-Width)</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/rsp_bloglist/effects/108" target="_blank">Image-styles für "rsp_bloglist"  ( (max-width - gap)/2 ) anpassen</a></li>
-			
 		</ol>
+		Remove Blog:
+		<ol>
+			<li><a href="/admin/structure/views" target="_blank">Disable Blog-View</a></li>
+			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/filter/type" target="_blank">Remove View Node-Type-Filter</a></li>
+			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/sticky" target="_blank">Remove Table Sticky Column</a></li>
+			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/type" target="_blank">Remove Table Type Column</a></li>
+			<li><a href="/admin/people/permissions#edit-view-own-unpublished-content" target="_blank">Disable Blog-Permissions</a></li>
+			<li><a href="/admin/config/media/picture/list/blogliste/delete" target="_blank">Delete Picture Mapping Blogliste</a></li>
+			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist" target="_blank">Delete Image-Style Bloglist</a></li>
+			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_smartphone_375" target="_blank">Delete Image-Style Bloglist 375</a></li>
+			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_smartphone_425" target="_blank">Delete Image-Style Bloglist 425</a></li>
+			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_tablet_768" target="_blank">Delete Image-Style Bloglist 768</a></li>
+			<li><a href="/admin/content?type=article" target="_blank">Delete Blog-Articles</a></li>
+			<li><a href="/node/8/delete" target="_blank">Delete Blog-Page</a></li>
+			<li><a href="/admin/modules#edit-modules-picture-picture-enable" target="_blank">Disable and <a href="/admin/modules/uninstall" target="_blank">uninstall</a> Custom-JSON</a></li>
+			<li><a href="/admin/structure/types/manage/article/delete" target="_blank">Delete Nodetype-Articles</a></li>
+		</ol>
+			
+		
 	</nav>
 	<section id="abschluss" name="abschluss">
 		<strong>Nach Fertigstellung:</strong>
@@ -103,9 +130,10 @@
 			<li><a href="/admin/config/search/xmlsitemap" target="_blank">XML-Sitemap aktualisieren</a></li>
 			<li><a href="/sitemap.xml" target="_blank">XML-Sitemap überprüfen</a></li>
 			<li><a href="/admin/reports/prod-check" target="_blank">Production Check überprüfen</a></li>
-			<li><a href="/_deactivate_lastmodules.php" target="_blank">_deactivate_lastmodules.php </a>Views & Field UI, Devel, BackupMigrate u.ä.<b>deinstallieren</b></li>
-			<li><a href="/admin/modules" target="_blank">Module deaktivieren: </a>Views & Field UI, Devel, BackupMigrate u.ä.</li>
+			<li><a href="/_deactivate_lastmodules.php" target="_blank">_deactivate_lastmodules.php </a>Views  &amp; Field UI, Devel, BackupMigrate u.ä.<b>deinstallieren</b></li>
+			<li><a href="/admin/modules" target="_blank">Module deaktivieren: </a>Views  &amp; Field UI, Devel, BackupMigrate u.ä.</li>
 			<li><a href="/admin/modules#edit-modules-performance-and-scalability" target="_blank">Module aktivieren: </a>Boost, HTTPRL, Crawler (Boost NICHT vorerst nicht updaten!)</li>
+			<li><a href="/admin/config/development/httprl" target="_blank">httprl: Set "Host name of the server ..." to <span class="pwselect"><?php print $_SERVER['SERVER_NAME']; ?></span></a></li>
 			<li><a href="/admin/config/system/boost/htaccess" target="_blank">Boost einstellungen in die htaccess kopieren</a></li>
 			<li><a href="/admin/modules/update" target="_blank">Updates überprüfen</a></li>
 			<li><a href="/admin/reports/status" target="_blank">Status überprüfen</a></li>
@@ -123,9 +151,6 @@
 			<li>add SSL-script to htaccess after <em>RewriteEngine on</em>:<br />
 				<pre style="line-height: 1em; font-size: .8em;">
   RewriteCond %{HTTPS} off
-  # First rewrite to HTTPS:
-  # Don't put www. here. If it is already there it will be included, if not
-  # the subsequent rule will catch it.
   RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 				</pre>
 			</li>
@@ -140,7 +165,7 @@
   	php_value memory_limit          256M
 				</pre>
 			</li>
-			<li>Cronjob Strato: curl --silent --compressed   https://www.wortkind.de/cron.php?cron_key=v4WzGexwS-qHO5iBy56Ke0oGEDjIPdNGKFLnJm24W94</li>
+			<li>Cronjob Strato: curl --silent --compressed   https://www.domain.de/cron.php?cron_key=xyz</li>
 		</ol>
 	</section>
 	
@@ -610,7 +635,7 @@
 				<li><a href="https://www.drupal.org/project/gmap_static" target="_blank">Google Map Static</a></li>
 				<li><a href="https://www.drupal.org/project/votingapi_bayesian" target="_blank">VotingAPI Bayesian (Fivestar)</a></li>
 				<li><a href="https://www.drupal.org/project/ajax_screen_lock" target="_blank">AJAX Screen Lock</a></li>
-				<li><a href="https://www.drupal.org/project/publish_away" target="_blank">Publish Away Field (Facebook & Twitter)</a></li>
+				<li><a href="https://www.drupal.org/project/publish_away" target="_blank">Publish Away Field (Facebook  &amp; Twitter)</a></li>
 				<li><a href="https://www.drupal.org/project/backup_migrate_prune" target="_blank">Backup and migrate prune</a></li>
 				<li><a href="https://www.drupal.org/project/fancy_file_delete" target="_blank">Fancy File Delete</a></li>
 				<li><a href="https://www.drupal.org/project/drupal_sync" target="_blank">Drupal Sync</a></li>
@@ -991,3 +1016,32 @@
 	
 </body>
 </html>
+
+<?php
+/**
+ * Generate a random string, using a cryptographically secure 
+ * pseudorandom number generator (random_int)
+ * 
+ * For PHP 7, random_int is a PHP core function
+ * For PHP 5.x, depends on https://github.com/paragonie/random_compat
+ * 
+ * @param int $length      How many characters do we want?
+ * @param string $keyspace A string of all possible characters
+ *                         to select from
+ * @return string
+ */
+function random_str(
+    $length,
+    $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-=~!@#$%^&*()_+,./<>?;:[]{}\|'
+) {
+    $str = '';
+    $max = mb_strlen($keyspace, '8bit') - 1;
+    if ($max < 1) {
+        throw new Exception('$keyspace must be at least two characters long');
+    }
+    for ($i = 0; $i < $length; ++$i) {
+        $str .= $keyspace[random_int(0, $max)];
+    }
+    return $str;
+}
+?>
