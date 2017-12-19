@@ -55,7 +55,6 @@
 			<li><a href="/admin/config/media/file-system" target="_blank">Temporäres Verzeichnis</a> (admin/config/media/file-system) vor dem Restore SPEICHERN und danach zurückstellen:<br>
 			<input name="verzeichnis" type="text" size="100" value="/tmp"></li>
 			
-			<li><a href="/admin/modules#edit-modules-core-dashboard-enable" target="_blank">Database Logging deaktivieren</a></li>
 			<li><a href="/admin/modules#edit-modules-other" target="_blank">Modul Backup-Migrate aktivieren</a></li>
 			<li><a href="https://www.drupal.org/files/issues/backup_migrate-fix_constructor_for_future_version_php-2623598-5-7.x.patch" target="_blank">Fehlermeldung Deprecated: Methods</a></li>
 			<li><a href="/admin/config/system/backup_migrate/backups" target="_blank">DEV-Datenbank hochladen</a><l/li>
@@ -80,14 +79,13 @@
 		Nach Neuanlage:
 		<ol>
 			<li><a href="/admin/people/create" target="_blank">Benutzer hinzufügen,</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
-			<li><a href="/admin/content" target="_blank">Inhalte Benutzer zuweisen</a></li>
-			<li><a href="/admin/content/file" target="_blank">Dateien Benutzer zuweisen (außer Standards wie Logo o.ä.!)</a></li>
 			<li><a href="/admin/config/system/site-information" target="_blank">admin/config/system/site-information (E-Mail kopieren)</a></li>
 			<li><a href="/admin/config/content/webform" target="_blank">Webform Standard-E-Mail</a></li>
 			<li><a href="/node/4/webform/emails/1" target="_blank">E-Mail Kontaktformular</a></li>
-			<li><a href="/node/4/edit" target="_blank">Adresse: Kontakt (Adresse kopieren) und ggf. Google+ Schema ändern</a></li>
+			<li><a href="/node/4/edit" target="_blank">Adresse: Kontakt-Seite (Adresse kopieren)</a></li>			
 			<li><a href="/admin/structure/block/manage/block/5/configure" target="_blank">Adresse: Sidebar</a></li>
 			<li><a href="/node/2/edit" target="_blank">Adresse: Impressum</a></li>
+			<li><a href="/admin/config/search/custom_address" target="_blank">Adresse: Schema.org ändern</a></li>
 			<li><a href="/admin/structure/menu/item/236/edit" target="_blank">Menülink zur Startseite</a></li>
 			<li><a href="/file/80/edit" target="_blank">Große Logo-Datei (für Social) austauschen und Benutzer auf Admin (<b>wg. Fehlermeldung!</b>) setzen</a></li>
 			<li><a href="/admin/appearance/settings/custom#edit-logo" target="_blank">Logo eintragen</a></li>
@@ -100,6 +98,8 @@
 		</ol>
 		Remove Blog:
 		<ol>
+			<li><a href="/admin/content?type=article" target="_blank">Delete Blog-Articles</a></li>
+			<li><a href="/node/8/delete" target="_blank">Delete Blog-Page</a></li>
 			<li><a href="/admin/structure/views" target="_blank">Disable Blog-View</a></li>
 			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/filter/type" target="_blank">Remove View Node-Type-Filter</a></li>
 			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/sticky" target="_blank">Remove Table Sticky Column</a></li>
@@ -110,8 +110,6 @@
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_smartphone_375" target="_blank">Delete Image-Style Bloglist 375</a></li>
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_smartphone_425" target="_blank">Delete Image-Style Bloglist 425</a></li>
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_tablet_768" target="_blank">Delete Image-Style Bloglist 768</a></li>
-			<li><a href="/admin/content?type=article" target="_blank">Delete Blog-Articles</a></li>
-			<li><a href="/node/8/delete" target="_blank">Delete Blog-Page</a></li>
 			<li><a href="/admin/modules#edit-modules-picture-picture-enable" target="_blank">Disable and <a href="/admin/modules/uninstall" target="_blank">uninstall</a> Custom-JSON</a></li>
 			<li><a href="/admin/structure/types/manage/article/delete" target="_blank">Delete Nodetype-Articles</a></li>
 		</ol>
@@ -121,12 +119,14 @@
 	<section id="abschluss" name="abschluss">
 		<strong>Nach Fertigstellung:</strong>
 		<ol>
-			<li><a href="/admin/config/search/xmlsitemap/settings#edit-advanced" target="_blank">URL für XML-Sitemap ändern</a></li>
+			<li><a href="/admin/content" target="_blank">Inhalte Benutzer zuweisen</a></li>
+			<li><a href="/admin/content/file" target="_blank">Dateien Benutzer zuweisen (außer Standards wie Logo o.ä.!)</a></li>
 			<li><a href="http://realfavicongenerator.net" target="_blank">Favicon generieren (sites/all/themes/custom)</a></li>
 			<li><a href="/admin/appearance/settings/custom" target="_blank">Turn off Rebuild theme registry on every page.</a></li>
 			<li><a href="/admin/config/media/image-toolkit" target="_blank">Qualität Bild Toolkit überprüfen (Standard 80%)</a></li>
 			<li><a href="/admin/structure/views/view/admin_views_node/edit" target="_blank">ggf. Inhalts-Tabelle anpassen</a></li>
 			<li><a href="/admin/structure/views/nojs/display/blog/block/cache" target="_blank">ggf. Blog-Cache anpassen</a></li>
+			<li><a href="/admin/config/search/xmlsitemap/settings#edit-advanced" target="_blank">URL für XML-Sitemap ändern</a></li>
 			<li><a href="/admin/config/search/xmlsitemap" target="_blank">XML-Sitemap aktualisieren</a></li>
 			<li><a href="/sitemap.xml" target="_blank">XML-Sitemap überprüfen</a></li>
 			<li><a href="/admin/reports/prod-check" target="_blank">Production Check überprüfen</a></li>
