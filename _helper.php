@@ -17,6 +17,10 @@
 		background-color: #f3f3f3;
 		font-style: italic;
 	}
+	pre {
+		line-height: 1em;
+		font-size: .8em;
+	}
 	</style>
 	
 </head>
@@ -119,41 +123,65 @@
 	<section id="abschluss" name="abschluss">
 		<strong>Nach Fertigstellung:</strong>
 		<ol>
+			
+			<li><a href="/admin/structure/block/manage/superfish/1/configure#edit-sf-advanced" target="_blank">Submenü Mouseverzögerung einstellen</a></li>
 			<li><a href="/admin/content" target="_blank">Inhalte Benutzer zuweisen</a></li>
 			<li><a href="/admin/content/file" target="_blank">Dateien Benutzer zuweisen (außer Standards wie Logo o.ä.!)</a></li>
 			<li><a href="http://realfavicongenerator.net" target="_blank">Favicon generieren (sites/all/themes/custom)</a></li>
 			<li><a href="/admin/appearance/settings/custom" target="_blank">Turn off Rebuild theme registry on every page.</a></li>
-			<li><a href="/admin/config/media/image-toolkit" target="_blank">Qualität Bild Toolkit überprüfen (Standard 80%)</a></li>
-			<li><a href="/admin/structure/views/view/admin_views_node/edit" target="_blank">ggf. Inhalts-Tabelle anpassen</a></li>
 			<li><a href="/admin/structure/views/nojs/display/blog/block/cache" target="_blank">ggf. Blog-Cache anpassen</a></li>
 			<li><a href="/admin/config/search/xmlsitemap/settings#edit-advanced" target="_blank">URL für XML-Sitemap ändern</a></li>
 			<li><a href="/admin/config/search/xmlsitemap" target="_blank">XML-Sitemap aktualisieren</a></li>
 			<li><a href="/sitemap.xml" target="_blank">XML-Sitemap überprüfen</a></li>
-			<li><a href="/admin/reports/prod-check" target="_blank">Production Check überprüfen</a></li>
-			<li><a href="/_deactivate_lastmodules.php" target="_blank">_deactivate_lastmodules.php </a>Views  &amp; Field UI, Devel, BackupMigrate u.ä.<b>deinstallieren</b></li>
-			<li><a href="/admin/modules" target="_blank">Module deaktivieren: </a>Views  &amp; Field UI, Devel, BackupMigrate u.ä.</li>
-			<li><a href="/admin/modules#edit-modules-performance-and-scalability" target="_blank">Module aktivieren: </a>Boost, HTTPRL, Crawler (Boost NICHT vorerst nicht updaten!)</li>
-			<li><a href="/admin/config/development/httprl" target="_blank">httprl: Set "Host name of the server ..." to <span class="pwselect"><?php print $_SERVER['SERVER_NAME']; ?></span></a></li>
+			<li><a href="/_deactivate_lastmodules.php" target="_blank">_deactivate_lastmodules.php </a>Views  &amp; Field UI, Devel, BackupMigrate u.ä. <b>deinstallieren</b></li>
+			<li><a href="/admin/modules/uninstall" target="_blank">Module deinstallieren</li>
+			<!-- <li><a href="/admin/modules#edit-modules-form-elements-hs-smallhierarchy-enable" target="_blank">Module aktivieren: Magic</a></li>-->
+			<li><a href="/admin/config/development/performance" target="_blank">Enable Cache and Minify</a></li>
+			<li><a href="/admin/config/development/performance/advagg" target="_blank">Enable Advagg</a></li>
+			<li><a href="https://www.sitelocity.com/critical-path-css-generator" target="_blank">Create critical path</a> for every page-type</li>
+			<li><a href="/admin/modules#edit-modules-performance-and-scalability" target="_blank">Module aktivieren: </a>Boost, Crawler, Recacher (Boost NICHT vorerst nicht updaten!)</li>
+			<li><a href="/admin/config/development/httprl" target="_blank">httprl: Set "Host name of the server ..."</a> to <span class="pwselect"><?php print $_SERVER['SERVER_NAME']; ?></span></li>
 			<li><a href="/admin/config/system/boost/htaccess" target="_blank">Boost einstellungen in die htaccess kopieren</a></li>
 			<li><a href="/admin/modules/update" target="_blank">Updates überprüfen</a></li>
 			<li><a href="/admin/reports/status" target="_blank">Status überprüfen</a></li>
-			<li><a href="/admin/config/development/httprl" target="_blank">ggf. HTTPRL auf -1 setzen</a></li>
-			<li><a href="/admin/config/development/performance/minifyjs" target="_blank">Minify Cache aufbauen</a></li>
-			<li><a href="/admin/config/development/performance/advagg" target="_blank">Advagg mit "Render Cache" aktivieren</a></li>
-			<li><a href="/admin/config/development/performance" target="_blank">Cache einschalten (ggf. $conf['block_cache_bypass_node_grants'] = TRUE; in settings.php)</a></li>
+			<li><a href="/admin/config/development/performance" target="_blank">Cache einschalten</a> (ggf. $conf['block_cache_bypass_node_grants'] = TRUE; in settings.php)</li>
 			<li><a href="/admin/config/development/logging" target="_blank">Fehlerlogging ausschalten</a></li>
 			<li><a href="/admin/config/regional/translate/update" target="_blank">Übersetzungen kontrollieren</a></li>
 			<li><a href="https://localize.drupal.org/translate/languages/de/export" target="_blank">ggf. fehlende Übersetzungen installieren</a></li>
+			
+
 			<li><em>sites/all/themes/custom/templates/mimemail-message.tpl.php</em> Logo-Pfad anpassen</li>
+			<li><em>settings.php</em> theme_debug deaktivieren</li>
+			<li><em>helper-files</em> löschen</li>
 			<li>Images komprimieren mit Image-Optim</li>
-			<li>SVG komprimieren mit svgo-gui</li>
 
 			<li>add SSL-script to htaccess after <em>RewriteEngine on</em>:<br />
-				<pre style="line-height: 1em; font-size: .8em;">
+				<pre class="pwselect">
   RewriteCond %{HTTPS} off
-  RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-				</pre>
+  RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</pre>
 			</li>
+
+<li>add SSL-script to htaccess after <em>RewriteEngine on</em>:<br />
+				<pre class="pwselect">
+# Deflate Compression by FileType
+&lt;IfModule mod_deflate.c&gt;
+ AddOutputFilterByType DEFLATE text/plain
+ AddOutputFilterByType DEFLATE text/html
+ AddOutputFilterByType DEFLATE text/xml
+ AddOutputFilterByType DEFLATE text/css
+ AddOutputFilterByType DEFLATE text/javascript
+ AddOutputFilterByType DEFLATE application/xml
+ AddOutputFilterByType DEFLATE application/xhtml+xml
+ AddOutputFilterByType DEFLATE application/rss+xml
+ AddOutputFilterByType DEFLATE application/atom_xml
+ AddOutputFilterByType DEFLATE application/javascript
+ AddOutputFilterByType DEFLATE application/x-javascript
+ AddOutputFilterByType DEFLATE application/x-shockwave-flash
+ AddOutputFilterByType DEFLATE image/svg+xml
+&lt;/IfModule&gt;</pre>
+			</li>
+
+
 
 			<li>add script to htaccess:<br />
 				<pre style="line-height: 1em; font-size: .8em;">
