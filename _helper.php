@@ -13,7 +13,7 @@
 		-webkit-user-select: all;
 		-moz-user-select: all;
 		-ms-user-select: all;
-		user-select: all; 
+		user-select: all;
 		background-color: #f3f3f3;
 		font-style: italic;
 	}
@@ -22,7 +22,7 @@
 		font-size: .8em;
 	}
 	</style>
-	
+
 </head>
 
 <body>
@@ -43,7 +43,7 @@
 			<li><a href="/admin/config/development/performance" target="_blank">Leistung</a></li>
 			<li><a href="/admin/config/system/backup_migrate" target="_blank">Backup</a></li>
 			<li><a href="/sites/all/themes/custom/grunticon/preview.html" target="_blank">Grunticon-Icons</a></li>
-			<li>Reload <a href="/sites/all/themes/custom/css/custom.css" target="_blank">custom.css</a>, <a href="/sites/all/themes/custom/css/custom-critical.css" target="_blank">custom-critical.css</a>, <a href="/sites/all/themes/myseven/css/myseven.css" target="_blank">myseven.css</a></li> </li> 
+			<li>Reload <a href="/sites/all/themes/custom/css/custom.css" target="_blank">custom.css</a>, <a href="/sites/all/themes/custom/css/custom-critical.css" target="_blank">custom-critical.css</a>, <a href="/sites/all/themes/myseven/css/myseven.css" target="_blank">myseven.css</a></li> </li>
 		</ul>
 	</section>
 
@@ -58,7 +58,7 @@
 			<li><a href="/admin/config/media/file-system" target="_blank">Privates Verzeichnis</a> (admin/config/media/file-system) auf <b>sites/default/files/private</b> stellen<br>
 			<li><a href="/admin/config/media/file-system" target="_blank">Temporäres Verzeichnis</a> (admin/config/media/file-system) vor dem Restore SPEICHERN und danach zurückstellen:<br>
 			<input name="verzeichnis" type="text" size="100" value="/tmp"></li>
-			
+
 			<li><a href="/admin/modules#edit-modules-other" target="_blank">Modul Backup-Migrate aktivieren</a></li>
 			<li><a href="https://www.drupal.org/files/issues/backup_migrate-fix_constructor_for_future_version_php-2623598-5-7.x.patch" target="_blank">Fehlermeldung Deprecated: Methods</a></li>
 			<li><a href="/admin/config/system/backup_migrate/backups" target="_blank">DEV-Datenbank hochladen</a><l/li>
@@ -79,14 +79,14 @@
 			<li><a href="/admin/config/system/backup_migrate" target="_blank">Backup</a></li>
 			<li><a href="/admin/config/system/backup_migrate/backups" target="_blank">Altes Backup löschen</a></li>
 		</ol>
-		
+
 		Nach Neuanlage:
 		<ol>
 			<li><a href="/admin/people/create" target="_blank">Benutzer hinzufügen,</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="/admin/config/system/site-information" target="_blank">admin/config/system/site-information (E-Mail kopieren)</a></li>
 			<li><a href="/admin/config/content/webform" target="_blank">Webform Standard-E-Mail</a></li>
 			<li><a href="/node/4/webform/emails/1" target="_blank">E-Mail Kontaktformular</a></li>
-			<li><a href="/node/4/edit" target="_blank">Adresse: Kontakt-Seite (Adresse kopieren)</a></li>			
+			<li><a href="/node/4/edit" target="_blank">Adresse: Kontakt-Seite (Adresse kopieren)</a></li>
 			<li><a href="/admin/structure/block/manage/block/5/configure" target="_blank">Adresse: Sidebar</a></li>
 			<li><a href="/node/2/edit" target="_blank">Adresse: Impressum</a></li>
 			<li><a href="/admin/config/search/custom_address" target="_blank">Adresse: Schema.org ändern</a></li>
@@ -117,13 +117,13 @@
 			<li><a href="/admin/modules#edit-modules-picture-picture-enable" target="_blank">Disable and <a href="/admin/modules/uninstall" target="_blank">uninstall</a> Custom-JSON</a></li>
 			<li><a href="/admin/structure/types/manage/article/delete" target="_blank">Delete Nodetype-Articles</a></li>
 		</ol>
-			
-		
+
+
 	</nav>
 	<section id="abschluss" name="abschluss">
 		<strong>Nach Fertigstellung:</strong>
 		<ol>
-			
+
 			<li><a href="/admin/structure/block/manage/superfish/1/configure#edit-sf-advanced" target="_blank">Submenü Mouseverzögerung einstellen</a></li>
 			<li><a href="/admin/content" target="_blank">Inhalte Benutzer zuweisen</a></li>
 			<li><a href="/admin/content/file" target="_blank">Dateien Benutzer zuweisen (außer Standards wie Logo o.ä.!)</a></li>
@@ -148,7 +148,7 @@
 			<li><a href="/admin/config/development/logging" target="_blank">Fehlerlogging ausschalten</a></li>
 			<li><a href="/admin/config/regional/translate/update" target="_blank">Übersetzungen kontrollieren</a></li>
 			<li><a href="https://localize.drupal.org/translate/languages/de/export" target="_blank">ggf. fehlende Übersetzungen installieren</a></li>
-			
+
 
 			<li><em>sites/all/themes/custom/templates/mimemail-message.tpl.php</em> Logo-Pfad anpassen</li>
 			<li><em>settings.php</em> theme_debug deaktivieren</li>
@@ -196,18 +196,18 @@
 			<li>Cronjob Strato: curl --silent --compressed   https://www.domain.de/cron.php?cron_key=xyz</li>
 		</ol>
 	</section>
-	
- 
 
 
 
-	
-	
+
+
+
+
 
 
 
 	<section id="module" name="module">
-		
+
 		Empfohlene Module:
 		<a href="/admin/modules/install" target="_blank">Neues Modul installieren</a>
 		<ul>
@@ -261,7 +261,7 @@
 			<li><a href="https://www.drupal.org/project/rdrush" target="_blank">Remote Drush</a></li>
 			<li><a href="https://www.drupal.org/project/field_inspector" target="_blank">Field inspector</a></li>
 		</ul>
-			
+
 			<br/>
 			<p><strong>Performance:</strong></p>
 			<ul>
@@ -278,7 +278,7 @@
 				<li><a href="https://www.drupal.org/project/views_accelerator" target="_blank">Views Accelerator (Views using "no" fields)</a></li>
 				<li><a href="https://www.drupal.org/project/views_row_cache" target="_blank">Views Row Cache</a></li>
 				<li><a href="https://www.drupal.org/project/views_cache_bully" target="_blank">Views Cache Bully</a></li>
-				<li><a href="https://www.drupal.org/project/shadow" target="_blank">Shadow - SQL queries / views optimization</a></li>			
+				<li><a href="https://www.drupal.org/project/shadow" target="_blank">Shadow - SQL queries / views optimization</a></li>
 				<li><a href="https://www.drupal.org/project/boost" target="_blank">Boost</a></li>
 				<li><a href="https://www.drupal.org/project/recacher" target="_blank">Recacher</a></li>
 				<li><a href="https://www.drupal.org/node/1986268/git-instructions/7.x-1.1" target="_blank">Boost Warmer</a></li>
@@ -327,7 +327,7 @@
 				<li><a href="https://www.drupal.org/project/picture" target="_blank">Picture</a></li>
 				<li><a href="https://www.drupal.org/project/flexslider" target="_blank">Flexslider</a></li>
 				<li><a href="https://www.drupal.org/project/jquery_update" target="_blank">Flexslider: jQuery Update</a></li>
-				<li><a href="https://www.drupal.org/project/jqmulti" target="_blank">Flexslider: jQuery Multi</a></li> 
+				<li><a href="https://www.drupal.org/project/jqmulti" target="_blank">Flexslider: jQuery Multi</a></li>
 				<li><a href="https://www.drupal.org/project/slick" target="_blank">Slick Carousel</a></li>
 				<li><a href="https://www.drupal.org/project/imagecache_actions" target="_blank">Image Cache Actions</a></li>
 				<li><a href="https://www.drupal.org/project/focal_point" target="_blank">Focal Point</a></li>
@@ -407,7 +407,7 @@
 				<li><a href="https://www.drupal.org/project/webform_layout" target="_blank">Webform Layout</a></li>
 				<li><a href="https://www.drupal.org/project/places_api_webform_autocomplete" target="_blank">Places API Webform Autocomplete</a></li>
 				<li><a href="https://www.drupal.org/project/webform_template" target="_blank">Webform Template</a></li>
-				<li><a href="https://www.drupal.org/project/webform_default_fields" target="_blank">Webform Default Fields</a></li>				
+				<li><a href="https://www.drupal.org/project/webform_default_fields" target="_blank">Webform Default Fields</a></li>
 				<li><a href="https://www.drupal.org/project/tgf" target="_blank">Taxonomy Group Fields</a></li>
 				<li><a href="https://www.drupal.org/project/better_form" target="_blank">Better Form (HTML5)</a></li>
 				<li><a href="https://www.drupal.org/project/elements" target="_blank">HTML5 Form Elements</a></li>
@@ -526,8 +526,8 @@
 				<li><a href="https://www.drupal.org/project/similar" target="_blank">Similar Entries</a></li>
 				<li><a href="https://www.drupal.org/project/featured_content" target="_blank">Featured Content</a></li>
 			</ul>
-			
-			
+
+
 
 			<br/>
 			<p><strong>Mobile:</strong></p>
@@ -617,7 +617,7 @@
 				<li><a href="https://www.drupal.org/project/mailcontrol" target="_blank">Mailcontrol</a></li>
 				<li><a href="https://www.drupal.org/project/required_by_role" target="_blank">(Field) Required by role</a></li>
 				<li><a href="https://www.drupal.org/project/user_settings_access" target="_blank">User Settings Access</a></li>
-				<li><a href="https://www.drupal.org/project/roleassign" target="_blank">Role Assign (Permission)</a></li> 
+				<li><a href="https://www.drupal.org/project/roleassign" target="_blank">Role Assign (Permission)</a></li>
 			</ul>
 
 			<br/>
@@ -738,7 +738,7 @@
 				<li><a href="https://www.drupal.org/project/upload_replace" target="_blank">Upload File Replace (for filefield CCK)</a></li>
 				<li><a href="https://www.drupal.org/project/field_group_easy_responsive_tabs" target="_blank">Field Group Responsive Tabs</a></li>
 				<li><a href="https://www.drupal.org/project/entityreference_view_widget" target="_blank">Entity Reference View Widget</a></li>
-				<li><a href="https://www.drupal.org/project/entityreference_rendered_widget" target="_blank">Entityreference Rendered Widget</a></li>	
+				<li><a href="https://www.drupal.org/project/entityreference_rendered_widget" target="_blank">Entityreference Rendered Widget</a></li>
 				<li><a href="https://www.drupal.org/project/reference_option_limit" target="_blank">Reference field option limit</a></li>
 				<li><a href="https://www.drupal.org/project/field_validation" target="_blank">Field validation</a></li>
 				<li><a href="https://www.drupal.org/project/multifield" target="_blank">Multifield (vgl. field collection)</a></li>
@@ -788,7 +788,7 @@
 				<li><a href="https://www.drupal.org/project/colorbox_field_formatter" target="_blank">Colorbox field formatter (for Text etc.)</a></li>
 				<li><a href="https://www.drupal.org/project/video_embed_local" target="_blank">Video embed local</a></li>
 				<li><a href="https://www.drupal.org/project/fitvids" target="_blank">FitVids (responsive Video)</a></li>
-	
+
 			</ul>
 
 			<p><strong>Views:</strong></p>
@@ -841,7 +841,7 @@
 				<li><a href="https://www.drupal.org/project/views_conditional" target="_blank">Views Conditional</a></li>
 				<li><a href="https://www.drupal.org/project/views_ui_basic" target="_blank">Views UI: Edit Basic Settings</a></li>
 			</ul>
-			
+
 			<br/>
 			<p><strong>Rules:</strong></p>
 			<ul>
@@ -866,7 +866,7 @@
 				<li><a href="https://www.drupal.org/project/webform_localization" target="_blank">Webform Localization</a></li>
 			</ul>
 
-			
+
 			<br/>
 			<p><strong>SEO:</strong></p>
 			<ul>
@@ -967,12 +967,12 @@
 				<li><a href="https://www.drupal.org/project/amazon" target="_blank">Amazon Product Advertisement APIe</a></li>
 				<li><a href="https://www.drupal.org/project/bookit" target="_blank">Bookit</a></li>
 				<li><a href="https://www.drupal.org/project/payment_webform" target="_blank">Payment for Webform</a></li>
-				<li><a href="https://www.drupal.org/project/basic_cart" target="_blank">Basic Cart</a></li>	
-				<li><a href="https://www.drupal.org/project/commerce_refund_line_item" target="_blank">Commerce Refund Line Item</a></li>	
+				<li><a href="https://www.drupal.org/project/basic_cart" target="_blank">Basic Cart</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_refund_line_item" target="_blank">Commerce Refund Line Item</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_cartmessage" target="_blank">Commerce Cart Message</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_goodrelations" target="_blank">Commerce Goodrelations (schema.org)</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_schemaorg" target="_blank">Commerce Schema.org</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_cart_link" target="_blank">Commerce Cart Link</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_cart_link" target="_blank">Commerce Cart Link</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_responsive_ui" target="_blank">Commerce Responsive UI</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_cart_estimate" target="_blank">Commerce Cart Estimate</a></li>
 				<li><a href="https://www.drupal.org/node/2196205" target="_blank">Commerce Piwik</a></li>
@@ -981,9 +981,9 @@
 				<li><a href="https://www.drupal.org/project/commerce_checkout_products_list" target="_blank">Commerce Checkout Product List</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_auto_checkout" target="_blank">Commerce Auto-Checkout</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_complete_registration" target="_blank">Commerce Checkout Complete Registration</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_customer_contact" target="_blank">Commerce Customer Contact</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_customer_contact" target="_blank">Commerce Customer Contact</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_dtc" target="_blank">Commerce Direct-to-Cart</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_panes_manager" target="_blank">Commerce Panes Manager</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_panes_manager" target="_blank">Commerce Panes Manager</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_fulfillment" target="_blank">Commerce Fulfillment</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_deploy" target="_blank">Commerce Deploy</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_reset" target="_blank">Commerce Reset</a></li>
@@ -992,8 +992,8 @@
 				<li><a href="https://www.drupal.org/project/2270819/git-instructions" target="_blank">Commerce Fast Ajax Add to Cart</a></li>
 				<li><a href="https://www.drupal.org/sandbox/xandeadx/2621602" target="_blank">Commerce Ajax Cart Form</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_option" target="_blank">Commerce Product Option</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_options_as_images" target="_blank">Commerce options as images</a></li>	
-				<li><a href="https://www.drupal.org/project/commerce_default_product_variant" target="_blank">Commerce Default Product Variant</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_options_as_images" target="_blank">Commerce options as images</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_default_product_variant" target="_blank">Commerce Default Product Variant</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_stocked_default" target="_blank">Commerce Stocked Default</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_paths" target="_blank">Commerce Checkout paths</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_packing_slip" target="_blank">Commerce Packing Slip (Lieferschein)</a></li>
@@ -1005,21 +1005,21 @@
 				<li><a href="https://www.drupal.org/project/commerce_checkout_multilane" target="_blank">Commerce Checkout Multilane</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_cart_expiration" target="_blank">Commerce Cart Expiration</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_order_cleanup" target="_blank">Commerce Order Cleanup</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_pricelist" target="_blank">Commerce Pricelist</a></li>	
-				<li><a href="https://www.drupal.org/project/commerce_price_table" target="_blank">Commerce price table</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_pricelist" target="_blank">Commerce Pricelist</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_price_table" target="_blank">Commerce price table</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_add_to_cart_confirmation" target="_blank">Commerce add to cart confirmation</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_shipping_quote_weight" target="_blank">Commerce Shipping Quote Weight</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_shipment" target="_blank">Commerce Shipment</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_shipment" target="_blank">Commerce Shipment</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_payment_simpleui" target="_blank">Commerce Payment Simple UI</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_cap" target="_blank">Commerce Checkout AJAX Pages</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_cap" target="_blank">Commerce Checkout AJAX Pages</a></li>
 				<li><a href="https://www.drupal.org/project/erpal_invoice" target="_blank">ERPAL Invoice</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_order_types" target="_blank">Commerce Order Types</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_order_types" target="_blank">Commerce Order Types</a></li>
 				<li><a href="https://www.drupal.org/project/field_slide_show_j360" target="_blank">field slide show j360</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_deploy" target="_blank">Commerce Deploy</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_search_api" target="_blank">Commerce Search API</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_product_bundle" target="_blank">Commerce Product Bundle</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_option" target="_blank">Commerce Product Option (vs. Variants)</a></li>
-				<li><a href="https://www.drupal.org/project/commerce_feeds" target="_blank">Commerce Feeds</a></li>	
+				<li><a href="https://www.drupal.org/project/commerce_feeds" target="_blank">Commerce Feeds</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_saleprice" target="_blank">Commerce Sale Price</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_eu_vat" target="_blank">Commerce European Union VAT</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_progress" target="_blank">Commerce Checkout Progress</a></li>
@@ -1032,7 +1032,7 @@
 				<li><a href="https://www.drupal.org/project/commerce_buy_one_click" target="_blank">Commerce Buy One Click</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_authcache" target="_blank">Commerce Authcache (s.a. <a href="https://www.drupal.org/node/2037015" taget="_blank">Tutorial</a></li>
 		</ul>
-		
+
 
 	</section>
 
@@ -1041,20 +1041,20 @@
 	<pre style="line-height: 1em; font-size: .8em;">dpm(get_defined_vars());</pre>
 	</p>
 
-	
+
 </section> <!-- #page -->
-	
+
 </body>
 </html>
 
 <?php
 /**
- * Generate a random string, using a cryptographically secure 
+ * Generate a random string, using a cryptographically secure
  * pseudorandom number generator (random_int)
- * 
+ *
  * For PHP 7, random_int is a PHP core function
  * For PHP 5.x, depends on https://github.com/paragonie/random_compat
- * 
+ *
  * @param int $length      How many characters do we want?
  * @param string $keyspace A string of all possible characters
  *                         to select from
@@ -1070,7 +1070,7 @@ function random_str(
         throw new Exception('$keyspace must be at least two characters long');
     }
     for ($i = 0; $i < $length; ++$i) {
-        $str .= $keyspace[random_int(0, $max)];
+        $str .= $keyspace[mt_rand(0, $max)];
     }
     return $str;
 }

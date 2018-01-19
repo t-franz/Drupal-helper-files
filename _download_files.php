@@ -27,7 +27,7 @@ if (file_put_contents("drupal_core.zip", file_get_contents($file)) ) {
         print '<br/>Renaming folder <em>drupal-7.'.$version.'</em> to <em>drupal</em><br/>';
         _download_sites();
     }
-    
+
 } else {
     echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';
 }
@@ -70,43 +70,43 @@ function _download_sites() {
 }
 
 
-function unzip($file){ 
-    $zip = zip_open($file); 
-    if(is_resource($zip)){ 
-        $tree = ""; 
-        while(($zip_entry = zip_read($zip)) !== false){ 
-            if(strpos(zip_entry_name($zip_entry), DIRECTORY_SEPARATOR) !== false){ 
-                $last = strrpos(zip_entry_name($zip_entry), DIRECTORY_SEPARATOR); 
-                $dir = substr(zip_entry_name($zip_entry), 0, $last); 
-                $file = substr(zip_entry_name($zip_entry), strrpos(zip_entry_name($zip_entry), DIRECTORY_SEPARATOR)+1); 
-                if(!is_dir($dir)){ 
-                    @mkdir($dir, 0755, true) or die("Unable to create $dir\n"); 
-                } 
-                if(strlen(trim($file)) > 0){ 
-                    $return = @file_put_contents($dir."/".$file, zip_entry_read($zip_entry, zip_entry_filesize($zip_entry))); 
-                    if($return === false){ 
-                        die("Unable to write file $dir/$file\n"); 
-                    } 
-                } 
-            }else{ 
+function unzip($file){
+    $zip = zip_open($file);
+    if(is_resource($zip)){
+        $tree = "";
+        while(($zip_entry = zip_read($zip)) !== false){
+            if(strpos(zip_entry_name($zip_entry), DIRECTORY_SEPARATOR) !== false){
+                $last = strrpos(zip_entry_name($zip_entry), DIRECTORY_SEPARATOR);
+                $dir = substr(zip_entry_name($zip_entry), 0, $last);
+                $file = substr(zip_entry_name($zip_entry), strrpos(zip_entry_name($zip_entry), DIRECTORY_SEPARATOR)+1);
+                if(!is_dir($dir)){
+                    @mkdir($dir, 0755, true) or die("Unable to create $dir\n");
+                }
+                if(strlen(trim($file)) > 0){
+                    $return = @file_put_contents($dir."/".$file, zip_entry_read($zip_entry, zip_entry_filesize($zip_entry)));
+                    if($return === false){
+                        die("Unable to write file $dir/$file\n");
+                    }
+                }
+            }else{
                 if (file_put_contents($file, zip_entry_read($zip_entry, zip_entry_filesize($zip_entry))) ) {
-                		echo $file." entpacken\n"; 
+                		echo $file." entpacken\n";
                 	} else {
                 		echo "Entpacken fehlgeschlagen\n";
                 }
-                	 
-            } 
-        } 
-    }else{ 
-        echo "Unable to open zip file\n"; 
-    } 
+
+            }
+        }
+    }else{
+        echo "Unable to open zip file\n";
+    }
 }
 
 function createsites() {
 
   if (!is_dir('sites')) {
     echo '<br><br>Folder <i>sites</i> does not exist.<br>';
-    
+
     if (mkdir('sites', 0777, true) ) {
       echo 'Create folder <i>sites</i><br>';
       if ( rename("all",'sites/all') && rename("default",'sites/default') ) {
@@ -114,7 +114,7 @@ function createsites() {
         movesites();
       };
     } else {
-      echo 'Could not create folder <i>sites</i><br>'; 
+      echo 'Could not create folder <i>sites</i><br>';
     }
 
   } else {
@@ -184,7 +184,7 @@ function appendrobots() {
     Disallow: /?q=user/logout";
 
     if (file_put_contents("drupal/robots.txt", $append, FILE_APPEND)) {
-        print '<br>Remove paths without Trailing Slash from robots.txt<br>';
+        print '<br>Add <em>paths without Trailing Slash</em> to robots.txt<br>';
     } else {
         print '<br><strong>Could not append robots.txt</strong><br>';
     }
