@@ -600,6 +600,7 @@
 				<li><a href="https://www.drupal.org/project/urllogin" target="_blank">urllogin</a></li>
 				<li><a href="https://www.drupal.org/project/auto_login_url" target="_blank">Auto Login URL</a></li>
 				<li><a href="https://www.drupal.org/project/login_one_time" target="_blank">Login one time</a></li>
+				<li><a href="https://www.drupal.org/project/deeplink" target="_blank">DeepLink (Login)</a></li>
 				<li><a href="https://www.drupal.org/project/gplus_sync" target="_blank">Google+ synchronization (Login)</a></li>
 				<li><a href="https://www.drupal.org/project/registration_invite" target="_blank">Registration invite</a></li>
 				<li><a href="https://www.drupal.org/project/invite" target="_blank">Invite</a></li>
@@ -893,6 +894,7 @@
 				<li><a href="https://www.drupal.org/project/ckeditor_link_file" target="_blank">CKEditor Link File</a></li>
 				<li><a href="https://www.drupal.org/project/ckeditor_htmlbuttons" target="_blank">CKEditor HTML buttons</a></li>
 				<li><a href="https://www.drupal.org/project/ck_autoembed" target="_blank">CKEditor AutoEmbed</a></li>
+				<li><a href="https://www.drupal.org/project/entity_embed" target="_blank">Entity Embed</a></li>
 				<li><a href="https://www.drupal.org/project/ckeditor_upload" target="_blank">CKEditor Upload</a></li>
 				<li><a href="https://www.drupal.org/project/ckeditor_plain_summary" target="_blank">CKeditor plain summary</a></li>
 				<li><a href="https://www.drupal.org/project/media_ckeditor" target="_blank">Media CKEditor</a></li>
