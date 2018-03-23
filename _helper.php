@@ -84,6 +84,7 @@
 		<ol>
 			<li><a href="/admin/people/create" target="_blank">Benutzer hinzufügen,</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="/admin/config/system/site-information" target="_blank">admin/config/system/site-information (E-Mail kopieren)</a></li>
+			<li><a href="/admin/config/system/mimemail" target="_blank">admin/config/system/mimemail (E-Mail kopieren)</a></li>
 			<li><a href="/admin/config/content/webform" target="_blank">Webform Standard-E-Mail</a></li>
 			<li><a href="/node/4/webform/emails/1" target="_blank">E-Mail Kontaktformular</a></li>
 			<li><a href="/node/4/edit" target="_blank">Adresse: Kontakt-Seite (Adresse kopieren)</a></li>
@@ -94,8 +95,9 @@
 			<li><a href="/file/80/edit" target="_blank">Große Logo-Datei (für Social) austauschen und Benutzer auf Admin (<b>wg. Fehlermeldung!</b>) setzen</a></li>
 			<li><a href="/admin/appearance/settings/custom#edit-logo" target="_blank">Logo eintragen</a></li>
 			<li><a href="/admin/structure/types/manage/article/fields/field_custom_json#edit-" target="_blank">Blog-JSON: Logo-Name und Größe eintragen</a></li>
-			<li><em>sites/all/themes/custom/templates/page.tpl.php</em> Logo anpassen</li>
-			<li><em>sites/all/themes/custom/templates/mimemail-message.tpl.php</em> Logo anpassen</li>
+			<li><a href="/admin/config/media/image-styles/edit/voll/effects/5" target="_blank">Image-styles für "voll" anpassen (Max-Tablet-Content-Width)</a></li>
+			<li><a href="/admin/config/media/image-styles/edit/halb/effects/6" target="_blank">Image-styles für "halb" anpassen</a></li>
+			<li><a href="/admin/config/media/image-styles/edit/viertel/effects/7" target="_blank">Image-styles für "viertel" anpassen</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/rsp_content_desktop/effects/92" target="_blank">Image-styles für "rsp_content_desktop" anpassen (Content-Width)</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/bloglist_sidebar/effects/111" target="_blank">Image-styles für "bloglist_sidebar" anpassen (Sidebar-Width)</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/rsp_bloglist/effects/108" target="_blank">Image-styles für "rsp_bloglist"  ( (max-width - gap)/2 ) anpassen</a></li>
@@ -123,7 +125,7 @@
 	<section id="abschluss" name="abschluss">
 		<strong>Nach Fertigstellung:</strong>
 		<ol>
-
+			<li>CSS-Farben in mail.css anpassen</li>
 			<li><a href="/admin/structure/block/manage/superfish/1/configure#edit-sf-advanced" target="_blank">Submenü Mouseverzögerung einstellen</a></li>
 			<li><a href="/admin/content" target="_blank">Inhalte Benutzer zuweisen</a></li>
 			<li><a href="/admin/content/file" target="_blank">Dateien Benutzer zuweisen (außer Standards wie Logo o.ä.!)</a></li>
@@ -135,6 +137,7 @@
 			<li><a href="/sitemap.xml" target="_blank">XML-Sitemap überprüfen</a></li>
 			<li><a href="/_deactivate_lastmodules.php" target="_blank">_deactivate_lastmodules.php </a>Views  &amp; Field UI, Devel, BackupMigrate u.ä. <b>deinstallieren</b></li>
 			<li><a href="/admin/modules/uninstall" target="_blank">Module deinstallieren</li>
+			<li><a href="/admin/modules#edit-modules-core-user-enable" target="_blank">Enable Advagg (plus Compress CSS &amp; JS, Modifier, Relocate)</li>
 			<!-- <li><a href="/admin/modules#edit-modules-form-elements-hs-smallhierarchy-enable" target="_blank">Module aktivieren: Magic</a></li>-->
 			<li><a href="/admin/config/development/performance" target="_blank">Enable Cache and Minify</a></li>
 			<li><a href="/admin/config/development/performance/advagg" target="_blank">Enable Advagg</a></li>
@@ -185,12 +188,12 @@
 
 			<li>add script to htaccess:<br />
 				<pre style="line-height: 1em; font-size: .8em;">
-	//	Nur bei All-INKL: AddHandler php-fastcgi .php
-	// 	AddHandler php53-cgi .php
+	// Nur bei All-INKL: AddHandler php-fastcgi .php
+	// AddHandler php70-cgi .php
 	// Oder im KAS -> Domain -> PHP-Version umstellen auf CGI
 
 	php_value max_execution_time        300
-  	php_value memory_limit          256M
+	php_value memory_limit          256M
 				</pre>
 			</li>
 			<li>Cronjob Strato: curl --silent --compressed   https://www.domain.de/cron.php?cron_key=xyz</li>
@@ -260,6 +263,10 @@
 			<li><a href="https://www.drupal.org/project/upgrade_status" target="_blank">Upgrade Status</a></li>
 			<li><a href="https://www.drupal.org/project/rdrush" target="_blank">Remote Drush</a></li>
 			<li><a href="https://www.drupal.org/project/field_inspector" target="_blank">Field inspector</a></li>
+			<li><a href="https://www.drupal.org/project/access_arguments_list" target="_blank">Permission Access Arguments List</a></li>
+			<li><a href="https://www.drupal.org/project/email_control" target="_blank">Email Control</a></li>
+			<li><a href="https://www.drupal.org/project/entity_log_file" target="_blank">File-Based Entity Log</a></li>
+			<li><a href="https://www.drupal.org/project/substitute_password" target="_blank">Substitute Password</a></li>
 		</ul>
 
 			<br/>
@@ -297,6 +304,7 @@
 				<li><a href="https://www.drupal.org/project/css_emimage" target="_blank">CSS Emedded Images</a></li>
 				<li><a href="https://www.drupal.org/project/lazyloader" target="_blank">Image Lazyloader</a></li>
 				<li><a href="https://www.drupal.org/project/lazyloader_filter" target="_blank">Image Lazyloader Filter</a></li>
+				<li><a href="https://www.drupal.org/project/image_lazy_loader" target="_blank">Image Lazy Loader</a></li>
 				<li><a href="https://www.drupal.org/project/defer_image" target="_blank">Defer Image</a></li>
 				<li><a href="https://www.drupal.org/project/fastclick" target="_blank">FastClick</a></li>
 				<li><a href="https://www.drupal.org/project/htaccess" target="_blank">htaccess</a></li>
@@ -325,6 +333,7 @@
 			<p><strong>Images:</strong></p>
 			<ul>
 				<li><a href="https://www.drupal.org/project/picture" target="_blank">Picture</a></li>
+        <li><a href="https://www.drupal.org/project/responsive_image" target="_blank">Responsive Image (JS Container Width)</a></li>
 				<li><a href="https://www.drupal.org/project/flexslider" target="_blank">Flexslider</a></li>
 				<li><a href="https://www.drupal.org/project/jquery_update" target="_blank">Flexslider: jQuery Update</a></li>
 				<li><a href="https://www.drupal.org/project/jqmulti" target="_blank">Flexslider: jQuery Multi</a></li>
@@ -381,6 +390,7 @@
 				<li><a href="https://www.drupal.org/project/popular-tags" target="_blank">Popular Tags</a></li>
 				<li><a href="https://www.drupal.org/project/search_autocomplete" target="_blank">Search Autocomplete</a></li>
 				<li><a href="https://www.drupal.org/project/fuzzysearch" target="_blank">Fuzzy Search</a></li>
+				<li><a href="https://www.drupal.org/project/crazy_search" target="_blank">Crazy Search</a></li>
 				<li><a href="https://www.drupal.org/project/maxlength" target="_blank">Maxlength</a></li>
 				<li><a href="https://www.drupal.org/project/simplify" target="_blank">Simplify Forms</a></li>
 				<li><a href="https://www.drupal.org/project/uniform" target="_blank">Form Uniform</a></li>
@@ -401,13 +411,16 @@
 				<li><a href="https://www.drupal.org/project/immoclient" target="_blank">OpenImmo Immoclient</a></li>
 				<li><a href="https://www.drupal.org/project/content_menu" target="_blank">Content Menu</a></li>
 				<li><a href="https://www.drupal.org/sandbox/biged/2007914" target="_blank">Age Verification</a></li>
+        <li><a href="https://www.drupal.org/project/le_gate" target="_blank">Age gate solution</a></li>
 				<li><a href="https://www.drupal.org/project/webform_accordion" target="_blank">Webform Accordion</a></li>
 				<li><a href="https://www.drupal.org/project/webform_layout" target="_blank">Webform Layout</a></li
 				<li><a href="https://www.drupal.org/project/webform_references" target="_blank">Webform References</a></li>
 				<li><a href="https://www.drupal.org/project/webform_layout" target="_blank">Webform Layout</a></li>
 				<li><a href="https://www.drupal.org/project/places_api_webform_autocomplete" target="_blank">Places API Webform Autocomplete</a></li>
 				<li><a href="https://www.drupal.org/project/webform_template" target="_blank">Webform Template</a></li>
+				<li><a href="https://www.drupal.org/project/webform_attributes" target="_blank">Webform Attributes</a></li>
 				<li><a href="https://www.drupal.org/project/webform_default_fields" target="_blank">Webform Default Fields</a></li>
+				<li><a href="https://www.drupal.org/project/webform_skip" target="_blank">Webform Skip</a></li>
 				<li><a href="https://www.drupal.org/project/tgf" target="_blank">Taxonomy Group Fields</a></li>
 				<li><a href="https://www.drupal.org/project/better_form" target="_blank">Better Form (HTML5)</a></li>
 				<li><a href="https://www.drupal.org/project/elements" target="_blank">HTML5 Form Elements</a></li>
@@ -441,6 +454,8 @@
 				<li><a href="https://www.drupal.org/project/fea" target="_blank">Form Element Access (FEA)</a></li>
 				<li><a href="https://www.drupal.org/project/vspfo" target="_blank">Views style plugin: Form options</a></li>
 				<li><a href="https://www.drupal.org/project/no_table_drag" target="_blank">No Table Drag</a></li>
+				<li><a href="https://www.drupal.org/project/forms_to_email" target="_blank">Forms to Email</a></li>
+				<li><a href="https://www.drupal.org/project/name" target="_blank">Name Field</a></li>
 			</ul>
 
 
@@ -455,6 +470,7 @@
 				<li><a href="/Users/tobbi/Websites/•DRUPAL/Skripte und Module/D7-Module/bean_revision" target="_blank">Beans remove revision (•DRUPAL-Ordner)</a></li>
 				<li><a href="https://www.drupal.org/project/equalheights" target="_blank">Equalheights</a></li>
 				<li><a href="https://www.drupal.org/project/breakpoints" target="_blank">Breakpoints</a></li>
+				<li><a href="https://www.drupal.org/project/breakpoints_class" target="_blank">Breakpoints Class</a></li>
 				<li><a href="https://www.drupal.org/project/flatcomments" target="_blank">Flat Comments</a></li>
 				<li><a href="https://www.drupal.org/project/fontyourface" target="_blank">Font Your Face</a></li>
 				<li><a href="https://www.drupal.org/project/touch_icons" target="_blank">Apple Touch Icons</a></li>
@@ -491,6 +507,7 @@
 				<li><a href="https://www.drupal.org/project/node_subpages" target="_blank">Node Subpages</a></li>
 				<li><a href="https://www.drupal.org/project/icon" target="_blank">Icon API</a></li>
 				<li><a href="https://www.drupal.org/project/submenutree" target="_blank">Submenu Tree</a></li>
+				<li><a href="https://www.drupal.org/project/themeless" target="_blank">Themeless</a></li>
 			</ul>
 
 
@@ -506,6 +523,7 @@
 				<li><a href="https://www.drupal.org/project/block_display_control" target="_blank">Block display duration (in days)</a></li>
 				<li><a href="https://www.drupal.org/project/block_date" target="_blank">Block by date</a></li>
 				<li><a href="https://www.drupal.org/project/ajaxblocks" target="_blank">Ajax Blocks</a></li>
+				<li><a href="https://www.drupal.org/project/load_block_on_ajax" target="_blank">Load Block On Ajax</a></li>
 				<li><a href="https://www.drupal.org/project/blocks_by_page_path" target="_blank">Blocks By Page Path</a></li>
 				<li><a href="https://www.drupal.org/project/block_attributes" target="_blank">Block Attributes</a></li>
 				<li><a href="https://www.drupal.org/project/block_class" target="_blank">Block Class</a></li>
@@ -525,6 +543,8 @@
 				<li><a href="https://www.drupal.org/project/views_block_area" target="_blank">Views block area</a></li>
 				<li><a href="https://www.drupal.org/project/similar" target="_blank">Similar Entries</a></li>
 				<li><a href="https://www.drupal.org/project/featured_content" target="_blank">Featured Content</a></li>
+				<li><a href="https://www.drupal.org/project/responsive_block" target="_blank">Responsive Block</a></li>
+				<li><a href="https://www.drupal.org/project/abr" target="_blank">Alternative Block Regions</a></li>
 			</ul>
 
 
@@ -543,6 +563,7 @@
 				<li><a href="https://www.drupal.org/project/field_group_easy_responsive_tabs" target="_blank">Field Group: Easy Responsive Tabs to Accordion</a></li>
 				<li><a href="https://www.drupal.org/project/mmenu" target="_blank">Mobile sliding menu</a></li>
 				<li><a href="https://www.drupal.org/project/zurb_responsive_tables" target="_blank">Zurb Responsive Tables</a></li>
+				<li><a href="https://www.drupal.org/project/responsive_tables_filter" target="_blank">Responsive Tables Filter</a></li>
 				<li><a href="https://www.drupal.org/project/footable" target="_blank">FooTable</a></li>
 				<li><a href="https://www.drupal.org/project/date_popup_mobile" target="_blank">Date Popup Mobile</a></li>
 				<li><a href="https://www.drupal.org/project/colorbox_swipe" target="_blank">Colorbox Swipe Gestures Support</a></li>
@@ -578,9 +599,6 @@
 				<li><a href="https://www.drupal.org/project/disable_field" target="_blank">Disable Field</a></li>
 				<li><a href="https://www.drupal.org/project/permissions_helper" target="_blank">Permissions Helper (Show Machine Name)</a></li>
 				<li><a href="https://www.drupal.org/project/soauth" target="_blank">Social Authorization</a></li>
-				<li><a href="https://www.drupal.org/project/hybridauth" target="_blank">HybridAuth Social Login</a></li>
-				<li><a href="https://www.drupal.org/project/xing_connect" target="_blank">Xing Connect</a></li>
-				<li><a href="https://www.drupal.org/project/content_login" target="_blank">Content Login</a></li>
 				<li><a href="https://www.drupal.org/project/redirect_after_logout" target="_blank">Redirect after logout</a></li>
 				<li><a href="https://www.drupal.org/project/multiple_registration" target="_blank">Multiple Registration</a></li>
 				<li><a href="https://www.drupal.org/project/user_picture_initials" target="_blank">User Picture Initials</a></li>
@@ -596,10 +614,14 @@
 				<li><a href="https://www.drupal.org/project/change_pwd_page" target="_blank">Password Separate Form</a></li>
 				<li><a href="https://www.drupal.org/project/email_confirm" target="_blank">Email Change Confirmation</a></li>
 				<li><a href="https://www.drupal.org/project/email_field_confirm" target="_blank">Email Field Confirm</a></li>
+        <li><a href="https://www.drupal.org/project/hybridauth" target="_blank">HybridAuth Social Login</a></li>
+        <li><a href="https://www.drupal.org/project/xing_connect" target="_blank">Xing Connect</a></li>
+        <li><a href="https://www.drupal.org/project/content_login" target="_blank">Content Login</a></li>
 				<li><a href="https://www.drupal.org/project/auto_login_url_tokens" target="_blank">Auto Login URL Tokens</a></li>
 				<li><a href="https://www.drupal.org/project/urllogin" target="_blank">urllogin</a></li>
 				<li><a href="https://www.drupal.org/project/auto_login_url" target="_blank">Auto Login URL</a></li>
 				<li><a href="https://www.drupal.org/project/login_one_time" target="_blank">Login one time</a></li>
+        <li><a href="https://www.drupal.org/project/tca" target="_blank">Token Content Access</a></li>
 				<li><a href="https://www.drupal.org/project/deeplink" target="_blank">DeepLink (Login)</a></li>
 				<li><a href="https://www.drupal.org/project/gplus_sync" target="_blank">Google+ synchronization (Login)</a></li>
 				<li><a href="https://www.drupal.org/project/registration_invite" target="_blank">Registration invite</a></li>
@@ -628,7 +650,7 @@
 				<li><a href="https://www.drupal.org/project/intlinks" target="_blank">Internal Links</a></li>
 				<li><a href="https://www.drupal.org/project/login_redirect" target="_blank">Login Redirect</a></li>
 				<li><a href="https://www.drupal.org/project/genpass" target="_blank">Password Generator</a></li>
-				<li><a href="https://www.drupal.org/project/user_alert" target="_blank">User Alert</a></li>
+				<li><a href="https://www.drupal.org/project/site_alert" target="_blank">Site Alert</a></li>
 				<li><a href="https://www.drupal.org/project/logic_block" target="_blank">Logic Block</a></li>
 				<li><a href="https://www.drupal.org/project/flag_expire" target="_blank">Flag expire</a></li>
 				<li><a href="https://www.drupal.org/project/conditional_flags" target="_blank">Conditional Flags</a></li>
@@ -660,8 +682,10 @@
 				<li><a href="https://www.drupal.org/project/colorized_gmap" target="_blank">Colorized google maps block</a></li>
 				<li><a href="https://www.drupal.org/project/entityform_email_confirmation" target="_blank">Entityform E-Mail Confirmation</a></li>
 				<li><a href="https://www.drupal.org/project/update_external_links" target="_blank">Update External Links</a></li>
+				<li><a href="https://www.drupal.org/project/extlink" target="_blank">External Links</a></li>
 				<li><a href="https://www.drupal.org/project/gp" target="_blank">Google Places for Drupal</a></li>
 				<li><a href="https://www.drupal.org/project/gmap_static" target="_blank">Google Map Static</a></li>
+        <li><a href="https://www.drupal.org/project/google_places_api_autocomplete" target="_blank">Google Places API autocomplete</a></li>
 				<li><a href="https://www.drupal.org/project/votingapi_bayesian" target="_blank">VotingAPI Bayesian (Fivestar)</a></li>
 				<li><a href="https://www.drupal.org/project/ajax_screen_lock" target="_blank">AJAX Screen Lock</a></li>
 				<li><a href="https://www.drupal.org/project/publish_away" target="_blank">Publish Away Field (Facebook  &amp; Twitter)</a></li>
@@ -675,6 +699,11 @@
 				<li><a href="https://www.drupal.org/project/cpn" target="_blank">Code per Node</a></li>
 				<li><a href="https://www.drupal.org/project/inline_css_checker" target="_blank">Inline CSS Checker</a></li>
 				<li><a href="https://www.drupal.org/project/jquery_stickem" target="_blank">jQuery Stick 'em</a></li>
+				<li><a href="https://www.drupal.org/project/alexa_flash_briefing" target="_blank">Alexa Flash Briefing</a></li>
+				<li><a href="https://www.drupal.org/project/email_scheduler" target="_blank">Email Scheduler</a></li>
+				<li><a href="https://www.drupal.org/project/title_html" target="_blank">Title HTML</a></li>
+				<li><a href="https://www.drupal.org/project/phpword" target="_blank">PHPWord</a></li>
+        <li><a href="https://www.drupal.org/project/quota" target="_blank">Quota (max number of nodes per user)</a></li>
 			</ul>
 			<br/>
 			<p><strong>Entities:</strong></p>
@@ -788,6 +817,8 @@
 				<li><a href="https://www.drupal.org/project/colorbox_field_formatter" target="_blank">Colorbox field formatter (for Text etc.)</a></li>
 				<li><a href="https://www.drupal.org/project/video_embed_local" target="_blank">Video embed local</a></li>
 				<li><a href="https://www.drupal.org/project/fitvids" target="_blank">FitVids (responsive Video)</a></li>
+				<li><a href="https://www.drupal.org/project/serial" target="_blank">Serial Field</a></li>
+				<li><a href="https://www.drupal.org/project/name" target="_blank">Name Field</a></li>
 
 			</ul>
 
@@ -840,6 +871,12 @@
 				<li><a href="https://www.drupal.org/project/views_send" target="_blank">Views Send</a></li>
 				<li><a href="https://www.drupal.org/project/views_conditional" target="_blank">Views Conditional</a></li>
 				<li><a href="https://www.drupal.org/project/views_ui_basic" target="_blank">Views UI: Edit Basic Settings</a></li>
+				<li><a href="https://www.drupal.org/project/views_column_control" target="_blank">Views Column Control</a></li>
+				<li><a href="https://www.drupal.org/project/views_rows_wrapper" target="_blank">Views Rows Wrapper</a></li>
+        <li><a href="https://www.drupal.org/project/views_row_insert" target="_blank">Views Row Insert</a></li>
+				<li><a href="https://www.drupal.org/project/other_view_filter" target="_blank">Other View Filter</a></li>
+        <li><a href="https://www.drupal.org/project/views_menu_children_filter" target="_blank">Views Menu Node Children Filter</a></li>
+        <li><a href="https://www.drupal.org/project/sooperthemes_gridstack" target="_blank">SooperThemes GridStack</a></li>
 			</ul>
 
 			<br/>
@@ -955,17 +992,27 @@
 				<li><a href="https://www.drupal.org/project/bigmenu" target="_blank">Big Menu</a></li>
 				<li><a href="https://www.drupal.org/project/menu_editor" target="_blank">Menu Editor</a></li>
 				<li><a href="https://www.drupal.org/project/menu_token" target="_blank">Menu token</a></li>
+				<li><a href="https://www.drupal.org/project/mnl" target="_blank">Menu no link (# Hash)</a></li>
 				<li><a href="https://www.drupal.org/project/taxonomy_manager" target="_blank">Taxonomy Manager</a></li>
 				<li><a href="https://www.drupal.org/project/term_merge" target="_blank">Term Merge</a></li>
 				<li><a href="https://www.drupal.org/project/back_to_top" target="_blank">Back to top</a></li>
+				<li><a href="https://www.drupal.org/project/ctanywhere" target="_blank">Change text anywhere</a></li>
 			</ul>
+
+      <p><strong>Security:</strong></p>
+      <ul>
+        <li><a href="https://www.drupal.org/project/username_enumeration_prevention" target="_blank">Username Enumeration Prevention</a></li>
+      </ul>
 
 			<br/>
 			<p><strong>Commerce:</strong></p>
 			<ul>
 				<li><a href="https://www.drupal.org/project/shopify" target="_blank">Shopify eCommerce</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_billy_cancel" target="_blank">Commerce billy cancel</a></li>
 				<li><a href="https://www.drupal.org/project/amazon" target="_blank">Amazon Product Advertisement APIe</a></li>
 				<li><a href="https://www.drupal.org/project/bookit" target="_blank">Bookit</a></li>
+				<li><a href="https://www.drupal.org/project/rooms" target="_blank">Rooms - Drupal Booking for Hotels, B&Bs and Vacation Rentals</a></li>
+				<li><a href="https://www.drupal.org/project/easy_booking" target="_blank">Easy booking</a></li>
 				<li><a href="https://www.drupal.org/project/payment_webform" target="_blank">Payment for Webform</a></li>
 				<li><a href="https://www.drupal.org/project/basic_cart" target="_blank">Basic Cart</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_refund_line_item" target="_blank">Commerce Refund Line Item</a></li>
@@ -1021,15 +1068,19 @@
 				<li><a href="https://www.drupal.org/project/commerce_option" target="_blank">Commerce Product Option (vs. Variants)</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_feeds" target="_blank">Commerce Feeds</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_saleprice" target="_blank">Commerce Sale Price</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_single_price_formatter" target="_blank">Commerce Single Price Formatter</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_eu_vat" target="_blank">Commerce European Union VAT</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_progress" target="_blank">Commerce Checkout Progress</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_login" target="_blank">Commerce Checkout Login</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_redirect" target="_blank"><b>Commerce Checkout Redirect</b></a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_complete_registration" target="_blank">Commerce Checkout Complete Registration</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_wishlist" target="_blank">Commerce Wishlist</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_currencydecimals" target="_blank">Commerce Currency Decimals</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_add_to_cart_confirmation" target="_blank">Commerce add to cart confirmation</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_discount" target="_blank">Commerce Discount</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_buy_one_click" target="_blank">Commerce Buy One Click</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_translation" target="_blank">Commerce Translation</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_checkout_url" target="_blank">Commerce Checkout URL</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_authcache" target="_blank">Commerce Authcache (s.a. <a href="https://www.drupal.org/node/2037015" taget="_blank">Tutorial</a></li>
 		</ul>
 
