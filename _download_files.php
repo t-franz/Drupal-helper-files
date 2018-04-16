@@ -163,25 +163,25 @@ function removetxt() {
 
 function appendrobots() {
     $append = "# Paths (clean URLs without trailing slash)
-    Disallow: /admin
-    Disallow: /comment/reply
-    Disallow: /filter/tips
-    Disallow: /node/add
-    Disallow: /search
-    Disallow: /user/register
-    Disallow: /user/password
-    Disallow: /user/login
-    Disallow: /user/logout
-    # Paths (no clean URLs)
-    Disallow: /?q=admin
-    Disallow: /?q=comment/reply
-    Disallow: /?q=filter/tips
-    Disallow: /?q=node/add
-    Disallow: /?q=search
-    Disallow: /?q=user/password
-    Disallow: /?q=user/register
-    Disallow: /?q=user/login
-    Disallow: /?q=user/logout";
+Disallow: /admin
+Disallow: /comment/reply
+Disallow: /filter/tips
+Disallow: /node/add
+Disallow: /search
+Disallow: /user/register
+Disallow: /user/password
+Disallow: /user/login
+Disallow: /user/logout
+# Paths (no clean URLs)
+Disallow: /?q=admin
+Disallow: /?q=comment/reply
+Disallow: /?q=filter/tips
+Disallow: /?q=node/add
+Disallow: /?q=search
+Disallow: /?q=user/password
+Disallow: /?q=user/register
+Disallow: /?q=user/login
+Disallow: /?q=user/logout";
 
     if (file_put_contents("drupal/robots.txt", $append, FILE_APPEND)) {
         print '<br>Add <em>paths without Trailing Slash</em> to robots.txt<br>';

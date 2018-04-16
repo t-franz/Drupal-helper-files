@@ -53,14 +53,15 @@
 		<ol>
 			<li><a id="downloadcore" href="_download_files.php">Download Core and Sites (_download_files.php)</a></li>
 			<li><a id="installdrupal" href="/install.php?profile=minimal" target="_blank">Drupal installieren</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
-			<li><a href="https://www.passwort-generator.com" target="_blank">Passwort generieren</a>: <span class="pwselect"><?php print random_str(15); ?></span>></li>
+			<li><a href="https://www.passwort-generator.com" target="_blank">Passwort generieren</a>: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="/?q=admin/config/search/clean-urls" target="_blank">Enable CleanURLs (ggf. htaccess rewriteBase)</a></li>
 			<li><a href="/admin/config/media/file-system" target="_blank">Privates Verzeichnis</a> (admin/config/media/file-system) auf <b>sites/default/files/private</b> stellen<br>
 			<li><a href="/admin/config/media/file-system" target="_blank">Temporäres Verzeichnis</a> (admin/config/media/file-system) vor dem Restore SPEICHERN und danach zurückstellen:<br>
 			<input name="verzeichnis" type="text" size="100" value="/tmp"></li>
 
 			<li><a href="/admin/modules#edit-modules-other" target="_blank">Modul Backup-Migrate aktivieren</a></li>
-			<li><a href="https://www.drupal.org/files/issues/backup_migrate-fix_constructor_for_future_version_php-2623598-5-7.x.patch" target="_blank">Fehlermeldung Deprecated: Methods</a></li>
+			<li>(<a href="https://www.drupal.org/files/issues/backup_migrate-fix_constructor_for_future_version_php-2623598-5-7.x.patch" target="_blank">Fehlermeldung Deprecated: Methods</a>)</li>
+			<li>(<a href="https://www.drupal.org/files/issues/backup_migrate-fix_constructor_for_future_version_php-2623598-5-7.x.patch" target="_blank">"General error: 3167 The 'INFORMATION_SCHEMA.SESSION_VARIABLES' feature is disabled;" -> phpMyAdmin -> Server(!) -> Variablen -> set "show compatibility 56" to ON Alternativ kas.allinkl Tools -> Account-Übertragung</a>)</li>
 			<li><a href="/admin/config/system/backup_migrate/backups" target="_blank">DEV-Datenbank hochladen</a><l/li>
 		</ol>
 	</p>
@@ -73,16 +74,16 @@
 			<li><a href="/admin/config/media/file-system" target="_blank">ggf. temporäres Verzeichnis wiederherstellen (admin/config/media/file-system)</a></li>
 			<li><a href="/admin/reports/status" target="_blank">admin/reports/status</a></li>
 			<li><a href="/admin/content?type=patch" target="_blank">Patches löschen</a></li>
-			<li><a href="/admin/modules#edit-modules-development-devel-generate-enable" target="_blank">Modules Patch- / Unused- / Update Extended deaktivieren</a></li>
+			<li><a href="/admin/modules#edit-modules-development-devel-generate-enable" target="_blank">Modules <i>Patch Manager &amp; Unused Modules</i> deaktivieren</a></li>
 			<li><a href="/admin/modules/uninstall" target="_blank">ggf. Module deinstallieren</a></li>
 			<li><a href="/admin/config/development/performance" target="_blank">Gesamten Cache löschen</a></li>
-			<li><a href="/admin/config/system/backup_migrate" target="_blank">Backup</a></li>
+			<li><a href="/admin/config/system/backup_migrate" target="_blank">Backup (mit Standard-Einstellungen)</a></li>
 			<li><a href="/admin/config/system/backup_migrate/backups" target="_blank">Altes Backup löschen</a></li>
 		</ol>
 
 		Nach Neuanlage:
 		<ol>
-			<li><a href="/admin/people/create" target="_blank">Benutzer hinzufügen,</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
+			<li><a href="/admin/people/create" target="_blank">Benutzer mit Rolle "administrator" hinzufügen,</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="/admin/config/system/site-information" target="_blank">admin/config/system/site-information (E-Mail kopieren)</a></li>
 			<li><a href="/admin/config/system/mimemail" target="_blank">admin/config/system/mimemail (E-Mail kopieren)</a></li>
 			<li><a href="/admin/config/content/webform" target="_blank">Webform Standard-E-Mail</a></li>
@@ -90,11 +91,15 @@
 			<li><a href="/node/4/edit" target="_blank">Adresse: Kontakt-Seite (Adresse kopieren)</a></li>
 			<li><a href="/admin/structure/block/manage/block/5/configure" target="_blank">Adresse: Sidebar</a></li>
 			<li><a href="/node/2/edit" target="_blank">Adresse: Impressum</a></li>
-			<li><a href="/admin/config/search/custom_address" target="_blank">Adresse: Schema.org ändern</a></li>
-			<li><a href="/admin/structure/menu/item/236/edit" target="_blank">Menülink zur Startseite</a></li>
+			<li><a href="/admin/config/search/metatags/config/global" target="_blank">Schema.org: Organization -> Adresse eintragen</a> (<a href="https://www.gps-coordinates.net" target="_blank">Geo-Coordinates.net</a>)</li>
+			<li><a href="/admin/config/search/metatags/config/node%3Aarticle#edit-metatags-und-schema-articlepublisher-value-logo-url" target="_blank">MetaTag Schema Blog-Artikel: Logo-Name und Größe eintragen</a></li>
+			<li><a href="/admin/appearance/settings/custom#edit-logo" target="_blank">Logo eintragen (möglichst logo.svg)</a></li>
 			<li><a href="/file/80/edit" target="_blank">Große Logo-Datei (für Social) austauschen und Benutzer auf Admin (<b>wg. Fehlermeldung!</b>) setzen</a></li>
-			<li><a href="/admin/appearance/settings/custom#edit-logo" target="_blank">Logo eintragen</a></li>
 			<li><a href="/admin/structure/types/manage/article/fields/field_custom_json#edit-" target="_blank">Blog-JSON: Logo-Name und Größe eintragen</a></li>
+
+
+
+			<li><a href="/admin/structure/menu/item/236/edit" target="_blank">Menülink zur Startseite</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/voll/effects/5" target="_blank">Image-styles für "voll" anpassen (Max-Tablet-Content-Width)</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/halb/effects/6" target="_blank">Image-styles für "halb" anpassen</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/viertel/effects/7" target="_blank">Image-styles für "viertel" anpassen</a></li>
@@ -262,11 +267,14 @@
 			<li><a href="https://www.drupal.org/project/module_missing_message_fixer" target="_blank">Module Missing Message Fixer</a></li>
 			<li><a href="https://www.drupal.org/project/upgrade_status" target="_blank">Upgrade Status</a></li>
 			<li><a href="https://www.drupal.org/project/rdrush" target="_blank">Remote Drush</a></li>
+			<li><a href="https://www.drupal.org/project/inspect" target="_blank">Inspect</a></li>
 			<li><a href="https://www.drupal.org/project/field_inspector" target="_blank">Field inspector</a></li>
 			<li><a href="https://www.drupal.org/project/access_arguments_list" target="_blank">Permission Access Arguments List</a></li>
 			<li><a href="https://www.drupal.org/project/email_control" target="_blank">Email Control</a></li>
 			<li><a href="https://www.drupal.org/project/entity_log_file" target="_blank">File-Based Entity Log</a></li>
-			<li><a href="https://www.drupal.org/project/substitute_password" target="_blank">Substitute Password</a></li>
+			<li><a href="https://www.drupal.org/project/log_filter" target="_blank">Log Filter</a></li>
+      <li><a href="https://www.drupal.org/project/logging_alerts" target="_blank">Logging Alerts to Email</a></li>
+      <li><a href="https://www.drupal.org/project/substitute_password" target="_blank">Substitute Password</a></li>
 		</ul>
 
 			<br/>
@@ -704,6 +712,7 @@
 				<li><a href="https://www.drupal.org/project/title_html" target="_blank">Title HTML</a></li>
 				<li><a href="https://www.drupal.org/project/phpword" target="_blank">PHPWord</a></li>
         <li><a href="https://www.drupal.org/project/quota" target="_blank">Quota (max number of nodes per user)</a></li>
+        <li><a href="https://www.drupal.org/project/animate_on_scroll" target="_blank">AOS Animate On Scroll</a></li>
 			</ul>
 			<br/>
 			<p><strong>Entities:</strong></p>
@@ -819,6 +828,7 @@
 				<li><a href="https://www.drupal.org/project/fitvids" target="_blank">FitVids (responsive Video)</a></li>
 				<li><a href="https://www.drupal.org/project/serial" target="_blank">Serial Field</a></li>
 				<li><a href="https://www.drupal.org/project/name" target="_blank">Name Field</a></li>
+				<li><a href="https://www.drupal.org/project/paragraphs_jquery_ui_accordion" target="_blank">Paragraphs jQuery UI Accordion</a></li>
 
 			</ul>
 
@@ -877,6 +887,7 @@
 				<li><a href="https://www.drupal.org/project/other_view_filter" target="_blank">Other View Filter</a></li>
         <li><a href="https://www.drupal.org/project/views_menu_children_filter" target="_blank">Views Menu Node Children Filter</a></li>
         <li><a href="https://www.drupal.org/project/sooperthemes_gridstack" target="_blank">SooperThemes GridStack</a></li>
+        <li><a href="https://www.drupal.org/project/views_customtext_booster" target="_blank">Views Custom Text Booster</a></li>
 			</ul>
 
 			<br/>
@@ -958,6 +969,7 @@
 				<li><a href="https://www.drupal.org/project/super_login" target="_blank">Super login</a></li>
 				<li><a href="https://www.drupal.org/project/persistent_login" target="_blank">Persistent Login</a></li>
 				<li><a href="https://www.drupal.org/project/super_login" target="_blank">Super Login</a></li>
+				<li><a href="https://www.drupal.org/project/protected_pages" target="_blank">Protected Pages</a></li>
 				<li><a href="https://www.drupal.org/project/clean_comments" target="_blank">Clean Comments</a></li>
 				<li><a href="https://www.drupal.org/project/contentment" target="_blank">Contentment</a></li>
 				<li><a href="https://www.drupal.org/project/jquery_localscroll" target="_blank">jQuery LocalScroll</a></li>
