@@ -49,15 +49,6 @@ function _download_sites() {
                 echo '<br/>Failed to copy <em>'.$file.'</em>';
             } else {
                 print 'Copied <em>'.$file.'</em><br/>';
-                print "Add to databases['default']['default']:<br><pre>\$databases['default']['default'] = array(
-      'driver' => 'mysql',
-      'database' => 'databasename',
-      'username' => 'username',
-      'password' => 'password',
-      'host' => 'localhost',
-      'charset' => 'utf8mb4',
-      'collation' => 'utf8mb4_general_ci',
-    );</pre><br/><br/>";
             }
         }
         removetxt();

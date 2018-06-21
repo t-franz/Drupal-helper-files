@@ -3,26 +3,37 @@
 // Get real path for our folder
 
 $folder = ( isset($_GET["dir"]) ) ? $_GET["dir"] : 'sites';
+$rootPath = realpath($folder);
 
-$filter = array('translations','settings.php');
+echo "Zipping <i>".$rootPath."</i><br>";
 
-if ($folder == 'sites') {
-    // exclude old backups, retain last
-    $backups = array_map('basename', glob("sites/default/files/private/backup_migrate/manual/*.{gz,info}", GLOB_BRACE));
-    sort($backups);
-    array_splice($backups, -2);
-    $filter = array_merge($filter,$backups);
-}
+$filter = array(rtrim(basename($folder.'.zip'),"/"));
+
 
 if (!file_exists($folder)) {
     echo "Folder <em>".$folder."</em> does not exists.<br>";
 } else {
 
-    $rootPath = realpath($folder);
+    if ($folder == 'sites') {
+        // exclude old backups, retain last
+        $backupfolder = "sites/default/files/private/backup_migrate/manual";
+        $backups = array();
+        $keep = array();
+        $backups = array_map('basename', array_merge(glob($backupfolder.'/*.gz'),glob($backupfolder.'/*.zip'), glob($backupfolder.'/*.info')));
+        sort($backups);
+        $keep = array_slice($backups,-2);
+        print "<br>Keeping only last backup:";
+        print '<pre>';
+        print_r($keep);
+        print '</pre>';
+        array_splice($backups,-2);
 
-    echo "Zipping <i>".$rootPath."</i>";
+        $rspstyles = array_map('basename',glob('sites/default/files/styles/rsp_*'));
+        $excludefiles = array('translations','settings.php','advagg_css','advagg_js');
+        $filter = array_merge($filter,$backups,$excludefiles,$rspstyles);
+    }
 
-    echo "<br><br/>Excluding: <i>";
+    echo "Excluding: <i>";
     print '<pre>';
     print_r($filter);
     print '</pre>';
