@@ -1,0 +1,51 @@
+#imageblock {
+  background-color: var(--orange);
+  height: 10px;
+  margin-bottom: 53px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 321px) {
+  #imageblock {
+    height: calc(100vw / 320 * 135);
+    background: url(../images/handwerker-480.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 481px) {
+  #imageblock {
+    background-image: url(../images/handwerker-768.jpg);
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px) {
+  #imageblock {
+    background-image: url(../images/handwerker-992.jpg);
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px) {
+  #imageblock {
+    background-image: url(../images/handwerker-1200.jpg);
+  }
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  #imageblock {
+    height: 530px;
+    background-image: url(../images/handwerker-1280.jpg);
+  }
+}
+
+@media only screen and (min-width : 1920px) {
+  #imageblock {
+    background-position-y: bottom;
+    background-image: url(../images/handwerker-1920.jpg);
+  }
+}

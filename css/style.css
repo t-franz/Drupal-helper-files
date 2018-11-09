@@ -1,0 +1,400 @@
+body {
+/*  background: url('../images/vorlage.jpg') no-repeat center top;*/
+}
+
+body {
+    padding-top: 70px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+
+#header {
+    z-index: 99;
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0);
+    background-color: #000;
+}
+
+
+#logo {
+    width: 100px;
+}
+
+#main .inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.button {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: box-shadow 0.5s, color 0.5s, background-color 0.5s, transform 0.5s, -webkit-transform 0.5s;
+    text-transform: uppercase;
+    color: grey;
+    border: 0;
+    border-radius: 30px;
+    background-color: red;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.button:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    color: #fff;
+    background-color: blue;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5);
+}
+
+.form-submit {
+    min-width: 250px;
+    margin: 40px 0 60px;
+    color: darkgrey;
+    background-color: lightgrey;
+}
+
+.form-submit:hover {
+    color: lightgrey;
+    background-color: grey;
+}
+
+
+h1 {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 3.6rem;
+    line-height: 1.33;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+    line-height: 1.5;
+}
+
+h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+h4 {
+    margin-bottom: 3.7rem;
+    font-size: 1.82rem;
+    line-height: 1.5;
+}
+
+
+
+
+
+/** NAVIGATION */
+
+
+.menu {
+    top: 70px;
+    max-height: calc(100vh - 60px);
+    margin: 0 auto;
+    background-color: grey;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+
+
+
+.menu a {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+.menu a:hover,
+.menu .active a {
+    color: red;
+}
+
+
+.toggle {
+    float: right;
+    margin-top: 8px;
+}
+
+.toggle a {
+    width: 60px;
+    height: 50px;
+}
+
+.toggle span,
+.toggle span:after,
+.toggle span:before,
+.expanded + .toggle span,
+.expanded + .toggle span:after,
+.expanded + .toggle span:before {
+    background-color: #fff;
+}
+
+.mobilecontact {
+    display: none;
+}
+
+
+/* FORM */
+form {
+    margin: 50px 0 0;
+    padding: 0;
+}
+
+.form-item {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    font-size: 1.4rem;
+}
+
+.form-item:focus {
+    outline-color: #aaa;
+}
+input.form-checkbox:focus + span {
+    border-color: #aaa;
+}
+
+#placeholder,
+::-webkit-input-placeholder {
+    color: #666;
+    font-weight: 400;
+}
+
+::-moz-placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder,
+::placeholder {
+    color: #666 !important;
+    font-weight: 400 !important;
+}
+
+#placeholder,
+.form-item:focus::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+.form-item:focus::-moz-placeholder,
+.form-item:focus:-ms-input-placeholder,
+.form-item:focus::-ms-input-placeholder,
+.form-item:focus::placeholder {
+    color: #aaa !important;
+}
+
+#form-email {
+    margin-top: 30px;
+}
+
+.form-textarea {
+    height: 128px;
+    margin: 30px 0 0;
+}
+input.form-text,
+textarea {
+    background-color: lightgray;
+}
+
+.form-type-checkbox {
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+label.checkbox span {
+    border: grey 2px solid;
+    width:1em;
+    height:1em;
+    background:#fff;
+    margin-top: 4px;
+}
+label.checkbox :checked + span {
+    background: grey;
+    border-color: #008700;
+}
+
+.labeltext {
+    padding-left: 25px;
+}
+
+.help {
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 1em;
+}
+
+.fax-only {
+    display: none !important;
+}
+
+
+
+
+
+
+
+/*CONTENT*/
+
+#hero {
+    position: relative;
+}
+
+.icon {
+    text-align: center;
+}
+.icon img {
+    max-width: 75px;
+    margin: 0 auto;
+}
+
+.column {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+#footer {
+    margin-top: 50px;
+    padding: 50px 20px 100px;
+    color: #fff;
+    background-color: grey;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.submenu {
+    font-size: 1.4rem;
+    line-height: 3.3rem;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer a:nth-child(even) {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 321px) {
+    .mobilecontact {
+        text-align: right;
+    }
+    .mobilecontact a {
+        display: inline-block;
+        padding: 19px 5px 0 12px;
+    }
+    .mobilecontact img {
+        width: 30px;
+        height: auto;
+    }
+}
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 481px) {
+    .column {
+        width: calc(100% / 2 - 30px);
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px) {
+
+
+    .herowrapper {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        -webkit-transform: translateY(-50%);    -ms-transform: translateY(-50%);    transform: translateY(-50%);
+    }
+
+    .submenu {
+        display: inline-block;
+        float: right;
+        text-align: right;
+    }
+
+    .mobilecontact {
+        display: none;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px) {
+    body {
+        color: #333;
+    }
+
+
+
+    .menu {
+        margin: 0 0 0 auto;
+        top:0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .menu li {
+        padding: 0 0 0 50px;
+    }
+
+    .menu a {
+        display: inline-block;
+        padding: 0;
+        transition: color 0.3s;
+        line-height: 30px;
+    }
+
+    .menu a:hover,
+    .menu li.active a {
+        color: red;
+    }
+
+    .column {
+        width: calc(100% / 3 - 30px);
+    }
+}
+
+
+
+@media screen and (min-width: 1080px) {
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
