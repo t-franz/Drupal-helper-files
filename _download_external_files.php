@@ -79,7 +79,8 @@ function unzip($file){
             unlink($file);
         } else {
            print "Unable to open zip file <em>".$file."</em><br>";
-           print_r($entpack)."<br>";
+           print_r($entpack);
+           print "<br>";
         }
     }
 }
