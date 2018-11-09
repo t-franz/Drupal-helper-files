@@ -62,19 +62,21 @@ function unzip($file){
             }
         }
         return TRUE;
-    }else{
+    } else if (shell_exec("unzip ".$file)) {
         print "Unable to extract zip file <em>".$file."</em><br><br>";
         print 'Try shell_exec("unzip '.$file.'")<br>';
-
-        $entpack = shell_exec("unzip ".$file);
-        if ( $entpack ) {
-            return TRUE;
+    } else {
+        print "Unable to extract zip file <em>".$file."</em> with Shell.<br><br>";
+        print 'Try PHP-Zip-Module (" $zip->open('.$file.')")<br>';
+        $phpzip = new ZipArchive;
+        $res = $phpzip->open($file);
+        if ($res === TRUE) {
+         $phpzip->extractTo($newfolder);
+         $phpzip->close();
+          echo 'Das ZIP-Archiv <b>'.$file.'</b> wurde erfolgreich in das Verzeichnis <b>'.$newfolder.'</b> entpackt.';
         } else {
-           print "Unable to open zip file <em>".$file."</em><br>";
-           print_r($entpack)."<br>";
+          echo '<b>Es ist ein Fehler beim Entpacken des ZIP-Archives aufgetreten!</b>';
         }
-
-
     }
 }
 

@@ -315,6 +315,7 @@
 				<li><a href="https://www.drupal.org/project/lazyloader" target="_blank">Image Lazyloader</a></li>
 				<li><a href="https://www.drupal.org/project/lazyloader_filter" target="_blank">Image Lazyloader Filter</a></li>
 				<li><a href="https://www.drupal.org/project/image_lazy_loader" target="_blank">Image Lazy Loader</a></li>
+				<li><a href="https://www.drupal.org/project/image_lazy_loader" target="_blank">Lazy Load</a></li>
 				<li><a href="https://www.drupal.org/project/defer_image" target="_blank">Defer Image</a></li>
 				<li><a href="https://www.drupal.org/project/fastclick" target="_blank">FastClick</a></li>
 				<li><a href="https://www.drupal.org/project/htaccess" target="_blank">htaccess</a></li>
@@ -465,6 +466,7 @@
 				<li><a href="https://www.drupal.org/project/no_table_drag" target="_blank">No Table Drag</a></li>
 				<li><a href="https://www.drupal.org/project/forms_to_email" target="_blank">Forms to Email</a></li>
 				<li><a href="https://www.drupal.org/project/name" target="_blank">Name Field</a></li>
+				<li><a href="https://www.drupal.org/project/hashcash" target="_blank">Hashcash (Anti Spam Lock Forms)</a></li>
 			</ul>
 
 
@@ -591,12 +593,14 @@
 				<li><a href="https://www.drupal.org/project/shortcutperrole" target="_blank">Shortcut per Role</a></li>
 				<li><a href="https://www.drupal.org/project/required_by_role" target="_blank">Required by role</a></li>
 				<li><a href="https://www.drupal.org/project/eu_cookie_compliance" target="_blank">EU Cookie Compliance</a></li>
+				<li><a href="https://www.drupal.org/project/cookie_content_blocker" target="_blank">Cookie Content Blocker</a></li>
 				<li><a href="https://www.drupal.org/project/divascookies" target="_blank">Divas Cookies</a></li>
 				<li><a href="https://www.drupal.org/project/cookiecontrol" target="_blank">Cookie Control</a></li>
 				<li><a href="https://www.drupal.org/project/cookiecuttr" target="_blank">CookieCuttr</a></li>
 				<li><a href="https://www.drupal.org/project/content_tab" target="_blank">Content Tab</a></li>
 				<li><a href="https://www.drupal.org/project/session_cookie_lifetime" target="_blank">Session cookie lifetime</a></li>
 				<li><a href="https://www.drupal.org/project/passwordless" target="_blank">Passwordless</a></li>
+				<li><a href="https://www.drupal.org/project/genpass" target="_blank">Generate Password</a></li>
 				<li><a href="https://www.drupal.org/project/rpt" target="_blank">Registration Password Token</a></li>
 				<li><a href="https://www.drupal.org/project/email_registration" target="_blank">Email Registration</a></li>
 				<li><a href="https://www.drupal.org/project/feedback_reloaded" target="_blank">Feedback Reloaded</a></li>
@@ -611,6 +615,7 @@
 				<li><a href="https://www.drupal.org/project/redirect_after_logout" target="_blank">Redirect after logout</a></li>
 				<li><a href="https://www.drupal.org/project/multiple_registration" target="_blank">Multiple Registration</a></li>
 				<li><a href="https://www.drupal.org/project/user_picture_initials" target="_blank">User Picture Initials</a></li>
+				<li><a href="https://www.drupal.org/project/reg_confirm_email" target="_blank">Registration Confirm Email Address</a></li>
 				<li><a href="https://www.drupal.org/project/email_login" target="_blank">Role based Email Login</a></li>
 				<li><a href="https://www.drupal.org/project/drop_down_login" target="_blank">Drop Down Login</a></li>
 				<li><a href="https://www.drupal.org/project/entity_legal" target="_blank">Entity Legal</a></li>
@@ -626,10 +631,12 @@
         <li><a href="https://www.drupal.org/project/hybridauth" target="_blank">HybridAuth Social Login</a></li>
         <li><a href="https://www.drupal.org/project/xing_connect" target="_blank">Xing Connect</a></li>
         <li><a href="https://www.drupal.org/project/content_login" target="_blank">Content Login</a></li>
-				<li><a href="https://www.drupal.org/project/auto_login_url_tokens" target="_blank">Auto Login URL Tokens</a></li>
 				<li><a href="https://www.drupal.org/project/urllogin" target="_blank">urllogin</a></li>
 				<li><a href="https://www.drupal.org/project/auto_login_url" target="_blank">Auto Login URL</a></li>
+				<li><a href="https://www.drupal.org/project/auto_login_url_tokens" target="_blank">Auto Login URL Tokens</a></li>
 				<li><a href="https://www.drupal.org/project/login_one_time" target="_blank">Login one time</a></li>
+				<li><a href="https://www.drupal.org/project/one_time_login_short_link" target="_blank">One-Time Login Short Link</a></li>
+				<li><a href="https://www.drupal.org/project/email_auto_login" target="_blank">Email Auto Login</a></li>
         <li><a href="https://www.drupal.org/project/tca" target="_blank">Token Content Access</a></li>
 				<li><a href="https://www.drupal.org/project/deeplink" target="_blank">DeepLink (Login)</a></li>
 				<li><a href="https://www.drupal.org/project/gplus_sync" target="_blank">Google+ synchronization (Login)</a></li>
@@ -649,6 +656,7 @@
 				<li><a href="https://www.drupal.org/project/required_by_role" target="_blank">(Field) Required by role</a></li>
 				<li><a href="https://www.drupal.org/project/user_settings_access" target="_blank">User Settings Access</a></li>
 				<li><a href="https://www.drupal.org/project/roleassign" target="_blank">Role Assign (Permission)</a></li>
+				<li><a href="https://www.drupal.org/project/tfa" target="_blank">Two-factor Authentication (TFA)</a></li>
 			</ul>
 
 			<br/>
@@ -698,6 +706,7 @@
 				<li><a href="https://www.drupal.org/project/votingapi_bayesian" target="_blank">VotingAPI Bayesian (Fivestar)</a></li>
 				<li><a href="https://www.drupal.org/project/ajax_screen_lock" target="_blank">AJAX Screen Lock</a></li>
 				<li><a href="https://www.drupal.org/project/publish_away" target="_blank">Publish Away Field (Facebook  &amp; Twitter)</a></li>
+				<li><a href="https://www.drupal.org/project/linkedin_autopost" target="_blank">linkedin Autopost</a></li>
 				<li><a href="https://www.drupal.org/project/backup_migrate_prune" target="_blank">Backup and migrate prune</a></li>
 				<li><a href="https://www.drupal.org/project/fancy_file_delete" target="_blank">Fancy File Delete</a></li>
 				<li><a href="https://www.drupal.org/project/drupal_sync" target="_blank">Drupal Sync</a></li>
@@ -714,6 +723,7 @@
 				<li><a href="https://www.drupal.org/project/phpword" target="_blank">PHPWord</a></li>
         <li><a href="https://www.drupal.org/project/quota" target="_blank">Quota (max number of nodes per user)</a></li>
         <li><a href="https://www.drupal.org/project/animate_on_scroll" target="_blank">AOS Animate On Scroll</a></li>
+        <li><a href="https://www.drupal.org/project/twilio" target="_blank">Twilio SMS Service</a></li>
 			</ul>
 			<br/>
 			<p><strong>Entities:</strong></p>
@@ -803,6 +813,7 @@
 				<li><a href="https://www.drupal.org/project/funky_date" target="_blank">Funky Date</a></li>
 				<li><a href="https://www.drupal.org/project/date_ical" target="_blank">Date iCal</a></li>
 				<li><a href="https://www.drupal.org/project/weekdays" target="_blank">Weekdays field (Date restrictions)</a></li>
+				<li><a href="https://www.drupal.org/project/calendar_multi_select" target="_blank">Calendar Multi Select</a></li>
 				<li><a href="https://www.drupal.org/project/addtocal" target="_blank">Add to Cal</a></li>
 				<li><a href="https://www.drupal.org/project/file_field_icons" target="_blank">File Field Icons</a></li>
 				<li><a href="https://www.drupal.org/project/field_lock_multi_values" target="_blank">Field lock multi values</a></li>
@@ -829,6 +840,7 @@
 				<li><a href="https://www.drupal.org/project/fitvids" target="_blank">FitVids (responsive Video)</a></li>
 				<li><a href="https://www.drupal.org/project/serial" target="_blank">Serial Field</a></li>
 				<li><a href="https://www.drupal.org/project/name" target="_blank">Name Field</a></li>
+				<li><a href="https://www.drupal.org/project/nvp" target="_blank">NVP field (Name Value Pair)</a></li>
 				<li><a href="https://www.drupal.org/project/paragraphs_jquery_ui_accordion" target="_blank">Paragraphs jQuery UI Accordion</a></li>
 
 			</ul>
@@ -994,6 +1006,7 @@
 				<li><a href="https://www.drupal.org/project/menu_firstchild" target="_blank">Menu Firstchild</a></li>
 				<li><a href="https://www.drupal.org/project/simple_modal_overlay" target="_blank">Simple modal overlay</a></li>
 				<li><a href="https://www.drupal.org/project/ng_lightbox" target="_blank">NG Lightbox (form in modal)</a></li>
+				<li><a href="https://www.drupal.org/project/lightbox_campaigns" target="_blank">Lightbox Campaigns</a></li>
 				<li><a href="https://www.drupal.org/project/view_mode_tab" target="_blank">View Mode Tab</a></li>
 				<li><a href="https://www.drupal.org/project/node_display_field" target="_blank">Node Display Field</a></li>
 				<li><a href="https://www.drupal.org/project/pace" target="_blank">PACE - Page load progress bar</a></li>
@@ -1004,17 +1017,21 @@
 				<li><a href="https://www.drupal.org/project/menuux" target="_blank">Menu Browser</a></li>
 				<li><a href="https://www.drupal.org/project/bigmenu" target="_blank">Big Menu</a></li>
 				<li><a href="https://www.drupal.org/project/menu_editor" target="_blank">Menu Editor</a></li>
+				<li><a href="https://www.drupal.org/project/node_menu_item_visibility_default_behaviour" target="_blank">Node menu item visibility default behaviour</a></li>
 				<li><a href="https://www.drupal.org/project/menu_token" target="_blank">Menu token</a></li>
 				<li><a href="https://www.drupal.org/project/mnl" target="_blank">Menu no link (# Hash)</a></li>
 				<li><a href="https://www.drupal.org/project/taxonomy_manager" target="_blank">Taxonomy Manager</a></li>
 				<li><a href="https://www.drupal.org/project/term_merge" target="_blank">Term Merge</a></li>
 				<li><a href="https://www.drupal.org/project/back_to_top" target="_blank">Back to top</a></li>
 				<li><a href="https://www.drupal.org/project/ctanywhere" target="_blank">Change text anywhere</a></li>
+				<li><a href="https://www.drupal.org/project/local_actions" target="_blank">Local Actions</a></li>
+				<li><a href="https://www.drupal.org/project/local_tasks_blocks" target="_blank">Local tasks blocks</a></li>
 			</ul>
 
       <p><strong>Security:</strong></p>
       <ul>
         <li><a href="https://www.drupal.org/project/username_enumeration_prevention" target="_blank">Username Enumeration Prevention</a></li>
+        <li><a href="https://www.drupal.org/project/embetty" target="_blank">Embetty (YouTube Privacy)</a></li>
       </ul>
 
 			<br/>
@@ -1070,6 +1087,7 @@
 				<li><a href="https://www.drupal.org/project/commerce_add_to_cart_confirmation" target="_blank">Commerce add to cart confirmation</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_shipping_quote_weight" target="_blank">Commerce Shipping Quote Weight</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_shipment" target="_blank">Commerce Shipment</a></li>
+				<li><a href="https://www.drupal.org/project/shippypro" target="_blank">ShippyPro - Drupal Commerce Shipping Integration</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_payment_simpleui" target="_blank">Commerce Payment Simple UI</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_cap" target="_blank">Commerce Checkout AJAX Pages</a></li>
 				<li><a href="https://www.drupal.org/project/erpal_invoice" target="_blank">ERPAL Invoice</a></li>
@@ -1095,6 +1113,7 @@
 				<li><a href="https://www.drupal.org/project/commerce_translation" target="_blank">Commerce Translation</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_url" target="_blank">Commerce Checkout URL</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_authcache" target="_blank">Commerce Authcache (s.a. <a href="https://www.drupal.org/node/2037015" taget="_blank">Tutorial</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_rma" target="_blank">Commerce Return Merchandise Authorization</a></li>
 		</ul>
 
 

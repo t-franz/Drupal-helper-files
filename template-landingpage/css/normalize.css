@@ -1,0 +1,106 @@
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+
+  -webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bold;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button,
+input,
+textarea {
+  overflow: visible;
+  max-width: 100%;
+}
+
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+
+textarea {
+  overflow: auto;
+}
+
+
+
+#skip-link {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #666;
+}
+
+.element-invisible,
+.element-focusable {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,1px,1px,1px);
+  width: 1px;
+  height: 1px;
+}
+
+a,
+a:link,
+a:focus,
+a:active,
+a:hover,
+form,
+*:focus {
+  outline: 0;
+
+  -moz-outline-style: none;
+}
