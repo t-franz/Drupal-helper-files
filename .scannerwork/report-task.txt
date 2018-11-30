@@ -3,5 +3,5 @@ projectKey=t-franz_Drupal-helper-files
 serverUrl=https://sonarcloud.io
 serverVersion=7.5.0.19078
 dashboardUrl=https://sonarcloud.io/dashboard?id=t-franz_Drupal-helper-files
-ceTaskId=AWb3Lurg7oselY-Zpo2t
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWb3Lurg7oselY-Zpo2t
+ceTaskId=AWb3ZvNNTnw0J_G3HNLA
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWb3ZvNNTnw0J_G3HNLA

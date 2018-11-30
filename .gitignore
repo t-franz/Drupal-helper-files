@@ -2,3 +2,10 @@
 Anleitung GitHub.txt
 *.webloc
 GitHub Desktop
+.scannerwork/*
+.scannerwork/report-task.txt
+report-task.txt
+.git
+.gitignore
+.DS_Store
+-Dsonar*

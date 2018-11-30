@@ -43,16 +43,16 @@
 			<li><a href="/admin/config/development/performance" target="_blank">Leistung</a></li>
 			<li><a href="/admin/config/system/backup_migrate" target="_blank">Backup</a></li>
 			<li><a href="/sites/all/themes/custom/grunticon/preview.html" target="_blank">Grunticon-Icons</a></li>
-			<li>Reload <a href="/sites/all/themes/custom/css/custom.css" target="_blank">custom.css</a>, <a href="/sites/all/themes/custom/css/custom-critical.css" target="_blank">custom-critical.css</a>, <a href="/sites/all/themes/myseven/css/myseven.css" target="_blank">myseven.css</a></li> </li>
+			<li>Reload <a href="/sites/all/themes/custom/css/custom.css" target="_blank">custom.css</a>, <a href="/sites/all/themes/custom/css/custom-critical.css" target="_blank">custom-critical.css</a>, <a href="/sites/all/themes/custom/css/responsive.css" target="_blank">responsive.css</a>, <a href="/sites/all/themes/myseven/css/myseven.css" target="_blank">myseven.css</a></li> </li>
 		</ul>
 	</section>
 
 	<section>
-	<p><a href="#module">Erweiterungs-Liste der MODULE »</a> | <a href="/admin/modules/install" target="_blank">admin/modules/install »</a> | <a href="#abschluss">Nach der Installation »</a></p>
+	<p><a href="#module">Erweiterungs-Liste der MODULE »</a> | <a href="/admin/modules/install?profile=minimal&locale=en" target="_blank">admin/modules/install »</a> | <a href="#abschluss">Nach der Installation »</a></p>
 	<p><strong>Vor dem Restore:</strong>
 		<ol>
 			<li><a id="downloadcore" href="_download_files.php">Download Core and Sites (_download_files.php)</a></li>
-			<li><a id="installdrupal" href="/install.php?profile=minimal" target="_blank">Drupal installieren</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
+			<li><a id="installdrupal" href="/install.php??profile=minimal&locale=en" target="_blank">Drupal installieren</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="https://www.passwort-generator.com" target="_blank">Passwort generieren</a>: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="/?q=admin/config/search/clean-urls" target="_blank">Enable CleanURLs (ggf. htaccess rewriteBase)</a></li>
 			<li><a href="/admin/config/media/file-system" target="_blank">Privates Verzeichnis</a> (admin/config/media/file-system) auf <b>sites/default/files/private</b> stellen<br>
