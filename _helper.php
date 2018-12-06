@@ -52,7 +52,7 @@
 	<p><strong>Vor dem Restore:</strong>
 		<ol>
 			<li><a id="downloadcore" href="_download_files.php">Download Core and Sites (_download_files.php)</a></li>
-			<li><a id="installdrupal" href="/install.php??profile=minimal&locale=en" target="_blank">Drupal installieren</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
+			<li><a id="installdrupal" href="/install.php?profile=minimal&locale=en" target="_blank">Drupal installieren</a> Passwort: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="https://www.passwort-generator.com" target="_blank">Passwort generieren</a>: <span class="pwselect"><?php print random_str(15); ?></span></li>
 			<li><a href="/?q=admin/config/search/clean-urls" target="_blank">Enable CleanURLs (ggf. htaccess rewriteBase)</a></li>
 			<li><a href="/admin/config/media/file-system" target="_blank">Privates Verzeichnis</a> (admin/config/media/file-system) auf <b>sites/default/files/private</b> stellen<br>
@@ -114,10 +114,9 @@
 			<li><a href="/admin/content?type=article" target="_blank">Delete Blog-Articles</a></li>
 			<li><a href="/node/8/delete" target="_blank">Delete Blog-Page</a></li>
 			<li><a href="/admin/structure/views" target="_blank">Disable Blog-View</a></li>
-			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/filter/type" target="_blank">Remove View Node-Type-Filter</a></li>
-			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/sticky" target="_blank">Remove Table Sticky Column</a></li>
-			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/type" target="_blank">Remove Table Type Column</a></li>
-			<li><a href="/admin/people/permissions#edit-view-own-unpublished-content" target="_blank">Disable Blog-Permissions</a></li>
+			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/filter/type" target="_blank">Admin-View: Remove Filter "Node-Type"</a></li>
+			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/sticky" target="_blank">Admin-View: Remove Column "Sticky"</a></li>
+			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/type" target="_blank">Admin-View: Remove Column "Type"</a></li>
 			<li><a href="/admin/config/media/picture/list/blogliste/delete" target="_blank">Delete Picture Mapping Blogliste</a></li>
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist" target="_blank">Delete Image-Style Bloglist</a></li>
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_smartphone_375" target="_blank">Delete Image-Style Bloglist 375</a></li>
