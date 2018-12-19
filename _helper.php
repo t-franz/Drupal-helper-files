@@ -158,8 +158,6 @@
 			<li><a href="/admin/config/regional/translate/update" target="_blank">Übersetzungen kontrollieren</a></li>
 			<li><a href="https://localize.drupal.org/translate/languages/de/export" target="_blank">ggf. fehlende Übersetzungen installieren</a></li>
 
-
-			<li><em>sites/all/themes/custom/templates/mimemail-message.tpl.php</em> Logo-Pfad anpassen</li>
 			<li><em>settings.php</em> theme_debug deaktivieren</li>
 			<li><em>helper-files</em> löschen</li>
 			<li>Images komprimieren mit Image-Optim</li>
@@ -170,7 +168,7 @@
   RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</pre>
 			</li>
 
-<li>add SSL-script to htaccess after <em>RewriteEngine on</em>:<br />
+<li>add GZIP-Compression to htaccess:<br />
 				<pre class="pwselect">
 # Deflate Compression by FileType
 &lt;IfModule mod_deflate.c&gt;

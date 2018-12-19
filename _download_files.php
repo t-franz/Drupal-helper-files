@@ -52,6 +52,11 @@ function _download_sites() {
             }
         }
         removetxt();
+        echo '<br>';
+        echo (unlink('drupal/.editorconfig')) ? 'Remove <em>drupal/.editorconfig</em><br/>' : '';
+        echo (unlink('drupal/.gitignore')) ? 'Remove <em>drupal/.gitignore</em><br/>' : '';
+        echo (unlink('drupal/web.config')) ? 'Remove <em>drupal/web.config</em><br/>' : '';
+
         appendrobots();
         print '<br/>Next Step: <b>FTP: Move drupal folder.</b>';
         print '<br/>Install Drupal: <a href="_helper.php#installdrupal">_helper.php</a>';
