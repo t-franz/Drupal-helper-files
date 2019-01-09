@@ -43,12 +43,12 @@ function _download_sites() {
         unlink("sites.zip");
         if (unlink("drupal/sites/default/settings.php")) {
             echo '<br/><br/>Deleting "sites/default/settings.php"<br/>';
-            $file = 'drupal/sites/default/default.settings.php';
+            $templatefile = 'drupal/sites/default/default.settings.php';
             $newfile = 'drupal/sites/default/settings.php';
-            if (!copy($file, $newfile)) {
-                echo '<br/>Failed to copy <em>'.$file.'</em>';
+            if (!copy($templatefile, $newfile)) {
+                echo '<br/>Failed to copy <em>'.$templatefile.'</em>';
             } else {
-                print 'Copied <em>'.$file.'</em><br/>';
+                print 'Copied <em>'.$templatefile.'</em><br/><br/>';
             }
         }
         removetxt();
@@ -58,7 +58,19 @@ function _download_sites() {
         echo (unlink('drupal/web.config')) ? 'Remove <em>drupal/web.config</em><br/>' : '';
 
         appendrobots();
-        print '<br/>Next Step: <b>FTP: Move drupal folder.</b>';
+
+        if (rename('_helper.php','drupal/_helper.php')) echo '<br/>Moved <em>_helper.php</em> to new folder.<br />';
+
+        // Move and renam Drupal folder to Basefolder
+        $originalBasename = basename(__DIR__);
+        chdir('../');
+        echo '<br/><br/>Moving new drupal-folder to original basefolder <em>'.$originalBasename.'</em><br/>';
+        rename($originalBasename.'/drupal','drupalneu');
+        if (rename($originalBasename,$originalBasename.'__alt')) {
+            echo '<br/>Renamed original folder <em>'.$originalBasename.'</em> to <em>'.$originalBasename.'__alt</em><br/>';
+        }
+        if (rename('drupalneu',$originalBasename) ) echo '<br/>Drupal folder is new Basefolder.<br/>';
+
         print '<br/>Install Drupal: <a href="_helper.php#installdrupal">_helper.php</a>';
     } else {
         echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';
