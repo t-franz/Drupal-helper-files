@@ -48,7 +48,7 @@
 	</section>
 
 	<section>
-	<p><a href="#module">Erweiterungs-Liste der MODULE »</a> | <a href="/admin/modules/install?profile=minimal&locale=en" target="_blank">admin/modules/install »</a> | <a href="#abschluss">Nach der Installation »</a></p>
+	<p><a href="#module">Erweiterungs-Liste der MODULE »</a> | <a href="/admin/modules/install" target="_blank">admin/modules/install »</a> | <a href="#abschluss">Nach der Installation »</a></p>
 	<p><strong>Vor dem Restore:</strong>
 		<ol>
 			<li><a id="downloadcore" href="_download_files.php">Download Core and Sites (_download_files.php)</a></li>
@@ -274,6 +274,7 @@
 			<li><a href="https://www.drupal.org/project/log_filter" target="_blank">Log Filter</a></li>
       <li><a href="https://www.drupal.org/project/logging_alerts" target="_blank">Logging Alerts to Email</a></li>
       <li><a href="https://www.drupal.org/project/substitute_password" target="_blank">Substitute Password</a></li>
+      <li><a href="https://www.drupal.org/project/custom_nid" target="_blank">Custom nid</a></li>
 		</ul>
 
 			<br/>
@@ -1053,16 +1054,19 @@
 				<li><a href="https://www.drupal.org/project/commerce_addressbook_extra" target="_blank">Commerce Addressbook Extra</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_pc_field" target="_blank">Commerce pre-calculated price field</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_products_list" target="_blank">Commerce Checkout Product List</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_fieldgroup_panes" target="_blank">Commerce Fieldgroup Panes</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_extra_panes" target="_blank">Commerce Extra Panes</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_auto_checkout" target="_blank">Commerce Auto-Checkout</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_checkout_complete_registration" target="_blank">Commerce Checkout Complete Registration</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_customer_contact" target="_blank">Commerce Customer Contact</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_dtc" target="_blank">Commerce Direct-to-Cart</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_panes_manager" target="_blank">Commerce Panes Manager</a></li>
+				<li><a href="https://www.drupal.org/project/commerce_cp" target="_blank">Commerce CART Pane</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_fulfillment" target="_blank">Commerce Fulfillment</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_deploy" target="_blank">Commerce Deploy</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_reset" target="_blank">Commerce Reset</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_add_to_cart_extras" target="_blank">Commerce Add to Cart Extras</a></li>
-				<li><a href="https://www.drupal.org/project/dc_ajax_add_cart" target="_blank">Commerce Ajax Add to Cart</a></li>
+				<li><a href="https://www.drupal.org/project/dc_ajax_add_cart" target="_blank"><strong>Commerce Ajax Add to Cart</strong></a></li>
 				<li><a href="https://www.drupal.org/project/2270819/git-instructions" target="_blank">Commerce Fast Ajax Add to Cart</a></li>
 				<li><a href="https://www.drupal.org/sandbox/xandeadx/2621602" target="_blank">Commerce Ajax Cart Form</a></li>
 				<li><a href="https://www.drupal.org/project/commerce_option" target="_blank">Commerce Product Option</a></li>

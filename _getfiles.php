@@ -74,8 +74,10 @@ function movefiles() {
       if (in_array($file, array(".",".."))) continue;
       echo '<br/>Copy <i>'.$source.$file.'</i> to <i>'.$destination.$file.'</i> ...';
       // If we copied this successfully, mark it for deletion
-      if (copy($source.$file, $destination.$file)) {
-        $delete[] = $source.$file;
+      if (is_file($source.$file)) {
+          if (copy($source.$file, $destination.$file)) {
+            $delete[] = $source.$file;
+          }
       }
     }
     // Delete all successfully-copied files
@@ -85,5 +87,19 @@ function movefiles() {
     }
     unlink($destination.'.gitattributes');
     unlink($destination.'.gitignore');
-    rmdir("Drupal-helper-files-master");
+    removeDir("Drupal-helper-files-master");
+}
+
+function removeDir($dir) {
+    $internalfiles = new RecursiveIteratorIterator(
+        new RecursiveDirectoryIterator($dir, RecursiveDirectoryIterator::SKIP_DOTS),
+        RecursiveIteratorIterator::CHILD_FIRST
+    );
+
+    foreach ($internalfiles as $fileinfo) {
+        $todo = ($fileinfo->isDir() ? 'rmdir' : 'unlink');
+        $todo($fileinfo->getRealPath());
+    }
+
+    rmdir($dir);
 }

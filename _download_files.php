@@ -61,15 +61,18 @@ function _download_sites() {
 
         if (rename('_helper.php','drupal/_helper.php')) echo '<br/>Moved <em>_helper.php</em> to new folder.<br />';
 
-        // Move and renam Drupal folder to Basefolder
-        $originalBasename = basename(__DIR__);
-        chdir('../');
-        echo '<br/><br/>Moving new drupal-folder to original basefolder <em>'.$originalBasename.'</em><br/>';
-        rename($originalBasename.'/drupal','drupalneu');
-        if (rename($originalBasename,$originalBasename.'__alt')) {
-            echo '<br/>Renamed original folder <em>'.$originalBasename.'</em> to <em>'.$originalBasename.'__alt</em><br/>';
+        // Move and rename Drupal folder to Basefolder
+        if (chdir('../')) {
+            $originalBasename = basename(__DIR__);
+            echo '<br/><br/>Moving new drupal-folder to original basefolder <em>'.$originalBasename.'</em><br/>';
+            rename($originalBasename.'/drupal','drupalneu');
+            if (rename($originalBasename,$originalBasename.'__alt')) {
+                echo '<br/>Renamed original folder <em>'.$originalBasename.'</em> to <em>'.$originalBasename.'__alt</em><br/>';
+            }
+            if (rename('drupalneu',$originalBasename) ) echo '<br/>Drupal folder is new Basefolder.<br/>';
+        } else {
+           echo '<br/><strong>FTP: Move drupal folder</strong><br/>';
         }
-        if (rename('drupalneu',$originalBasename) ) echo '<br/>Drupal folder is new Basefolder.<br/>';
 
         print '<br/>Install Drupal: <a href="_helper.php#installdrupal">_helper.php</a>';
     } else {
