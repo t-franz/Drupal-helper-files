@@ -15,22 +15,21 @@ if (!file_exists($folder)) {
 } else {
 
     if ($folder == 'sites') {
-        // exclude old backups, retain last
-        $backupfolder = "sites/default/files/private/backup_migrate/manual";
-        $backups = array();
-        $keep = array();
-        $backups = array_map('basename', array_merge(glob($backupfolder.'/*.gz'),glob($backupfolder.'/*.zip'), glob($backupfolder.'/*.info')));
-        sort($backups);
-        $keep = array_slice($backups,-2);
-        print "<br>Keeping only last backup:";
-        print '<pre>';
-        print_r($keep);
-        print '</pre>';
-        array_splice($backups,-2);
 
-        $rspstyles = array_map('basename',glob('sites/default/files/styles/rsp_*'));
-        $excludefiles = array('translations','settings.php','advagg_css','advagg_js');
-        $filter = array_merge($filter,$backups,$excludefiles,$rspstyles);
+        $allBackups = glob("sites/default/files/private/backup_migrate/manual/*.{gz,info}", GLOB_BRACE);
+        $allBackups = array_combine($allBackups, array_map("filemtime", $allBackups));
+        arsort($allBackups);
+        $allBackups = array_keys($allBackups);
+        $starting_index = 0; $limit = 2;
+        // exclude old backups, retain last
+        $allBackups = array_slice($allBackups, $starting_index,$limit);
+        $backups = array_map('basename', $allBackups);
+        $filter = array_merge($filter,$backups);
+
+        $styles = array('bloglist_sidebar','halbe_breite_beschnitten','medium','viertel','voll','viertel_breite_beschnitten');
+        $rsp_styles = glob("sites/default/files/styles/rsp_*");
+
+        $filter = array_merge($filter,$styles,$rsp_styles);
     }
 
     echo "Excluding: <i>";
