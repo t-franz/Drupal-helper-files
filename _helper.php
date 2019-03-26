@@ -74,6 +74,7 @@
 			<li><a href="/admin/config/media/file-system" target="_blank">ggf. temporäres Verzeichnis wiederherstellen (admin/config/media/file-system)</a></li>
 			<li><a href="/admin/reports/status" target="_blank">admin/reports/status</a></li>
 			<li><a href="/admin/content?type=patch" target="_blank">Patches löschen</a></li>
+			<li><a href="/admin/structure/types/manage/patch/delete" target="_blank">ContentType Patch löschen</a></li>
 			<li><a href="/admin/modules#edit-modules-development-devel-generate-enable" target="_blank">Modules <i>Patch Manager, Patch Status &amp; Unused Modules</i> deaktivieren</a></li>
 			<li><a href="/admin/modules/uninstall" target="_blank">ggf. Module deinstallieren</a></li>
 			<li><a href="/admin/config/development/performance" target="_blank">Gesamten Cache löschen</a></li>
