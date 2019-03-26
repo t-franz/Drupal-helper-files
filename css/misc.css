@@ -79,6 +79,12 @@ li {
   -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end;
 }
 
+.comun:empty {
+  height: 0;
+  visibility: hidden;
+  margin-bottom: 0;
+}
+
 
 
 
