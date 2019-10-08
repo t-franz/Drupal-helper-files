@@ -95,13 +95,11 @@
 			<li><a href="/admin/structure/block/manage/block/5/configure" target="_blank">Adresse: Sidebar</a></li>
 			<li><a href="/node/2/edit" target="_blank">Adresse: Impressum</a></li>
 			<li><a href="/admin/config/search/metatags/config/global" target="_blank">Schema.org: Organization -> Adresse eintragen</a> (<a href="https://www.gps-coordinates.net" target="_blank">Geo-Coordinates.net</a>)</li>
+			<li><a href="/admin/config/search/metatags/config/global#edit-metatags-und-schema-organizationlogo-value" target="_blank">MetaTag Schema Organization: Logo-Name und Größe eintragen</a></li>
 			<li><a href="/admin/config/search/metatags/config/node%3Aarticle#edit-metatags-und-schema-articlepublisher-value-logo-url" target="_blank">MetaTag Schema Blog-Artikel: Logo-Name und Größe eintragen</a></li>
 			<li><a href="/admin/appearance/settings/custom#edit-logo" target="_blank">Logo eintragen (möglichst logo.svg)</a></li>
 			<li><a href="/file/80/edit" target="_blank">Große Logo-Datei (für Social) austauschen und Benutzer auf Admin (<b>wg. Fehlermeldung!</b>) setzen</a></li>
 			<li><a href="/admin/structure/types/manage/article/fields/field_custom_json#edit-" target="_blank">Blog-JSON: Logo-Name und Größe eintragen</a></li>
-
-
-
 			<li><a href="/admin/structure/menu/item/236/edit" target="_blank">Menülink zur Startseite</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/voll/effects/5" target="_blank">Image-styles für "voll" anpassen (Max-Tablet-Content-Width)</a></li>
 			<li><a href="/admin/config/media/image-styles/edit/halb/effects/6" target="_blank">Image-styles für "halb" anpassen</a></li>
@@ -118,14 +116,116 @@
 			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/filter/type" target="_blank">Admin-View: Remove Filter "Node-Type"</a></li>
 			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/sticky" target="_blank">Admin-View: Remove Column "Sticky"</a></li>
 			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/type" target="_blank">Admin-View: Remove Column "Type"</a></li>
+			<li><a href="/admin/structure/views/nojs/config-item/admin_views_node/default/field/views_bulk_operations" target="_blank">Admin-View: Bulk Operations</a> Remove: Entitätswerte, Hervorhebung, Startseite</li>
 			<li><a href="/admin/config/media/picture/list/blogliste/delete" target="_blank">Delete Picture Mapping Blogliste</a></li>
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist" target="_blank">Delete Image-Style Bloglist</a></li>
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_smartphone_375" target="_blank">Delete Image-Style Bloglist 375</a></li>
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_smartphone_425" target="_blank">Delete Image-Style Bloglist 425</a></li>
 			<li><a href="/admin/config/media/image-styles/delete/rsp_bloglist_tablet_768" target="_blank">Delete Image-Style Bloglist 768</a></li>
-			<li><a href="/admin/modules#edit-modules-picture-picture-enable" target="_blank">Disable and <a href="/admin/modules/uninstall" target="_blank">uninstall</a> Custom-JSON</a></li>
 			<li><a href="/admin/structure/types/manage/article/delete" target="_blank">Delete Nodetype-Articles</a></li>
+			<li><a href="/admin/modules#edit-modules-seo-schema-review-enable" target="_blank">Disable Module Schema.org: Article</a></li>
+			<li><a href="/admin/helppage" target="_blank">Helppage</a> anpassen. (modules/custom_helppage)</li>
 		</ol>
+
+		Remove Webform:
+		<ol>
+			<li><a href="/admin/modules" target="_blank">Disable and <a href="/admin/modules/uninstall" target="_blank">uninstall</a> Clientside Validation, Webform, Encrypt</a></li>
+			<li><a href="https://www.drupal.org/project/node_convert" target="_blank">Download</a> and <a href="/admin/modules#edit-modules-other-menu-link-weight-enable" target="_blank">install</a> "Node Convert"</li>
+			<li><a href="/node/4/convert" target="_blank">Convert to "Statische Seite"</a></li>
+			<li><a href="/admin/modules#edit-modules-other-menu-link-weight-enable" target="_blank">Disable and <a href="/admin/modules/uninstall" target="_blank">uninstall</a> Node Convert</a></li>
+			<li><a href="/admin/structure/types/manage/webform/delete" target="_blank">Remove content type webform</a></li>
+		</ol>
+
+		Remove Paragraphs "Slideshow" and "Collage":
+		<ol>
+			<li><a href="/admin/structure/paragraphs/images/display#edit-modes" target="_blank">Remove Anzeigen "Slideshow" &amp; "Collage"</a></li>
+			<li><a href="/admin/structure/paragraphs/images/fields/field_paragraphs_gallery_style/field-settings" target="_blank">Edit Feldeinstellungen "Stil der Galerie"</a></li>
+			<li><a href="/admin/modules#edit-modules-seo-schema-web-site-enable" target="_blank">Disable &amp; uninstall modules Slick &amp; Collage Formatter</a></li>
+		</ol>
+
+		Sprache hinzufügen:
+		<ul>
+			<li><a href="/admin/config/regional/language" target="_blank">Sprache aktivieren</a></li>
+			<li><a href="/admin/config/regional/language/configure" target="_blank">Erkennung und Auswahl</a> URL + Sitzung + Browser</li>
+			<li><a href="https://www.drupal.org/project/variable" target="_blank">Download</a> and <a href="/admin/modules/install" target="_blank">install</a> module "Variable"</li>
+			<li><a href="https://www.drupal.org/project/i18n" target="_blank">Download</a>, <a href="/admin/modules/install" target="_blank">install</a> and <a href="/admin/modules#edit-modules-multilingual-l10n-update-enable" target="_blank">activate</a> modules:
+				<ul>
+					<li>"Internationalization": Block languages</li>
+					<li>Menu Translation</li>
+					<li>Multilingual content</li>
+					<li>String translation</li>
+					<li>Synchronize translations (wg. Imagefield Focus, s. u.)</li>
+					<li>Translation redirect</li>
+					<li>Translation sets</li>
+					<li>Variable translation</li>
+					<li>XML sitemap internationalization</li>
+				</ul>
+			</li>
+			<li><a href="https://www.drupal.org/project/hreflang" target="_blank">Download</a> and <a href="/admin/modules/install" target="_blank">install</a> module "Hreflang"</li>
+			<li><a href="https://www.drupal.org/project/node_edit_redirect" target="_blank">Download</a> and <a href="/admin/modules/install" target="_blank">install</a> module "Node edit redirect"</li>
+			<li><a href="/admin/config/regional/i18n/node" target="_blank">Hide content translation links</a></li>
+			<li><a href="/admin/config/regional/i18n/strings" target="_blank">Translatable text formats:</a> Full, Plain, ...</li>
+			<li><a href="/admin/config/regional/i18n/variable" target="_blank">Select variables:</a>
+				<ul>
+					<li>Menüeinstellungen: Quelle der Hautplinks</li>
+					<li>Website-Informationen: Alles (bis auf Gast)</li>
+				</ul>
+			</li>
+			<li><a href="/admin/structure/menu/manage/main-menu/edit" target="_blank">Hauptmenu</a> – Optionen: Translate and Localize.</li>
+			<li><a href="/admin/structure/menu/manage/menu-footer-menu/edit" target="_blank">Footer Menu</a> – Optionen: Translate and Localize.</li>
+			<li><a href="/admin/structure/types/manage/page" target="_blank">Für <i>alle</i> Content-Types:</a>
+				<ul>
+					<li>Veröffentlichungseinstellungen: Aktiviert, mit Übersetzung (erst speichern, dann:)</li>
+					<li>Mehrsprachige Einstellungen: Require Language, Normal</li>
+					<li>Übersetzungen synchronisieren: Alle Bilder und Logo (wg. Imagefield Focus, s. u.); Restrict synchronization</li>
+					<!-- <li>Menüeinstellungen: KEINE</li>
+					<li>Vereinfachen: Ja, Menüeinstellungen</li> -->
+				</ul>
+			</li>
+			<li><a href="/admin/structure/types/manage/page/display" target="_blank">Für <i>alle</i> Content-Types:</a> Feld "Sprache" ausblenden.</li>
+			<!-- <li>Help-Page für <i>Neue Menüpunkte</i> anpassen.</li> -->
+			<li><a href="/admin/structure/block/manage/superfish/1/configure" target="_blank">Block Hauptmenu:</a>Anzeigen alle außer <pre class="pwselect">user
+user/*</pre></li>
+			<li><a href="/admin/structure/block/manage/locale/language/configure" target="_blank">Block Sprachumschalter:</a> Titel: none, Region: Navigation bar (vor Hauptmenu)</li>
+			<li><a href="/admin/people/permissions#module-content_menu" target="_blank">Permission:</a> Inhalt übersetzen, Block languages: Translate Blocks</li>
+			<li><a href="/admin/structure/views/view/admin_views_node" target="_blank">View: Nodes:</a> Feld hinzufügen: "Inhalt: Sprache"; Filterkriterien: "Inhalt: Sprache" (Keine, de, en; Liste begrenzen)</li>
+			<li>Add Script to  template.php:<br/>
+				<small><pre class="pwselect">/* Rewrite Language Switcher Block */
+				function custom_links__locale_block(&$vars) {
+				  $vars['attributes']['class'][] = 'menu';
+				  foreach($vars['links'] as $lang => $langInfo) {
+				    $vars['links'][$lang]['title'] = strtoupper($vars['links'][$lang]['language']->language);
+				  }
+				  $content = theme_links($vars);
+				  return $content;
+				}</pre></small>
+			</li>
+			<li>Übersetzen: <a href="/en/node/add/page?translation=1&target=en" target="_blank">Startseite</a>, <a href="/en/node/add/page?translation=3&target=en" target="_blank">Datenschutzseite (Metatag_Advanced: Prevent ...)</a>, <a href="/en/node/add/page?translation=2&target=en" target="_blank">Impressum (Metatag_Advanced: Prevent ...)</a>, <a href="/en/node/add/page?translation=4&target=en" target="_blank">Kontakt (MetaTags Schema_Webpage: ContactPage)</a>, <a href="/en/node/add/page?translation=5&target=en" target="_blank">Fehlerseite (Metatag_Advanced: Prevent ...)</a><br/>
+				<small><pre class="pwselect">Oops ... an error has occurred ...
+... please try to reach the desired page again via the menu - thank you!</pre></small>
+			</li>
+			<li><a href="/admin/structure/views/view/admin_views_node" target="_blank">Fehlerseite</a> aus View entfernen (Filter: Inhalt NID "ungleich zu").</li>
+			<li><a href="/en/admin/config/system/site-information" target="_blank">Site informations</a> für englisch anpassen.</li>
+			<li><a href="/de/admin/structure/menu/item/236/translate/en" target="_blank">Ggf. Menü-Item "Start" übersetzen</a>.</li>
+			<li><a href="/admin/config/system/globalredirect" target="_blank">Global redirect:</a> Prüfen der Sprache für einen Pfad</li>
+			<li><a href="/admin/config/search/metatags/config/node#edit-metatags-und-next-value" target="_blank">MetaTag Advanced:</a> Inhaltssprache <span class="pwselect">[node:language]</span></li>
+			<li><a href="/admin/config/search/metatags/config/node#edit-metatags-und-schema-web-page" target="_blank">MetaTag schema.org Webpage:</a> <span class="pwselect">[site:url]<b>/</b>node/[node:nid]</span></li>
+			<li><a href="/admin/config/search/xmlsitemap" target="_blank">XML-Sitemap:</a>Neue Sitemap hinzufügen und Sprache wählen; Vorhande bearbeiten und Sprache wählen</li>
+
+
+			<li><a href="https://www.drupal.org/project/i18n/issues/1594804" target="_blank"><b>Fehler</b> "Sprache nicht definiert":</a> Ggf. müssen alle Inhalte nochmals (ggf. von "neutral") individuell gespeichert werden.</li>
+			<li><a href="https://www.drupal.org/forum/support/post-installation/2013-03-04/menu-item-disabled-after-saving-a-node-in-a-different#comment-7169276" target="_blank"><b>Fehler</b> "Menu item disabled":</a> Submodule i18n_menu austauschen gegen <a href="https://www.drupal.org/node/1668340" target="_blank">Version 1.7</a>.</li>
+			<li><a href="admin/structure/menu/manage/menu-footer-menu" target="_blank"><b>Fehler</b> "Footer-Menu: Kontakt":</a> Ggf. Kontakt aus Footer-Menü entfernen.</li>
+			<li><a href="https://www.drupal.org/project/imagefield_focus" target="_blank"><b>Fehler</b> "Imagefield Focus (7.x-1.x-dev, 4 Jan 2016)":</a> Limitation concerning node translations: Crop gehen nur auf Bilder, welche auf den Source-Nodes hochgeladen wurden.<br/>
+				Custom formalter:<br/><small><pre class="pwselect">    if ($language->language == 'en') {
+      hide($form['group_banner']);
+      hide($form['field_image']);
+    }</pre></small>
+
+			</li>
+
+
+
 
 
 	</nav>
@@ -133,6 +233,8 @@
 		<strong>Nach Fertigstellung:</strong>
 		<ol>
 			<li>CSS-Farben in mail.css anpassen</li>
+			<li><a href="/devel/php" target="_blank">Test-Mail senden</a><br/><span class="pwselect">$params['account'] = user_load(1); drupal_mail('user', 'password_reset', 'debug@fusbfg.de', language_default(), $params);</span></li>
+			<li><a href="/admin/config/search/metatags/config/global#edit-metatags-und-schema-organizationimage-value" target="_blank">MetaTag Schema Organization: Bannerbild und Größe eintragen</a></li>
 			<li><a href="/admin/structure/block/manage/superfish/1/configure#edit-sf-advanced" target="_blank">Submenü Mouseverzögerung einstellen</a></li>
 			<li><a href="/admin/content" target="_blank">Inhalte Benutzer zuweisen</a></li>
 			<li><a href="/admin/content/file" target="_blank">Dateien Benutzer zuweisen (außer Standards wie Logo o.ä.!)</a></li>
@@ -154,6 +256,7 @@
 			<li><a href="/admin/config/system/boost/htaccess" target="_blank">Boost einstellungen in die htaccess kopieren</a></li>
 			<li><a href="/admin/modules/update" target="_blank">Updates überprüfen</a></li>
 			<li><a href="/admin/reports/status" target="_blank">Status überprüfen</a></li>
+			<li><a href="/admin/reports/updates/settings" target="_blank">E-Mail für Verfügbare Aktualisierungen austauschen</a></li>
 			<li><a href="/admin/config/development/performance" target="_blank">Cache einschalten</a> (ggf. $conf['block_cache_bypass_node_grants'] = TRUE; in settings.php)</li>
 			<li><a href="/admin/config/development/logging" target="_blank">Fehlerlogging ausschalten</a></li>
 			<li><a href="/admin/config/regional/translate/update" target="_blank">Übersetzungen kontrollieren</a></li>
@@ -276,6 +379,7 @@
       <li><a href="https://www.drupal.org/project/logging_alerts" target="_blank">Logging Alerts to Email</a></li>
       <li><a href="https://www.drupal.org/project/substitute_password" target="_blank">Substitute Password</a></li>
       <li><a href="https://www.drupal.org/project/custom_nid" target="_blank">Custom nid</a></li>
+      <li><a href="https://www.drupal.org/project/automatic_updates" target="_blank">Automatic Updates</a></li>
 		</ul>
 
 			<br/>
@@ -420,10 +524,11 @@
 				<li><a href="https://www.drupal.org/project/combined_termref" target="_blank">Combined Termref</a></li>
 				<li><a href="https://www.drupal.org/project/immoclient" target="_blank">OpenImmo Immoclient</a></li>
 				<li><a href="https://www.drupal.org/project/content_menu" target="_blank">Content Menu</a></li>
+				<li><a href="https://www.drupal.org/project/multiple_node_menu" target="_blank">Multiple Node Menu</a></li>
 				<li><a href="https://www.drupal.org/sandbox/biged/2007914" target="_blank">Age Verification</a></li>
         <li><a href="https://www.drupal.org/project/le_gate" target="_blank">Age gate solution</a></li>
 				<li><a href="https://www.drupal.org/project/webform_accordion" target="_blank">Webform Accordion</a></li>
-				<li><a href="https://www.drupal.org/project/webform_layout" target="_blank">Webform Layout</a></li
+				<li><a href="https://www.drupal.org/project/webform_layout" target="_blank">Webform Layout</a></li>
 				<li><a href="https://www.drupal.org/project/webform_references" target="_blank">Webform References</a></li>
 				<li><a href="https://www.drupal.org/project/places_api_webform_autocomplete" target="_blank">Places API Webform Autocomplete</a></li>
 				<li><a href="https://www.drupal.org/project/webform_template" target="_blank">Webform Template</a></li>
@@ -973,6 +1078,7 @@
 
 			<p><strong>Interface:</strong></p>
 			<ul>
+				<li><a href="https://www.drupal.org/project/nodeformcols" target="_blank">Node form columns</a></li>
 				<li><a href="https://www.drupal.org/project/workbench_moderation" target="_blank">Workbench</a></li>
 				<li><a href="https://www.drupal.org/project/disclaimer" target="_blank">Disclaimer</a></li>
 				<li><a href="https://www.drupal.org/project/signed_nodes" target="_blank">Signed Nodes</a></li>
