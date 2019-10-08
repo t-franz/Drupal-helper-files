@@ -49,7 +49,7 @@
 
         <main id="main">
 
-            <section id="hero">
+            <div id="hero">
                 <!-- http://scottjehl.github.io/picturefill/ -->
                 <picture>
                     <source media="(min-width: 1201px)" srcset="images/vorlagen/responsive_16-9_1920.png">
@@ -68,10 +68,7 @@
                         <p>herotext</p>
                     </div><!-- /.herotext -->
                 </div><!-- /.herowrapper -->
-
-            </section><!-- /#hero -->
-
-            <article>
+            </div><!-- /#hero -->
 
             <div class="headline">
                 <div class="inner">
@@ -81,7 +78,6 @@
                     </header>
                 </div> <!-- /.inner -->
             </div>
-
 
             <div class="flexbox fb-spacearound">
                 <span class="icon"><img src="images/vorlagen/icon-guenstig.svg" alt="Günstige Webseiten" width="73.6" height="75" />günstig</span>
@@ -106,7 +102,6 @@
                                              images/vorlagen/responsive_16-9_1280.png 1280w">
                 </div> <!-- /.inner -->
             </section> <!-- /#overview -->
-
 
             <section id="angebot">
                 <div class="inner">
@@ -181,7 +176,6 @@
                 </div> <!-- /.inner -->
             </section> <!-- /#angebot -->
 
-
             <section id="vorteile">
                 <div class="inner">
                     <h2>Vorteile</h2>
@@ -212,10 +206,10 @@
 
                     <form action="/mail.php" method="post" id="formular" accept-charset="UTF-8">
 
-                        <input required="required" type="text" id="form-name" name="submitted[name]" placeholder="Vorname und Name" size="60" maxlength="64" pattern="[A-Za-z ]{1,64}" class="form-item form-text" autocapitalize="sentences" tabindex=1/>
+                        <input required="required" type="text" id="form-name" name="submitted[name]" placeholder="Vorname und Name" size="60" maxlength="64" pattern="[A-Za-z ]{1,64}" class="form-item form-text" autocapitalize="sentences" tabindex="1"/>
                         <label class="label" for="form-name">Ihr Name</label>
 
-                        <input required="required" type="email" id="form-email" name="submitted[email]" placeholder="Ihre E-Mail-Adresse" size="60" maxlength="128" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,7}$" title="Die E-Mail sollte nur aus Kleinbuchstaben bestehen." class="form-item form-text" tabindex=2 />
+                        <input required="required" type="email" id="form-email" name="submitted[email]" placeholder="Ihre E-Mail-Adresse" size="60" maxlength="128" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,7}$" title="Die E-Mail sollte nur aus Kleinbuchstaben bestehen." class="form-item form-text" tabindex="2" />
                         <label class="label" for="form-email">Ihre E-Mail-Adresse</label>
 
                         <textarea required="required" type="text" id="form-message" name="submitted[message]" placeholder="Mein Anliegen" rows="10" cols="50" autocapitalize="sentences" class="form-item form-text form-textarea" tabindex=3 ></textarea>
@@ -226,18 +220,17 @@
                         <div class="form-type-checkbox">
 
                             <label class="option checkbox" for="form-datenschutz">
-                                <input <input type="checkbox" name="submitted[datenschutz]" id="form-datenschutz" value="0" class="form-item form-checkbox" required="required" tabindex=4 />
+                                <input type="checkbox" name="submitted[datenschutz]" id="form-datenschutz" value="0" class="form-item form-checkbox" required="required" tabindex="4" />
                                 <span></span>
                                 <div class="labeltext">Ja, ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> zur Kenntnis genommen und bin damit einverstanden, dass meine Angaben zweckgebunden zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Die Einwilligung kann ich jederzeit widerrufen.</div>
                             </label>
                         </div>
 
-                        <input class="form-submit button" type="submit" name="op" value="Senden" tabindex=5 onclick="javascript:_paq.push(['trackEvent', 'Kontaktformular', 'Submit']);"/>
+                        <input class="form-submit button" type="submit" name="op" value="Senden" tabindex="5"/>
                     </form>
 
                 </div> <!-- /.inner -->
             </section> <!-- /#kontakt -->
-
 
             <section id="vertrauen">
              <div class="inner">
@@ -251,7 +244,6 @@
              </div> <!-- /.inner -->
             </section> <!-- /#vertrauen -->
 
-        </article>
         </main>
 
 
@@ -295,15 +287,6 @@
                 <p>Firma © 2018</p>
             </div>
         </footer>
-
-
-
-
-
-
-
-
-
 
 
 
