@@ -600,6 +600,7 @@ user/*</pre></li>
 				<li><a href="https://www.drupal.org/project/jquery_ajax_load" target="_blank">jQuery AJAX Load</a></li>
 				<li><a href="https://www.drupal.org/project/content_callback" target="_blank">Content callback</a></li>
 				<li><a href="https://www.drupal.org/project/layouter" target="_blank">Layouter - WYSIWYG layout templates</a></li>
+        <li><a href="https://www.drupal.org/project/gridstack" target="_blank">D8: GridStack (Mason)</a></li>
 				<li><a href="https://www.drupal.org/project/no_term_pages" target="_blank">No term pages (Taxonomy)</a></li>
 				<li><a href="https://www.drupal.org/project/simpleads" target="_blank">SimpleAds</a></li>
 				<li><a href="https://www.drupal.org/project/themekey" target="_blank">ThemeKey</a></li>
