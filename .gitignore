@@ -9,3 +9,4 @@ report-task.txt
 .gitignore
 .DS_Store
 -Dsonar*
+.vscode/sftp.json
