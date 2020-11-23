@@ -1,20 +1,32 @@
 <?php
 
-$file = 'https://www.drupal.org/download-latest/zip';
+$nofile = TRUE;
+$version = 80;
+
+
+while ($nofile && $version > 65) {
+	$file = 'https://ftp.drupal.org/files/projects/drupal-7.'.$version.'.zip';
+	print 'Checkfile: '.$file.'<br/>';
+	if (strlen(@file_get_contents($file))) {
+		$nofile = FALSE;
+		print '<br/>Get file: '.$file.'<br/>';
+	} else {
+		$version--;
+	}
+}
+
 
 
 if (file_put_contents("drupal_core.zip", file_get_contents($file)) ) {
     echo 'File "'.$file.'" geladen.<br/>';
-    if (unzip("drupal_core.zip")) {
-        unlink("drupal_core.zip");
+    unzip("drupal_core.zip");
+    unlink("drupal_core.zip");
+    if (!rename('drupal-7.'.$version,'drupal')) {
+        print '<br/><br/>Could not rename folder <em>drupal-7.'.$version.'</em>. <b>Please rename folder <em>drupal-7.'.$version.'</em> manually.</b><br/>';
+    } else {
+        print '<br/>Renaming folder <em>drupal-7.'.$version.'</em> to <em>drupal</em><br/>';
     }
-    // unlink("drupal_core.zip");
-    // if (!rename('drupal-7.'.$version,'drupal')) {
-    //     print '<br/><br/>Could not rename folder <em>drupal-7.'.$version.'</em>. <b>Please rename folder <em>drupal-7.'.$version.'</em> manually.</b><br/>';
-    // } else {
-    //     print '<br/>Renaming folder <em>drupal-7.'.$version.'</em> to <em>drupal</em><br/>';
-    // }
-    print '<br/><br/>Next Step: Rename folder "drupal_9.0.0" to "web" ';
+    print '<br/><br/>Next Step: <b><a href="_download_sites.php">_download_sites.php</a><br/><br/><br/>';
 } else {
     echo 'Herunterladen von "'.$file.'" fehlgeschlagen.<br/>';
 }
@@ -47,10 +59,8 @@ function unzip($file){
 
             }
         }
-    } else {
+    }else{
         echo "Unable to open zip file\n";
-        return FALSE;
     }
-    return TRUE;
 }
 
