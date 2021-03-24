@@ -11,19 +11,19 @@ body {
 
 .inner {
   width: 100%;
-  max-width: 1040px; /* SIEHE MEDIA-QUERY */
+  max-width: 1100px; /* SIEHE MEDIA-QUERY */
   margin-right: auto;
   margin-left: auto;
 }
 
-#main .inner {
+#main .inner,
+#footer .inner {
   padding-left: 20px;
   padding-right: 20px;
 }
 
 #logo {
   z-index: 999;
-  display: inline-block;
   float: left;
   padding-left: 20px;
 }
@@ -45,6 +45,13 @@ p,
 ul,
 li {
   margin-top: 0;
+}
+
+p, ul, ol {
+  margin-bottom: 2em;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 
 .selectall {
@@ -79,11 +86,11 @@ li {
 .fb-bottom {
   -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end;
 }
-
-.comun:empty {
-  height: 0;
-  visibility: hidden;
-  margin-bottom: 0;
+.gap40 {
+  width: 40px;
+}
+.gap80 {
+  width: 80px;
 }
 
 
@@ -112,7 +119,8 @@ li {
 }
 
 
-.menu a {
+.menu a,
+.menu span {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -131,18 +139,7 @@ li {
   transition-duration: 0.15s;
   transition-property: opacity,filter;
   font-size: 1.1rem;
-}
-
-.toggle a {
-  position: relative;
-  display: inline-block;
   cursor: pointer;
-}
-
-.toggle a:hover,
-.toggle a:focus,
-.toggle a:active {
-  text-decoration: none;
 }
 
 
@@ -238,7 +235,6 @@ label.checkbox input[type="checkbox"] {
 }
 
 label.checkbox span {
-  display:inline-block;
   box-sizing: content-box;
   float: left;
   cursor: pointer;
@@ -298,8 +294,8 @@ label.checkbox :checked + span:after {
 }
 
 
-@media screen and (min-width: 1080px) {
-  .phone {
+@media screen and (min-width: 1024px) {
+  a[href^="tel"] {
     cursor: default;
     color: inherit;
   }

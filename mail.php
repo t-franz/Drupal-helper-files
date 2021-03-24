@@ -3,7 +3,7 @@
 
 ### Konfiguration ###
 
-# Bitte passen Sie die folgenden Werte an, bevor Sie das Script benutzen!
+# Bitte passen die folgenden Werte an, bevor Sie das Script benutzen!
 
 # An welche Adresse sollen die Mails gesendet werden?
 $mailto = 'debug@fusbfg.de';
@@ -12,7 +12,7 @@ $mailto = 'debug@fusbfg.de';
 $nospam = TRUE;
 $error = '';
 $spamcheck = '';
-$respondpage = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+// $baseurl = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . "://".$_SERVER['HTTP_HOST'];
 if (!empty($_POST['submitted']['contact_me_by_fax_only']) && (bool) $_POST['submitted']['contact_me_by_fax_only'] == TRUE) {
     $nospam = FALSE;
     $error .= '&error=spam';
@@ -56,7 +56,7 @@ $mailfrom = $name.'<'.$email.'>';
 
 
 # Welchen Betreff sollen die Mails erhalten?
-$betreff    = 'BETREFF EINTRAGEN';
+$betreff    = 'Nachricht vom Kontaktformular '.$_SERVER['SERVER_NAME'];
 
 $headers   = array();
 $headers[] = "MIME-Version: 1.0";
@@ -84,13 +84,17 @@ Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen und bin damit einve
 
   $nachricht = wordwrap($nachricht, 85);
 
-  mail($mailto, $betreff, $nachricht, $header) or die($string['form-techerror']);
-
-  $respondpage .= '/danke.php?success=true';
-  header("Location: $respondpage");
+  if (mail($mailto, $betreff, $nachricht, $header) or die($string['form-techerror'])) {
+    $respondpage = './danke.php?success=true';
+    header("Location: $respondpage");
+  } else {
+    $error .= '&error=email';
+    $respondpage = './danke.php?success=false'.$error;
+    header("Location: $respondpage");
+  };
   exit;
 } else {
-  $respondpage .= '/danke.php?success=false'.$error;
+  $respondpage = './danke.php?success=false'.$error;
   header("Location: $respondpage");
   exit;
 }

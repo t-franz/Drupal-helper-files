@@ -1,0 +1,9 @@
+#!/bin/bash
+# https://www.hastac.org/blogs/joe-cutajar/2015/04/21/how-make-simple-bash-script-mac
+# https://developers.google.com/speed/webp/docs/cwebp
+
+for file in *.jpg
+do
+cwebp -preset "photo" -mt -short "$file" -o "${file%.jpg}.webp"
+done
+
