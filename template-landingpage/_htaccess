@@ -2,22 +2,78 @@
 	RewriteEngine on
 	RewriteCond %{HTTPS} off [OR]
 	RewriteCond %{HTTP_HOST} !^www\. [NC]
-	RewriteRule (.*) https://www.EXAMPLE.de%{REQUEST_URI} [R=301,L]
+	# RewriteRule (.*) https://www.XYZ.de/%{REQUEST_URI} [R=301,NC]
+  	# RewriteRule ^index.html$ https://www.XYZ.de/ [R=301,L]
 </IfModule>
 
+# Header always set Strict-Transport-Security "max-age=4838400; includeSubDomains; preload" env=HTTPS
+
+# https://content-security-policy.com/
+# Header set Content-Security-Policy "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'"
+# Header add Content-Security-Policy "default-src 'self';"
+# Header always set Content-Security-Policy "upgrade-insecure-requests"
+
+# https://really-simple-ssl.com/site-health-recommended-security-headers
+# Header always set X-Content-Type-Options "nosniff"
+# Header always set X-XSS-Protection "1; mode=block"
+# Header always set Expect-CT "max-age=7776000, enforce"
+# Header always set Referrer-Policy: "no-referrer-when-downgrade"
+
+
+### START HTTP Security Header
+## Test auf https://siwecos.de
+###Content Security Policy - CSP-HEADER
+## Lade Inhalte nur von Seiten die explizit erlaubt sind
+##  Beispiel: Alles von der eigenen Domain erlauben, keine Externas:
+# Header set Content-Security-Policy "default-src 'none'; frame-src 'self'; font-src 'self'; img-src 'self'; object-src 'self'; script-src 'self'; style-src 'self';"
+## HTTP Content-Types
+# AddCharset UTF-8 .html
+## Public Key Pins
+# Header set Public-Key-Pins "pin-sha256=\"base64+primary==\"; pin-sha256=\"base64+backup==\"; max-age=5184000; includeSubDomains"
+## Strict-Transport-Security
+# Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+## X-Content-Type-Options
+# Header always set X-Content-Type-Options "nosniff"
+## X-Frame-Options
+# Header always set X-Frame-Options "SAMEORIGIN"
+## X-Xss-Protection
+#Header always set X-Xss-Protection "1; mode=block"
+## Referrer-Policy
+# Header set Referrer-Policy "strict-origin"
+### END HTTP Security Header
+
+
+
 # Add correct content-type for fonts
-AddType font/ttf .ttf
-AddType font/eot .eot
-AddType font/otf .otf
 AddType font/woff .woff
 AddType font/woff2 .woff2
-AddType image/svg+xml .svg
+
+<IfModule mod_gzip.c>
+  mod_gzip_on Yes
+  mod_gzip_dechunk Yes
+  mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+  mod_gzip_item_include handler ^cgi-script$
+  mod_gzip_item_include mime ^text/.*
+  mod_gzip_item_include mime ^application/x-javascript.*
+  mod_gzip_item_exclude mime ^image/.*
+  mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+<FilesMatch "\.(html?|txt|css|js|php|pl)$">
+  SetOutputFilter DEFLATE
+</FilesMatch>
 
 # Deflate Compression by MimeType
 <IfModule mod_deflate.c>
- <FilesMatch "\.(ico|js|jpg|jpeg|gif|png|css|webp|woff|woff2)$">
+ <FilesMatch "\.(html?|php|ico|js|jpg|jpeg|gif|png|css|webp|svg|woff|woff2)$">
   ExpiresActive on
-  ExpiresDefault "access plus 1 month"
+  ExpiresDefault "access plus 6 month"
   SetOutputFilter DEFLATE
  </FilesMatch>
 </IfModule>
+
+<FilesMatch "\.(pdf|jpg|jpeg|png|gif|svg|css)$">
+	Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(js|ico|woff|woff2)$">
+	Header set Cache-Control "max-age=51840000, public"
+</FilesMatch>

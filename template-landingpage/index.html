@@ -8,12 +8,27 @@
     <title>XXX</title>
     <meta name="description" content="XXX" />
 
+    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="XXX" />
     <meta property="og:description" content="XXX" />
-    <meta property="og:image" content="XXX" />
     <meta property="og:url" content="XXX" />
+    <meta property="og:image" content="XXX" />
+    <!-- minimum dimension of 1200×630 pixels and an aspect ratio of 1.91:1, file size less than 1MB. -->
 
+    <link rel="preload" as="font" href="fonts/open-sans-v15-latin-600.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/open-sans-v15-latin-600.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/open-sans-v15-latin-700.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/open-sans-v15-latin-700.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/open-sans-v15-latin-regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/open-sans-v15-latin-regular.woff" type="font/woff2" crossorigin="anonymous">
+
+    <!-- <link rel="prefetch" href="ueber-uns.html">
+    <link rel="prefetch" href="leistungen.html">
+    <link rel="prefetch" href="software.html">
+    <link rel="prefetch" href="kontakt.html"> -->
+
+    <!-- https://technicalseo.com/tools/schema-markup-generator/ -->
     <script type="application/ld+json">
         {
           "@context": "http://schema.org/",
@@ -43,7 +58,7 @@
 </head>
 
 <body class="front">
-    <p id="skip-link"><a href="#navigation" class="element-invisible element-focusable">Gehe zur Navigation</a></p>
+    <p id="skip-link"><a href="#nav" class="element-invisible element-focusable">Gehe zur Navigation</a></p>
     <div name="start" id="start"></div>
 
         <main id="main">
@@ -72,7 +87,7 @@
             <div class="headline">
                 <div class="inner">
                     <header>
-                        <h1>Überschrift H1</h1>
+                        <h1>XXX</h1>
                         <p class="subtitle">Subheadline</p>
                     </header>
                 </div> <!-- /.inner -->
@@ -205,13 +220,13 @@
 
                     <form action="/mail.php" method="post" id="formular" accept-charset="UTF-8">
 
-                        <input required="required" type="text" id="form-name" name="submitted[name]" placeholder="Vorname und Name" size="60" maxlength="64" pattern="[A-Za-z ]{1,64}" class="form-item form-text" autocapitalize="sentences" tabindex="1"/>
+                        <input required="required" type="text" id="form-name" name="submitted[name]" placeholder="Vorname und Name" size="60" maxlength="64" pattern="[A-Za-z ]{1,64}" class="form-item form-text" autocapitalize="sentences" />
                         <label class="label" for="form-name">Ihr Name</label>
 
-                        <input required="required" type="email" id="form-email" name="submitted[email]" placeholder="Ihre E-Mail-Adresse" size="60" maxlength="128" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,7}$" title="Die E-Mail sollte nur aus Kleinbuchstaben bestehen." class="form-item form-text" tabindex="2" />
+                        <input required="required" type="email" id="form-email" name="submitted[email]" placeholder="Ihre E-Mail-Adresse" size="60" maxlength="128" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,7}$" title="Die E-Mail sollte nur aus Kleinbuchstaben bestehen." class="form-item form-text" />
                         <label class="label" for="form-email">Ihre E-Mail-Adresse</label>
 
-                        <textarea required="required" type="text" id="form-message" name="submitted[message]" placeholder="Mein Anliegen" rows="10" cols="50" autocapitalize="sentences" class="form-item form-text form-textarea" tabindex=3 ></textarea>
+                        <textarea required="required" type="text" id="form-message" name="submitted[message]" placeholder="Mein Anliegen" rows="10" cols="50" autocapitalize="sentences" class="form-item form-text form-textarea"></textarea>
                         <label class="label" for="form-message">Ihre Nachricht</label>
 
                         <input class="fax-only" type="checkbox" name="submitted[contact_me_by_fax_only]" value="0" tabindex="-1" autocomplete="false" id="form-fax"><label class="label fax-only" for="form-fax">Fax</label>
@@ -219,13 +234,13 @@
                         <div class="form-type-checkbox">
 
                             <label class="option checkbox" for="form-datenschutz">
-                                <input type="checkbox" name="submitted[datenschutz]" id="form-datenschutz" value="0" class="form-item form-checkbox" required="required" tabindex="4" />
+                                <input type="checkbox" name="submitted[datenschutz]" id="form-datenschutz" value="0" class="form-item form-checkbox" required="required"/>
                                 <span></span>
                                 <div class="labeltext">Ja, ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> zur Kenntnis genommen und bin damit einverstanden, dass meine Angaben zweckgebunden zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Die Einwilligung kann ich jederzeit widerrufen.</div>
                             </label>
                         </div>
 
-                        <input class="form-submit button" type="submit" name="op" value="Senden" tabindex="5"/>
+                        <input class="form-submit button" type="submit" name="op" value="Senden"/>
                     </form>
 
                 </div> <!-- /.inner -->
@@ -248,26 +263,28 @@
 
 
 
-        <header id="header" role="banner" class="fixed bg-primary">
+        <header id="header" role="banner" class="fixed bg-white">
             <div class="inner">
 
                 <nav id="nav" role="navigation" class="navigation">
                     <ul class="menu">
-                        <li class="active"><a class="intern" href="#start" title ="Zurück zum Anfang">Start</a></li>
-                        <li class=""><a class="intern" href="#angebot" title ="Webseiten-Angebot">Angebot</a></li>
-                        <li class=""><a class="intern" href="#vorteile" title ="Unsere Leistungen">Vorteile</a></li>
-                        <li class=""><a class="intern" href="#ueber-uns" title ="Ihre Dienstleister">Über uns</a></li>
-                        <li class=""><a class="intern" href="#kontakt" title ="Kontakt">Kontakt</a></li>
-                        <li class=""><a class="intern" href="#vertrauen" title ="Vertrauen">Vertrauen</a></li>
+                        <li class="active"><span class="js-toggler" aria-current="page">Start</span></li>
+                        <li class=""><a class="js-toggler" href="#angebot" title ="Webseiten-Angebot">Angebot</a></li>
+                        <li class=""><a class="js-toggler" href="#vorteile" title ="Unsere Leistungen">Vorteile</a></li>
+                        <li class=""><a class="js-toggler" href="#ueber-uns" title ="Ihre Dienstleister">Über uns</a></li>
+                        <li class=""><a class="js-toggler" href="#kontakt" title ="Kontakt">Kontakt</a></li>
+                        <li class=""><a class="js-toggler" href="#vertrauen" title ="Vertrauen">Vertrauen</a></li>
                     </ul>
                 </nav>
 
-                <div class="toggle"><a><span>&nbsp;</span></a></div>
+                <div class="toggle js-toggler"><span>&nbsp;</span></div>
 
-                <a href="#start" title="Zurück" rel="home" id="logo">
+                <div id="logo">
+                    <!-- <a href="#start" title="Zurück" rel="home"> -->
                     <!-- LOGO GRÖSSE ANPASSEN -->
-                    <img src="images/vorlagen/logo.svg" onerror="this.src='images/logo.png'; this.onerror=null;" width="152" height="20" class="d-inline-block align-top" alt="LOGO"/>
-                </a>
+                    <img src="images/vorlagen/logo.svg" onerror="this.src='images/logo.png'; this.onerror=null;" width="152" height="20" class="d-inline-block align-top js-toggler" alt="LOGO"/>
+                    <!-- </a> -->
+                </div>
 
                 <div class="mobilecontact">
                     <a class="phone" href="tel:+12345"><img src="images/phone.svg" width="30" height="30" alt="Anrufen!" /></a>
@@ -279,9 +296,9 @@
         <footer id="footer" role="contentinfo">
             <div class="inner">
                 <p class="submenu">
-                    <a href="datenschutz.html">Datenschutz</a>
-                    <a href="agb.html">AGB</a>
-                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html" title="Hinweise zum Datenschutz" rel="nofollow">Datenschutz</a>
+                    <a href="agb.html" title="Allgemeine Geschäftsbedingungen" rel="nofollow">AGB</a>
+                    <a href="impressum.html" title="Impressum" rel="nofollow">Impressum</a>
                 </p>
                 <p>Firma © 2018</p>
             </div>
@@ -291,41 +308,40 @@
 
 
     <script type="text/javascript">
-        var dfLoadStatus = 0;
-        var dfLoadFiles = [
-                    ["js/jquery-3.3.1.min.js"],
-                    ["js/scrollspy.min.js"],
-                    ["js/script.js"]];
-
-        function downloadJSAtOnload() {
-                if (!dfLoadFiles.length) return;
-
-                var dfGroup = dfLoadFiles.shift();
-                dfLoadStatus = 0;
-
-                for(var i = 0; i<dfGroup.length; i++) {
-                        dfLoadStatus++;
-                        var element = document.createElement('script');
-                        element.src = dfGroup[i];
-                        element.onload = element.onreadystatechange = function() {
-                        if ( ! this.readyState ||
-                                     this.readyState == 'complete') {
-                                dfLoadStatus--;
-                                if (dfLoadStatus==0) downloadJSAtOnload();
-                        }
-                };
-                document.body.appendChild(element);
-            }
+        /* Toggle Mobile Menu */
+        window.onload = function () {
+            var elements = document.querySelectorAll('.js-toggler');
+            elements.forEach(
+                el=>el.onclick = function() {
+                    document.querySelector('#nav').classList.toggle('expanded');
+                }
+            );
         }
-        if (window.addEventListener)
-                window.addEventListener("load", downloadJSAtOnload, false);
-        else if (window.attachEvent)
-                window.attachEvent("onload", downloadJSAtOnload);
-        else window.onload = downloadJSAtOnload;
 
+        /* LazyLoad Images with class "lazy" and DATA-SRC */
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                    let lazyImage = entry.target;
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.classList.remove("lazy");
+                    lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+                });
+
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
+        });
     </script>
 
-    <link rel="stylesheet" href="css/deferred.css" />
+<!--     <link rel="stylesheet" href="css/deferred.css" /> -->
 
 </body>
 
