@@ -30,6 +30,7 @@ strong {
 img {
   display: block;
   height: auto;
+  max-width: 100%;
   border-style: none;
 }
 
@@ -100,6 +101,6 @@ a:hover,
 form,
 *:focus {
   outline: 0;
-
+  outline-style: none;
   -moz-outline-style: none;
 }
